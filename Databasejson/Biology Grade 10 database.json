@@ -1,0 +1,1199 @@
+{
+  "grade": 10,
+  "subject": "Biology",
+  "curriculum": "Ethiopian New Curriculum",
+  "publisher": "Ministry of Education of Ethiopia",
+  "textbook_year": 2023,
+  "units": [
+    {
+      "unit_number": 1,
+      "unit_title": "Sub-fields of Biology",
+      "sections": [
+        {
+          "section_number": "1.1",
+          "section_title": "Sub-fields of Biology",
+          "topics": [
+            {
+              "topic_title": "Branches of Biology",
+              "subtopics": [
+                "Botany",
+                "Zoology",
+                "Microbiology",
+                "Ecology",
+                "Genetics",
+                "Biochemistry",
+                "Cell biology",
+                "Physiology",
+                "Anatomy",
+                "Evolution"
+              ]
+            },
+            {
+              "topic_title": "Pure and Applied Biology",
+              "subtopics": [
+                "Pure biology",
+                "Applied biology",
+                "Agricultural applications",
+                "Medical applications",
+                "Industrial applications",
+                "Environmental applications"
+              ]
+            },
+            {
+              "topic_title": "Major Scientific Discoveries in Biology",
+              "subtopics": [
+                "Major biological discoveries",
+                "Contributions to modern biology",
+                "Importance of scientific discoveries"
+              ]
+            },
+            {
+              "topic_title": "Contributions of Ethiopian Biologists",
+              "subtopics": [
+                "Ethiopian biological research",
+                "Contributions to science and society",
+                "Local biological knowledge"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.2",
+          "section_title": "Importance and Applications of Biology",
+          "topics": [
+            {
+              "topic_title": "Biology in Agriculture",
+              "subtopics": [
+                "Crop improvement",
+                "Animal production",
+                "Pest management",
+                "Plant breeding",
+                "Animal breeding"
+              ]
+            },
+            {
+              "topic_title": "Biology in Medicine",
+              "subtopics": [
+                "Disease diagnosis",
+                "Disease prevention",
+                "Pharmaceutical applications",
+                "Medical research"
+              ]
+            },
+            {
+              "topic_title": "Biology and Environment",
+              "subtopics": [
+                "Environmental conservation",
+                "Biodiversity",
+                "Pollution control",
+                "Sustainable resource use"
+              ]
+            },
+            {
+              "topic_title": "Careers in Biology",
+              "subtopics": [
+                "Biological sciences careers",
+                "Laboratory careers",
+                "Health-related careers",
+                "Environmental careers",
+                "Agricultural careers"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "unit_title": "Plants",
+      "sections": [
+        {
+          "section_number": "2.1",
+          "section_title": "Plant Structure and Function",
+          "topics": [
+            {
+              "topic_title": "Plant Organs",
+              "subtopics": [
+                "Roots",
+                "Stems",
+                "Leaves",
+                "Flowers",
+                "Fruits",
+                "Seeds"
+              ]
+            },
+            {
+              "topic_title": "Root Structure and Function",
+              "subtopics": [
+                "Root systems",
+                "Root hairs",
+                "Water absorption",
+                "Mineral absorption",
+                "Anchorage"
+              ]
+            },
+            {
+              "topic_title": "Stem Structure and Function",
+              "subtopics": [
+                "Stem tissues",
+                "Support",
+                "Transport",
+                "Storage",
+                "Growth"
+              ]
+            },
+            {
+              "topic_title": "Leaf Structure and Function",
+              "subtopics": [
+                "Leaf parts",
+                "Epidermis",
+                "Mesophyll",
+                "Stomata",
+                "Vascular bundles",
+                "Photosynthesis",
+                "Gas exchange"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.2",
+          "section_title": "Plant Reproduction",
+          "topics": [
+            {
+              "topic_title": "Asexual Reproduction in Plants",
+              "subtopics": [
+                "Vegetative propagation",
+                "Natural vegetative propagation",
+                "Artificial vegetative propagation",
+                "Advantages and disadvantages"
+              ]
+            },
+            {
+              "topic_title": "Sexual Reproduction in Plants",
+              "subtopics": [
+                "Flower structure",
+                "Male reproductive part",
+                "Female reproductive part",
+                "Pollination",
+                "Fertilization",
+                "Seed formation",
+                "Fruit formation"
+              ]
+            },
+            {
+              "topic_title": "Pollination",
+              "subtopics": [
+                "Self-pollination",
+                "Cross-pollination",
+                "Pollinating agents",
+                "Adaptations for pollination"
+              ]
+            },
+            {
+              "topic_title": "Seed Dispersal",
+              "subtopics": [
+                "Wind dispersal",
+                "Water dispersal",
+                "Animal dispersal",
+                "Explosive dispersal",
+                "Importance of seed dispersal"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.3",
+          "section_title": "Transport in Plants",
+          "topics": [
+            {
+              "topic_title": "Transport Tissues",
+              "subtopics": [
+                "Xylem",
+                "Phloem",
+                "Vascular bundles",
+                "Structure and function of transport tissues"
+              ]
+            },
+            {
+              "topic_title": "Water Transport",
+              "subtopics": [
+                "Root uptake",
+                "Osmosis",
+                "Transpiration",
+                "Transpiration stream",
+                "Cohesion",
+                "Adhesion",
+                "Root pressure"
+              ]
+            },
+            {
+              "topic_title": "Transpiration",
+              "subtopics": [
+                "Definition",
+                "Stomatal transpiration",
+                "Factors affecting transpiration",
+                "Importance of transpiration"
+              ]
+            },
+            {
+              "topic_title": "Translocation",
+              "subtopics": [
+                "Phloem transport",
+                "Source",
+                "Sink",
+                "Movement of assimilates"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.4",
+          "section_title": "Photosynthesis",
+          "topics": [
+            {
+              "topic_title": "Photosynthesis",
+              "subtopics": [
+                "Definition",
+                "Importance",
+                "Overall equation",
+                "Chlorophyll",
+                "Chloroplasts"
+              ]
+            },
+            {
+              "topic_title": "Light-dependent Reactions",
+              "subtopics": [
+                "Light absorption",
+                "Excited electrons",
+                "Photolysis of water",
+                "ATP",
+                "NADPH",
+                "Oxygen release"
+              ]
+            },
+            {
+              "topic_title": "Light-independent Reactions",
+              "subtopics": [
+                "Calvin cycle",
+                "Carbon dioxide fixation",
+                "Reduction",
+                "Regeneration of RuBP",
+                "Glucose formation"
+              ]
+            },
+            {
+              "topic_title": "Factors Affecting Photosynthesis",
+              "subtopics": [
+                "Light intensity",
+                "Carbon dioxide concentration",
+                "Temperature",
+                "Water availability",
+                "Chlorophyll"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.5",
+          "section_title": "Response in Plants",
+          "topics": [
+            {
+              "topic_title": "Plant Hormones",
+              "subtopics": [
+                "Auxins",
+                "Gibberellins",
+                "Cytokinins",
+                "Abscisic acid",
+                "Ethylene"
+              ]
+            },
+            {
+              "topic_title": "Tropisms",
+              "subtopics": [
+                "Phototropism",
+                "Geotropism",
+                "Hydrotropism",
+                "Thigmotropism",
+                "Chemotropism"
+              ]
+            },
+            {
+              "topic_title": "Plant Responses to Stimuli",
+              "subtopics": [
+                "Light responses",
+                "Gravity responses",
+                "Touch responses",
+                "Water responses",
+                "Growth regulation"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "unit_title": "Biochemical Molecules",
+      "sections": [
+        {
+          "section_number": "3.1",
+          "section_title": "Introduction to Biochemical Molecules",
+          "topics": [
+            {
+              "topic_title": "Biological Molecules",
+              "subtopics": [
+                "Definition",
+                "Organic compounds",
+                "Inorganic compounds",
+                "Importance in living organisms"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.2",
+          "section_title": "Carbohydrates",
+          "topics": [
+            {
+              "topic_title": "Structure and Classification",
+              "subtopics": [
+                "Monosaccharides",
+                "Disaccharides",
+                "Polysaccharides",
+                "Glucose",
+                "Fructose",
+                "Sucrose",
+                "Starch",
+                "Glycogen",
+                "Cellulose"
+              ]
+            },
+            {
+              "topic_title": "Functions of Carbohydrates",
+              "subtopics": [
+                "Energy source",
+                "Energy storage",
+                "Structural roles",
+                "Cell recognition"
+              ]
+            },
+            {
+              "topic_title": "Tests for Carbohydrates",
+              "subtopics": [
+                "Benedict's test",
+                "Iodine test",
+                "Reducing sugars",
+                "Starch test"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.3",
+          "section_title": "Lipids",
+          "topics": [
+            {
+              "topic_title": "Structure of Lipids",
+              "subtopics": [
+                "Glycerol",
+                "Fatty acids",
+                "Triglycerides",
+                "Phospholipids",
+                "Saturated fatty acids",
+                "Unsaturated fatty acids"
+              ]
+            },
+            {
+              "topic_title": "Functions of Lipids",
+              "subtopics": [
+                "Energy storage",
+                "Membrane structure",
+                "Insulation",
+                "Protection",
+                "Hormone-related functions"
+              ]
+            },
+            {
+              "topic_title": "Tests for Lipids",
+              "subtopics": [
+                "Emulsion test",
+                "Interpretation of lipid tests"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.4",
+          "section_title": "Proteins",
+          "topics": [
+            {
+              "topic_title": "Amino Acids",
+              "subtopics": [
+                "Amino acid structure",
+                "Essential amino acids",
+                "Non-essential amino acids"
+              ]
+            },
+            {
+              "topic_title": "Protein Structure",
+              "subtopics": [
+                "Primary structure",
+                "Secondary structure",
+                "Tertiary structure",
+                "Quaternary structure",
+                "Peptide bonds"
+              ]
+            },
+            {
+              "topic_title": "Functions of Proteins",
+              "subtopics": [
+                "Enzymes",
+                "Structural proteins",
+                "Transport proteins",
+                "Hormones",
+                "Antibodies",
+                "Muscle proteins"
+              ]
+            },
+            {
+              "topic_title": "Test for Proteins",
+              "subtopics": [
+                "Biuret test",
+                "Positive result",
+                "Protein identification"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.5",
+          "section_title": "Nucleic Acids",
+          "topics": [
+            {
+              "topic_title": "DNA",
+              "subtopics": [
+                "Nucleotides",
+                "DNA structure",
+                "Double helix",
+                "Base pairing",
+                "Genetic information"
+              ]
+            },
+            {
+              "topic_title": "RNA",
+              "subtopics": [
+                "RNA structure",
+                "mRNA",
+                "tRNA",
+                "rRNA",
+                "Role in protein synthesis"
+              ]
+            },
+            {
+              "topic_title": "ATP",
+              "subtopics": [
+                "ATP structure",
+                "Energy transfer",
+                "ATP hydrolysis",
+                "ATP resynthesis"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.6",
+          "section_title": "Water and Inorganic Ions",
+          "topics": [
+            {
+              "topic_title": "Water",
+              "subtopics": [
+                "Water as a solvent",
+                "Cohesion",
+                "Adhesion",
+                "High specific heat capacity",
+                "High latent heat",
+                "Importance to organisms"
+              ]
+            },
+            {
+              "topic_title": "Mineral Ions",
+              "subtopics": [
+                "Essential ions",
+                "Functions of mineral ions",
+                "Deficiency effects"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "unit_title": "Cell Reproduction",
+      "sections": [
+        {
+          "section_number": "4.1",
+          "section_title": "Cell Cycle",
+          "topics": [
+            {
+              "topic_title": "Cell Cycle",
+              "subtopics": [
+                "Interphase",
+                "G1 phase",
+                "S phase",
+                "G2 phase",
+                "M phase",
+                "Cell-cycle regulation"
+              ]
+            },
+            {
+              "topic_title": "Chromosomes",
+              "subtopics": [
+                "Chromatin",
+                "Chromosomes",
+                "Sister chromatids",
+                "Centromere",
+                "Homologous chromosomes"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.2",
+          "section_title": "Mitosis",
+          "topics": [
+            {
+              "topic_title": "Stages of Mitosis",
+              "subtopics": [
+                "Prophase",
+                "Metaphase",
+                "Anaphase",
+                "Telophase",
+                "Cytokinesis"
+              ]
+            },
+            {
+              "topic_title": "Significance of Mitosis",
+              "subtopics": [
+                "Growth",
+                "Repair",
+                "Replacement",
+                "Asexual reproduction",
+                "Genetic stability"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.3",
+          "section_title": "Meiosis",
+          "topics": [
+            {
+              "topic_title": "Stages of Meiosis",
+              "subtopics": [
+                "Meiosis I",
+                "Prophase I",
+                "Metaphase I",
+                "Anaphase I",
+                "Telophase I",
+                "Meiosis II",
+                "Prophase II",
+                "Metaphase II",
+                "Anaphase II",
+                "Telophase II"
+              ]
+            },
+            {
+              "topic_title": "Genetic Variation in Meiosis",
+              "subtopics": [
+                "Crossing over",
+                "Independent assortment",
+                "Random fertilization"
+              ]
+            },
+            {
+              "topic_title": "Significance of Meiosis",
+              "subtopics": [
+                "Gamete formation",
+                "Reduction of chromosome number",
+                "Genetic variation",
+                "Sexual reproduction"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.4",
+          "section_title": "Comparison of Mitosis and Meiosis",
+          "topics": [
+            {
+              "topic_title": "Mitosis versus Meiosis",
+              "subtopics": [
+                "Number of divisions",
+                "Number of daughter cells",
+                "Chromosome number",
+                "Genetic similarity",
+                "Crossing over",
+                "Biological roles"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "unit_title": "Human Biology",
+      "sections": [
+        {
+          "section_number": "5.1",
+          "section_title": "Human Body Organization",
+          "topics": [
+            {
+              "topic_title": "Levels of Organization",
+              "subtopics": [
+                "Cells",
+                "Tissues",
+                "Organs",
+                "Organ systems",
+                "Organism"
+              ]
+            },
+            {
+              "topic_title": "Tissues",
+              "subtopics": [
+                "Epithelial tissue",
+                "Connective tissue",
+                "Muscle tissue",
+                "Nervous tissue"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.2",
+          "section_title": "Digestive System",
+          "topics": [
+            {
+              "topic_title": "Structure of the Digestive System",
+              "subtopics": [
+                "Mouth",
+                "Esophagus",
+                "Stomach",
+                "Small intestine",
+                "Large intestine",
+                "Rectum",
+                "Anus",
+                "Accessory organs"
+              ]
+            },
+            {
+              "topic_title": "Digestion",
+              "subtopics": [
+                "Mechanical digestion",
+                "Chemical digestion",
+                "Carbohydrate digestion",
+                "Protein digestion",
+                "Lipid digestion"
+              ]
+            },
+            {
+              "topic_title": "Absorption and Assimilation",
+              "subtopics": [
+                "Villi",
+                "Absorption in small intestine",
+                "Assimilation",
+                "Large intestine and water absorption"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.3",
+          "section_title": "Respiratory System",
+          "topics": [
+            {
+              "topic_title": "Structure of Respiratory System",
+              "subtopics": [
+                "Nose",
+                "Pharynx",
+                "Larynx",
+                "Trachea",
+                "Bronchi",
+                "Bronchioles",
+                "Alveoli",
+                "Lungs"
+              ]
+            },
+            {
+              "topic_title": "Mechanism of Breathing",
+              "subtopics": [
+                "Inhalation",
+                "Exhalation",
+                "Diaphragm",
+                "Intercostal muscles",
+                "Pressure changes"
+              ]
+            },
+            {
+              "topic_title": "Gas Exchange",
+              "subtopics": [
+                "Alveolar gas exchange",
+                "Diffusion",
+                "Oxygen transport",
+                "Carbon dioxide transport"
+              ]
+            },
+            {
+              "topic_title": "Respiratory Health",
+              "subtopics": [
+                "Smoking",
+                "Air pollution",
+                "Respiratory diseases",
+                "Prevention"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.4",
+          "section_title": "Circulatory System",
+          "topics": [
+            {
+              "topic_title": "Blood",
+              "subtopics": [
+                "Plasma",
+                "Red blood cells",
+                "White blood cells",
+                "Platelets",
+                "Blood groups"
+              ]
+            },
+            {
+              "topic_title": "Heart",
+              "subtopics": [
+                "Heart structure",
+                "Atria",
+                "Ventricles",
+                "Valves",
+                "Cardiac cycle",
+                "Heartbeat"
+              ]
+            },
+            {
+              "topic_title": "Blood Vessels",
+              "subtopics": [
+                "Arteries",
+                "Veins",
+                "Capillaries",
+                "Structure-function relationships"
+              ]
+            },
+            {
+              "topic_title": "Double Circulation",
+              "subtopics": [
+                "Pulmonary circulation",
+                "Systemic circulation",
+                "Blood flow through the heart"
+              ]
+            },
+            {
+              "topic_title": "Circulatory Health",
+              "subtopics": [
+                "Hypertension",
+                "Atherosclerosis",
+                "Heart disease",
+                "Risk factors",
+                "Prevention"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.5",
+          "section_title": "Excretory System",
+          "topics": [
+            {
+              "topic_title": "Excretion",
+              "subtopics": [
+                "Definition",
+                "Excretory products",
+                "Importance of excretion"
+              ]
+            },
+            {
+              "topic_title": "Kidneys and Urinary System",
+              "subtopics": [
+                "Kidneys",
+                "Ureters",
+                "Urinary bladder",
+                "Urethra",
+                "Nephron"
+              ]
+            },
+            {
+              "topic_title": "Urine Formation",
+              "subtopics": [
+                "Ultrafiltration",
+                "Selective reabsorption",
+                "Tubular secretion",
+                "Urine concentration"
+              ]
+            },
+            {
+              "topic_title": "Homeostatic Role of Kidneys",
+              "subtopics": [
+                "Water balance",
+                "Ion balance",
+                "Osmoregulation",
+                "Urea excretion"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.6",
+          "section_title": "Nervous System",
+          "topics": [
+            {
+              "topic_title": "Neurons",
+              "subtopics": [
+                "Sensory neurons",
+                "Relay neurons",
+                "Motor neurons",
+                "Cell body",
+                "Dendrites",
+                "Axon",
+                "Synapse"
+              ]
+            },
+            {
+              "topic_title": "Central Nervous System",
+              "subtopics": [
+                "Brain",
+                "Spinal cord",
+                "Functions"
+              ]
+            },
+            {
+              "topic_title": "Peripheral Nervous System",
+              "subtopics": [
+                "Sensory nerves",
+                "Motor nerves",
+                "Somatic nervous system",
+                "Autonomic nervous system"
+              ]
+            },
+            {
+              "topic_title": "Reflex Actions",
+              "subtopics": [
+                "Stimulus",
+                "Receptor",
+                "Sensory neuron",
+                "Relay neuron",
+                "Motor neuron",
+                "Effector",
+                "Reflex arc"
+              ]
+            },
+            {
+              "topic_title": "Coordination and Response",
+              "subtopics": [
+                "Receptors",
+                "Effectors",
+                "Nervous coordination",
+                "Response to stimuli"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.7",
+          "section_title": "Reproductive System",
+          "topics": [
+            {
+              "topic_title": "Male Reproductive System",
+              "subtopics": [
+                "Testes",
+                "Sperm ducts",
+                "Accessory glands",
+                "Penis",
+                "Sperm production"
+              ]
+            },
+            {
+              "topic_title": "Female Reproductive System",
+              "subtopics": [
+                "Ovaries",
+                "Oviducts",
+                "Uterus",
+                "Cervix",
+                "Vagina",
+                "Egg production"
+              ]
+            },
+            {
+              "topic_title": "Human Reproduction",
+              "subtopics": [
+                "Gametes",
+                "Fertilization",
+                "Embryo development",
+                "Pregnancy",
+                "Birth"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.8",
+          "section_title": "Homeostasis",
+          "topics": [
+            {
+              "topic_title": "Homeostasis",
+              "subtopics": [
+                "Definition",
+                "Internal environment",
+                "Negative feedback",
+                "Importance"
+              ]
+            },
+            {
+              "topic_title": "Temperature Regulation",
+              "subtopics": [
+                "Body temperature",
+                "Heat production",
+                "Heat loss",
+                "Sweating",
+                "Vasodilation",
+                "Vasoconstriction",
+                "Shivering"
+              ]
+            },
+            {
+              "topic_title": "Blood Glucose Regulation",
+              "subtopics": [
+                "Insulin",
+                "Glucagon",
+                "Pancreas",
+                "Liver",
+                "Negative feedback"
+              ]
+            },
+            {
+              "topic_title": "Water Balance",
+              "subtopics": [
+                "Osmoregulation",
+                "ADH",
+                "Kidneys",
+                "Water conservation"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "unit_title": "Ecological Interactions",
+      "sections": [
+        {
+          "section_number": "6.1",
+          "section_title": "Ecological Interactions",
+          "topics": [
+            {
+              "topic_title": "Population Interactions",
+              "subtopics": [
+                "Competition",
+                "Predation",
+                "Parasitism",
+                "Mutualism",
+                "Commensalism",
+                "Cooperation"
+              ]
+            },
+            {
+              "topic_title": "Community Interactions",
+              "subtopics": [
+                "Species interactions",
+                "Community structure",
+                "Ecological balance"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.2",
+          "section_title": "Population Ecology",
+          "topics": [
+            {
+              "topic_title": "Population Characteristics",
+              "subtopics": [
+                "Population size",
+                "Population density",
+                "Distribution",
+                "Age structure",
+                "Sex ratio"
+              ]
+            },
+            {
+              "topic_title": "Population Growth",
+              "subtopics": [
+                "Exponential growth",
+                "Logistic growth",
+                "Carrying capacity",
+                "Growth rate",
+                "Limiting factors"
+              ]
+            },
+            {
+              "topic_title": "Population Regulation",
+              "subtopics": [
+                "Density-dependent factors",
+                "Density-independent factors",
+                "Predation",
+                "Competition",
+                "Disease",
+                "Climate"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.3",
+          "section_title": "Ecosystem Structure and Function",
+          "topics": [
+            {
+              "topic_title": "Trophic Levels",
+              "subtopics": [
+                "Producers",
+                "Primary consumers",
+                "Secondary consumers",
+                "Tertiary consumers",
+                "Decomposers"
+              ]
+            },
+            {
+              "topic_title": "Food Chains and Food Webs",
+              "subtopics": [
+                "Food chains",
+                "Food webs",
+                "Energy transfer",
+                "Trophic relationships"
+              ]
+            },
+            {
+              "topic_title": "Ecological Pyramids",
+              "subtopics": [
+                "Pyramid of numbers",
+                "Pyramid of biomass",
+                "Pyramid of energy"
+              ]
+            },
+            {
+              "topic_title": "Energy Flow",
+              "subtopics": [
+                "Solar energy",
+                "Primary productivity",
+                "Energy loss",
+                "Energy transfer between trophic levels"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.4",
+          "section_title": "Biogeochemical Cycles",
+          "topics": [
+            {
+              "topic_title": "Water Cycle",
+              "subtopics": [
+                "Evaporation",
+                "Condensation",
+                "Precipitation",
+                "Infiltration",
+                "Runoff",
+                "Transpiration"
+              ]
+            },
+            {
+              "topic_title": "Carbon Cycle",
+              "subtopics": [
+                "Photosynthesis",
+                "Respiration",
+                "Decomposition",
+                "Combustion",
+                "Carbon storage"
+              ]
+            },
+            {
+              "topic_title": "Nitrogen Cycle",
+              "subtopics": [
+                "Nitrogen fixation",
+                "Nitrification",
+                "Assimilation",
+                "Ammonification",
+                "Denitrification"
+              ]
+            },
+            {
+              "topic_title": "Phosphorus Cycle",
+              "subtopics": [
+                "Weathering",
+                "Uptake by plants",
+                "Food chains",
+                "Decomposition",
+                "Sedimentation"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.5",
+          "section_title": "Biodiversity and Conservation",
+          "topics": [
+            {
+              "topic_title": "Biodiversity",
+              "subtopics": [
+                "Genetic diversity",
+                "Species diversity",
+                "Ecosystem diversity",
+                "Importance of biodiversity"
+              ]
+            },
+            {
+              "topic_title": "Threats to Biodiversity",
+              "subtopics": [
+                "Habitat destruction",
+                "Overexploitation",
+                "Pollution",
+                "Invasive species",
+                "Climate change"
+              ]
+            },
+            {
+              "topic_title": "Conservation",
+              "subtopics": [
+                "In-situ conservation",
+                "Ex-situ conservation",
+                "Protected areas",
+                "National parks",
+                "Wildlife conservation",
+                "Sustainable resource use"
+              ]
+            },
+            {
+              "topic_title": "Ethiopian Biodiversity",
+              "subtopics": [
+                "Endemic species",
+                "Ethiopian ecosystems",
+                "Conservation challenges",
+                "Community-based conservation"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1134 @@
+{
+  "grade": 11,
+  "subject": "Chemistry",
+  "curriculum": "Ethiopian New Curriculum",
+  "publisher": "Ministry of Education of Ethiopia",
+  "textbook_year": 2023,
+  "units": [
+    {
+      "unit_number": 1,
+      "unit_title": "Atomic Structure and Periodic Properties of the Elements",
+      "sections": [
+        {
+          "section_number": "1.1",
+          "section_title": "Introduction",
+          "page": 2,
+          "topics": [
+            {
+              "topic_title": "Historical Development of Atomic Ideas",
+              "subtopics": [
+                "Ancient Greek views of matter",
+                "Democritus and atomos",
+                "Development toward the modern concept of the atom"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.2",
+          "section_title": "Dalton's Atomic Theory and the Modern Atomic Theory",
+          "page": 3,
+          "topics": [
+            {
+              "topic_title": "Postulates of Dalton's Atomic Theory",
+              "subtopics": [
+                "Dalton's atomic theory",
+                "Atoms and elements",
+                "Atoms in compounds",
+                "Atoms in chemical reactions"
+              ]
+            },
+            {
+              "topic_title": "Postulates of Modern Atomic Theory",
+              "subtopics": [
+                "Modern view of atoms",
+                "Subatomic particles",
+                "Isotopes",
+                "Chemical combination and rearrangement of atoms"
+              ]
+            },
+            {
+              "topic_title": "Fundamental Chemical Laws",
+              "subtopics": [
+                "Law of conservation of mass",
+                "Law of definite proportions",
+                "Law of multiple proportions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.3",
+          "section_title": "Early Experiments to Characterize the Atom",
+          "page": 6,
+          "topics": [
+            {
+              "topic_title": "The Discovery of the Electron",
+              "subtopics": [
+                "Cathode rays",
+                "Properties of cathode rays",
+                "J. J. Thomson",
+                "Millikan oil-drop experiment",
+                "Electron charge and mass"
+              ]
+            },
+            {
+              "topic_title": "Radioactivity and the Discovery of the Nucleus",
+              "subtopics": [
+                "Radioactivity",
+                "Radioactive decay",
+                "Alpha radiation",
+                "Beta radiation",
+                "Gamma radiation",
+                "Rutherford alpha-scattering experiment",
+                "Nuclear model of the atom"
+              ]
+            },
+            {
+              "topic_title": "Discovery of the Neutron",
+              "subtopics": [
+                "James Chadwick",
+                "Properties of the neutron",
+                "Role of the neutron in the nucleus"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.4",
+          "section_title": "Make-up of the Nucleus",
+          "page": 12,
+          "topics": [
+            {
+              "topic_title": "Subatomic Particles",
+              "subtopics": [
+                "Protons",
+                "Neutrons",
+                "Electrons",
+                "Charge and mass of subatomic particles",
+                "Atomic number",
+                "Mass number"
+              ]
+            },
+            {
+              "topic_title": "Atomic Mass and Isotopes",
+              "subtopics": [
+                "Atomic mass",
+                "Isotopes",
+                "Isotopic abundance",
+                "Relative atomic mass calculations"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.5",
+          "section_title": "Electromagnetic Radiation and Atomic Spectra",
+          "page": 15,
+          "topics": [
+            {
+              "topic_title": "Electromagnetic Radiation",
+              "subtopics": [
+                "Wave properties",
+                "Wavelength",
+                "Frequency",
+                "Speed of light",
+                "Electromagnetic spectrum"
+              ]
+            },
+            {
+              "topic_title": "The Quantum Theory and Photon",
+              "subtopics": [
+                "Planck's quantum theory",
+                "Energy of a photon",
+                "Photon",
+                "Photoelectric effect"
+              ]
+            },
+            {
+              "topic_title": "Atomic Spectra",
+              "subtopics": [
+                "Continuous spectra",
+                "Line spectra",
+                "Emission spectra",
+                "Absorption spectra",
+                "Spectral lines"
+              ]
+            },
+            {
+              "topic_title": "The Bohr Model of the Hydrogen Atom",
+              "subtopics": [
+                "Bohr's postulates",
+                "Energy levels",
+                "Electron transitions",
+                "Hydrogen spectrum",
+                "Bohr energy calculations"
+              ]
+            },
+            {
+              "topic_title": "Limitations of the Bohr Model",
+              "subtopics": [
+                "Limitations of Bohr theory",
+                "Multi-electron atoms",
+                "Need for quantum mechanical model"
+              ]
+            },
+            {
+              "topic_title": "The Wave-Particle Duality of Matter and Energy",
+              "subtopics": [
+                "Wave nature of matter",
+                "Particle nature of radiation",
+                "de Broglie wavelength",
+                "Wave-particle duality"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.6",
+          "section_title": "The Quantum Mechanical Model of the Atom",
+          "page": 34,
+          "topics": [
+            {
+              "topic_title": "The Heisenberg's Principle",
+              "subtopics": [
+                "Uncertainty principle",
+                "Position and momentum",
+                "Implications for electrons"
+              ]
+            },
+            {
+              "topic_title": "Quantum Numbers",
+              "subtopics": [
+                "Principal quantum number",
+                "Angular momentum quantum number",
+                "Magnetic quantum number",
+                "Spin quantum number",
+                "Allowed quantum-number combinations"
+              ]
+            },
+            {
+              "topic_title": "Shapes of Atomic Orbitals",
+              "subtopics": [
+                "s orbitals",
+                "p orbitals",
+                "d orbitals",
+                "f orbitals",
+                "Orbital orientation"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.7",
+          "section_title": "Electronic Configurations and Orbital Diagrams",
+          "page": 41,
+          "topics": [
+            {
+              "topic_title": "Ground State Electronic Configuration of the Elements",
+              "subtopics": [
+                "Aufbau principle",
+                "Pauli exclusion principle",
+                "Hund's rule",
+                "Orbital diagrams",
+                "Ground-state configurations",
+                "Valence electrons"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.8",
+          "section_title": "Electronic Configurations and the Periodic Table of the Elements",
+          "page": 47,
+          "topics": [
+            {
+              "topic_title": "The Modern Periodic Table",
+              "subtopics": [
+                "Modern periodic law",
+                "Periods",
+                "Groups",
+                "Blocks of the periodic table"
+              ]
+            },
+            {
+              "topic_title": "Classification of the Elements",
+              "subtopics": [
+                "Representative elements",
+                "Transition elements",
+                "Inner-transition elements",
+                "s-block",
+                "p-block",
+                "d-block",
+                "f-block"
+              ]
+            },
+            {
+              "topic_title": "Periodic Properties",
+              "subtopics": [
+                "Atomic radius",
+                "Ionization energy",
+                "Electron affinity",
+                "Electronegativity",
+                "Metallic character",
+                "Periodic trends across periods",
+                "Periodic trends down groups"
+              ]
+            },
+            {
+              "topic_title": "Advantages of Periodic Classification of the Elements",
+              "subtopics": [
+                "Predicting properties",
+                "Relating electron configuration to properties",
+                "Organizing elements systematically"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "unit_title": "Chemical Bonding",
+      "sections": [
+        {
+          "section_number": "2.1",
+          "section_title": "Introduction",
+          "page": 67,
+          "topics": [
+            {
+              "topic_title": "The Octet Rule",
+              "subtopics": [
+                "Chemical stability",
+                "Valence electrons",
+                "Octet rule",
+                "Duet rule"
+              ]
+            },
+            {
+              "topic_title": "Types of Chemical Bonding",
+              "subtopics": [
+                "Ionic bonding",
+                "Covalent bonding",
+                "Metallic bonding",
+                "Intramolecular forces"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.2",
+          "section_title": "Ionic Bonds",
+          "page": 69,
+          "topics": [
+            {
+              "topic_title": "Lewis Electron-Dot Symbols",
+              "subtopics": [
+                "Lewis symbols",
+                "Valence electrons",
+                "Electron-dot representation"
+              ]
+            },
+            {
+              "topic_title": "Formation of Ionic Bonds",
+              "subtopics": [
+                "Cations",
+                "Anions",
+                "Electron transfer",
+                "Electrostatic attraction",
+                "Ionic lattice"
+              ]
+            },
+            {
+              "topic_title": "Exceptions to the Octet Rule in Ionic Compounds",
+              "subtopics": [
+                "Incomplete octets",
+                "Expanded octets",
+                "Unusual ionic electron configurations"
+              ]
+            },
+            {
+              "topic_title": "Properties of Ionic Compounds",
+              "subtopics": [
+                "Crystal structure",
+                "Melting and boiling points",
+                "Solubility",
+                "Electrical conductivity",
+                "Hardness and brittleness"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.3",
+          "section_title": "Covalent Bonds and Molecular Geometry",
+          "page": 83,
+          "topics": [
+            {
+              "topic_title": "Covalent Bonding",
+              "subtopics": [
+                "Electron sharing",
+                "Single bonds",
+                "Double bonds",
+                "Triple bonds",
+                "Lewis structures"
+              ]
+            },
+            {
+              "topic_title": "Molecular Geometry",
+              "subtopics": [
+                "VSEPR theory",
+                "Electron-pair geometry",
+                "Molecular shapes",
+                "Bond angles",
+                "Polarity and molecular geometry"
+              ]
+            },
+            {
+              "topic_title": "Intermolecular Forces in Covalent Compounds",
+              "subtopics": [
+                "Dipole-dipole forces",
+                "Hydrogen bonding",
+                "London dispersion forces",
+                "Relationship to physical properties"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.4",
+          "section_title": "Metallic Bonding",
+          "page": 111,
+          "topics": [
+            {
+              "topic_title": "Formation of Metallic Bonding",
+              "subtopics": [
+                "Metal atoms",
+                "Valence electrons",
+                "Metal cations"
+              ]
+            },
+            {
+              "topic_title": "Electron-Sea Model",
+              "subtopics": [
+                "Delocalized electrons",
+                "Metallic lattice",
+                "Electron mobility"
+              ]
+            },
+            {
+              "topic_title": "Properties of Metals and Bonding",
+              "subtopics": [
+                "Electrical conductivity",
+                "Thermal conductivity",
+                "Malleability",
+                "Ductility",
+                "Luster"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.5",
+          "section_title": "Chemical Bonding Theories",
+          "page": 114,
+          "topics": [
+            {
+              "topic_title": "Valence Bond (VB) Theory",
+              "subtopics": [
+                "Orbital overlap",
+                "Sigma bonds",
+                "Pi bonds",
+                "Hybridization",
+                "sp hybridization",
+                "sp2 hybridization",
+                "sp3 hybridization"
+              ]
+            },
+            {
+              "topic_title": "Molecular Orbital Theory (MOT)",
+              "subtopics": [
+                "Molecular orbitals",
+                "Bonding molecular orbitals",
+                "Antibonding molecular orbitals",
+                "Bond order",
+                "Paramagnetism and diamagnetism"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.6",
+          "section_title": "Types of Crystal",
+          "page": 135,
+          "topics": [
+            {
+              "topic_title": "Crystal Structures",
+              "subtopics": [
+                "Ionic crystals",
+                "Molecular crystals",
+                "Covalent-network crystals",
+                "Metallic crystals"
+              ]
+            },
+            {
+              "topic_title": "Properties of Crystals",
+              "subtopics": [
+                "Crystal lattice",
+                "Melting point",
+                "Hardness",
+                "Electrical conductivity",
+                "Relationship between bonding and properties"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "unit_title": "Physical States of Matter",
+      "sections": [
+        {
+          "section_number": "3.1",
+          "section_title": "Introduction",
+          "page": 145,
+          "topics": [
+            {
+              "topic_title": "States of Matter",
+              "subtopics": [
+                "Solid state",
+                "Liquid state",
+                "Gaseous state",
+                "Particle nature of matter"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.2",
+          "section_title": "Kinetic Theory and Properties of Matter",
+          "page": 147,
+          "topics": [
+            {
+              "topic_title": "The Kinetic Theory of Matter",
+              "subtopics": [
+                "Particle motion",
+                "Kinetic energy",
+                "Interparticle forces",
+                "Temperature and particle motion"
+              ]
+            },
+            {
+              "topic_title": "Properties of Matter",
+              "subtopics": [
+                "Density",
+                "Compressibility",
+                "Diffusion",
+                "Expansion",
+                "Intermolecular forces"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.3",
+          "section_title": "The Gaseous State",
+          "page": 150,
+          "topics": [
+            {
+              "topic_title": "The Kinetic Molecular Theory of Gases",
+              "subtopics": [
+                "Gas particles",
+                "Random motion",
+                "Elastic collisions",
+                "Negligible particle volume",
+                "Pressure and temperature"
+              ]
+            },
+            {
+              "topic_title": "The Gas Laws",
+              "subtopics": [
+                "Boyle's law",
+                "Charles's law",
+                "Gay-Lussac's law",
+                "Avogadro's law",
+                "Combined gas law",
+                "Ideal gas equation",
+                "Gas constant",
+                "Molar volume"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.4",
+          "section_title": "The Liquid State",
+          "page": 173,
+          "topics": [
+            {
+              "topic_title": "Properties of Liquids",
+              "subtopics": [
+                "Cohesion",
+                "Adhesion",
+                "Surface tension",
+                "Viscosity",
+                "Vapor pressure",
+                "Evaporation"
+              ]
+            },
+            {
+              "topic_title": "Energy Changes in Liquids",
+              "subtopics": [
+                "Heating and cooling",
+                "Vaporization",
+                "Condensation",
+                "Latent heat",
+                "Energy during phase changes"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.5",
+          "section_title": "The Solid State",
+          "page": 180,
+          "topics": [
+            {
+              "topic_title": "Properties of Solids",
+              "subtopics": [
+                "Fixed shape",
+                "Fixed volume",
+                "Density",
+                "Compressibility",
+                "Particle arrangement"
+              ]
+            },
+            {
+              "topic_title": "Types of Solids",
+              "subtopics": [
+                "Crystalline solids",
+                "Amorphous solids",
+                "Ionic solids",
+                "Molecular solids",
+                "Covalent-network solids",
+                "Metallic solids"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "unit_title": "Chemical Kinetics",
+      "sections": [
+        {
+          "section_number": "4.1",
+          "section_title": "Introduction",
+          "page": 193,
+          "topics": [
+            {
+              "topic_title": "Chemical Kinetics",
+              "subtopics": [
+                "Definition of chemical kinetics",
+                "Reaction rate",
+                "Importance of reaction rates"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.2",
+          "section_title": "The Rate of a Reaction",
+          "page": 193,
+          "topics": [
+            {
+              "topic_title": "Reaction Rate",
+              "subtopics": [
+                "Average rate",
+                "Instantaneous rate",
+                "Rate from reactant disappearance",
+                "Rate from product appearance",
+                "Rate calculations"
+              ]
+            },
+            {
+              "topic_title": "Factors Affecting Reaction Rate",
+              "subtopics": [
+                "Nature of reactants",
+                "Surface area",
+                "Concentration",
+                "Pressure for gases",
+                "Temperature",
+                "Catalysts"
+              ]
+            },
+            {
+              "topic_title": "Activation Energy",
+              "subtopics": [
+                "Activation energy",
+                "Energy profile",
+                "Activated complex",
+                "Effect of catalysts on activation energy"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.3",
+          "section_title": "Factors Affecting the Rate of a Chemical Reaction",
+          "page": 207,
+          "topics": [
+            {
+              "topic_title": "Effect of Concentration",
+              "subtopics": [
+                "Collision frequency",
+                "Concentration-rate relationship"
+              ]
+            },
+            {
+              "topic_title": "Effect of Temperature",
+              "subtopics": [
+                "Kinetic energy",
+                "Effective collisions",
+                "Temperature-rate relationship"
+              ]
+            },
+            {
+              "topic_title": "Effect of Surface Area",
+              "subtopics": [
+                "Particle size",
+                "Surface area and collision frequency"
+              ]
+            },
+            {
+              "topic_title": "Effect of Catalysts",
+              "subtopics": [
+                "Catalyst",
+                "Positive catalyst",
+                "Negative catalyst",
+                "Catalytic pathway"
+              ]
+            },
+            {
+              "topic_title": "Nature of Reactants",
+              "subtopics": [
+                "Chemical nature",
+                "Bond strength",
+                "Physical state"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "unit_title": "Chemical Equilibrium",
+      "sections": [
+        {
+          "section_number": "5.1",
+          "section_title": "Introduction",
+          "page": 222,
+          "topics": [
+            {
+              "topic_title": "Chemical Equilibrium",
+              "subtopics": [
+                "Extent of reaction",
+                "Reversible reactions",
+                "Dynamic equilibrium"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.2",
+          "section_title": "Chemical Equilibrium",
+          "page": 222,
+          "topics": [
+            {
+              "topic_title": "Reversible and Irreversible Reactions",
+              "subtopics": [
+                "Reversible reactions",
+                "Irreversible reactions",
+                "Equilibrium arrow"
+              ]
+            },
+            {
+              "topic_title": "Attainment and Characteristics of Chemical Equilibria",
+              "subtopics": [
+                "Dynamic nature",
+                "Forward and reverse rates",
+                "Constant macroscopic properties"
+              ]
+            },
+            {
+              "topic_title": "Conditions for Attainment of Chemical Equilibria",
+              "subtopics": [
+                "Closed system",
+                "Constant conditions",
+                "Reversible process",
+                "Equal forward and reverse rates"
+              ]
+            },
+            {
+              "topic_title": "Equilibrium Expression and Equilibrium Constant",
+              "subtopics": [
+                "Law of mass action",
+                "Kc",
+                "Kp",
+                "Equilibrium expressions",
+                "Homogeneous equilibria",
+                "Heterogeneous equilibria"
+              ]
+            },
+            {
+              "topic_title": "Applications of Equilibrium Constant",
+              "subtopics": [
+                "Reaction direction",
+                "Magnitude of equilibrium constant",
+                "Equilibrium concentrations",
+                "Equilibrium calculations"
+              ]
+            },
+            {
+              "topic_title": "Changing Equilibrium Conditions: Le-Chatelier's Principle",
+              "subtopics": [
+                "Effect of concentration",
+                "Effect of pressure and volume",
+                "Effect of temperature",
+                "Effect of catalysts",
+                "Predicting equilibrium shifts"
+              ]
+            },
+            {
+              "topic_title": "Equilibrium and Industry",
+              "subtopics": [
+                "Haber process",
+                "Ammonia production",
+                "Contact process",
+                "Sulfuric acid production",
+                "Optimum industrial conditions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "unit_title": "Some Important Oxygen-Containing Organic Compounds",
+      "sections": [
+        {
+          "section_number": "6.1",
+          "section_title": "Introduction",
+          "page": 264,
+          "topics": [
+            {
+              "topic_title": "Oxygen-Containing Organic Compounds",
+              "subtopics": [
+                "Functional groups",
+                "Alcohols",
+                "Ethers",
+                "Aldehydes",
+                "Ketones",
+                "Carboxylic acids",
+                "Esters",
+                "Fats and oils"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.2",
+          "section_title": "Alcohols and Ethers",
+          "page": 265,
+          "topics": [
+            {
+              "topic_title": "Classification of Alcohols",
+              "subtopics": [
+                "Monohydric alcohols",
+                "Dihydric alcohols",
+                "Trihydric alcohols",
+                "Primary alcohols",
+                "Secondary alcohols",
+                "Tertiary alcohols"
+              ]
+            },
+            {
+              "topic_title": "Nomenclature of Alcohols",
+              "subtopics": [
+                "IUPAC naming",
+                "Common names",
+                "Parent chain",
+                "Numbering",
+                "Hydroxyl group"
+              ]
+            },
+            {
+              "topic_title": "Physical Properties of Alcohols",
+              "subtopics": [
+                "Boiling point",
+                "Solubility",
+                "Hydrogen bonding",
+                "Density"
+              ]
+            },
+            {
+              "topic_title": "Preparation of Alcohols",
+              "subtopics": [
+                "Hydration of alkenes",
+                "Fermentation",
+                "Reduction of carbonyl compounds"
+              ]
+            },
+            {
+              "topic_title": "Chemical Properties of Alcohols",
+              "subtopics": [
+                "Combustion",
+                "Reaction with sodium",
+                "Oxidation",
+                "Dehydration",
+                "Esterification"
+              ]
+            },
+            {
+              "topic_title": "Structure and Nomenclature of Ethers",
+              "subtopics": [
+                "Ether functional group",
+                "IUPAC nomenclature",
+                "Common names",
+                "Symmetrical and unsymmetrical ethers"
+              ]
+            },
+            {
+              "topic_title": "Physical Properties of Ethers",
+              "subtopics": [
+                "Boiling point",
+                "Solubility",
+                "Volatility"
+              ]
+            },
+            {
+              "topic_title": "Preparation of Ethers",
+              "subtopics": [
+                "Dehydration of alcohols",
+                "Williamson ether synthesis"
+              ]
+            },
+            {
+              "topic_title": "Reactions of Ethers",
+              "subtopics": [
+                "Cleavage reactions",
+                "Combustion",
+                "Chemical stability"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.3",
+          "section_title": "Aldehydes and Ketones",
+          "page": 287,
+          "topics": [
+            {
+              "topic_title": "Nomenclature",
+              "subtopics": [
+                "Aldehyde nomenclature",
+                "Ketone nomenclature",
+                "Functional groups",
+                "IUPAC naming"
+              ]
+            },
+            {
+              "topic_title": "Physical Properties of Aldehydes and Ketones",
+              "subtopics": [
+                "Polarity",
+                "Boiling points",
+                "Solubility",
+                "Intermolecular forces"
+              ]
+            },
+            {
+              "topic_title": "Chemical Properties",
+              "subtopics": [
+                "Oxidation of aldehydes",
+                "Reduction",
+                "Addition reactions",
+                "Characteristic tests"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.4",
+          "section_title": "Carboxylic Acids",
+          "page": 292,
+          "topics": [
+            {
+              "topic_title": "Structure and Nomenclature of Carboxylic Acids",
+              "subtopics": [
+                "Carboxyl group",
+                "IUPAC nomenclature",
+                "Common names",
+                "Monocarboxylic acids",
+                "Dicarboxylic acids"
+              ]
+            },
+            {
+              "topic_title": "Physical Properties of Carboxylic Acids",
+              "subtopics": [
+                "Boiling points",
+                "Solubility",
+                "Hydrogen bonding",
+                "Acidity"
+              ]
+            },
+            {
+              "topic_title": "Chemical Properties of Carboxylic Acids",
+              "subtopics": [
+                "Acid-base reactions",
+                "Reaction with metals",
+                "Reaction with carbonates",
+                "Esterification",
+                "Reduction"
+              ]
+            },
+            {
+              "topic_title": "Preparation of Carboxylic Acids",
+              "subtopics": [
+                "Oxidation of primary alcohols",
+                "Oxidation of aldehydes",
+                "Hydrolysis of derivatives"
+              ]
+            },
+            {
+              "topic_title": "Fatty Acids",
+              "subtopics": [
+                "Saturated fatty acids",
+                "Unsaturated fatty acids",
+                "Examples of fatty acids"
+              ]
+            },
+            {
+              "topic_title": "Uses of Carboxylic Acids",
+              "subtopics": [
+                "Food preservation",
+                "Industrial uses",
+                "Pharmaceutical uses",
+                "Household uses"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.5",
+          "section_title": "Esters",
+          "page": 313,
+          "topics": [
+            {
+              "topic_title": "Sources of Esters",
+              "subtopics": [
+                "Natural esters",
+                "Fruits and flowers",
+                "Fats and oils"
+              ]
+            },
+            {
+              "topic_title": "Nomenclature",
+              "subtopics": [
+                "Naming esters",
+                "Alcohol-derived part",
+                "Acid-derived part"
+              ]
+            },
+            {
+              "topic_title": "Physical Properties",
+              "subtopics": [
+                "Odor",
+                "Boiling points",
+                "Solubility",
+                "Volatility"
+              ]
+            },
+            {
+              "topic_title": "Chemical Properties",
+              "subtopics": [
+                "Hydrolysis",
+                "Saponification",
+                "Reduction"
+              ]
+            },
+            {
+              "topic_title": "Preparation of Esters",
+              "subtopics": [
+                "Esterification",
+                "Carboxylic acid and alcohol reaction",
+                "Equilibrium in esterification"
+              ]
+            },
+            {
+              "topic_title": "Uses of Esters",
+              "subtopics": [
+                "Flavoring agents",
+                "Fragrances",
+                "Solvents",
+                "Industrial applications"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.6",
+          "section_title": "Fats and Oils",
+          "page": 319,
+          "topics": [
+            {
+              "topic_title": "Source of Fats and Oils",
+              "subtopics": [
+                "Animal sources",
+                "Plant sources",
+                "Natural oils"
+              ]
+            },
+            {
+              "topic_title": "Structure of Fats and Oils",
+              "subtopics": [
+                "Triglycerides",
+                "Glycerol",
+                "Fatty acids",
+                "Saturated and unsaturated fats"
+              ]
+            },
+            {
+              "topic_title": "Physical Properties of Fats and Oils",
+              "subtopics": [
+                "Melting point",
+                "Solubility",
+                "Physical state",
+                "Saturation"
+              ]
+            },
+            {
+              "topic_title": "Hardening of Oils",
+              "subtopics": [
+                "Hydrogenation",
+                "Catalytic hydrogenation",
+                "Conversion of unsaturated oils to saturated fats"
+              ]
+            },
+            {
+              "topic_title": "Rancidity",
+              "subtopics": [
+                "Oxidative rancidity",
+                "Hydrolytic rancidity",
+                "Prevention of rancidity"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

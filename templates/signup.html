@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration - EduVault</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-100 dark:bg-slate-950 flex items-center justify-center px-4 py-10">
+    <main class="w-full max-w-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl shadow-xl p-6 sm:p-8">
+        <div class="text-center mb-6">
+            <span class="text-[10px] font-black tracking-widest uppercase text-blue-600">Student Registration</span>
+            <h1 class="text-2xl font-black text-slate-900 dark:text-white mt-2">Request EduVault access</h1>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">Your account will remain pending until an administrator reviews it. After approval, your Student Code will be sent by SMS or email.</p>
+        </div>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            {% for category, msg in messages %}
+              <div class="mb-4 p-3 rounded-xl text-xs font-semibold {% if category == 'error' %}bg-red-100 text-red-800{% else %}bg-emerald-100 text-emerald-800{% endif %}">{{ msg }}</div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+        <form action="{{ url_for('signup') }}" method="POST" class="space-y-4">
+            <div class="grid sm:grid-cols-2 gap-4">
+                <label class="block text-xs font-bold text-slate-500">First Name
+                    <input name="first_name" required minlength="2" maxlength="50" pattern="[A-Za-z][A-Za-z' -]{1,49}" autocomplete="given-name" class="mt-1 w-full p-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 dark:text-white" />
+                </label>
+                <label class="block text-xs font-bold text-slate-500">Last Name
+                    <input name="last_name" required minlength="2" maxlength="50" pattern="[A-Za-z][A-Za-z' -]{1,49}" autocomplete="family-name" class="mt-1 w-full p-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 dark:text-white" />
+                </label>
+            </div>
+            <label class="block text-xs font-bold text-slate-500">Username
+                <input name="username" required minlength="3" maxlength="30" pattern="[a-z0-9][a-z0-9_.-]{1,28}[a-z0-9]" autocomplete="username" placeholder="lowercase username" class="mt-1 w-full p-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 dark:text-white" />
+            </label>
+            <label class="block text-xs font-bold text-slate-500">Mobile phone number <span class="font-normal"></span>
+                <input name="phone_number" type="tel" inputmode="tel" autocomplete="tel" maxlength="18" pattern="(?:\+251|00251|251|0)?[79][0-9]{8}" placeholder="09xxxxxxxx or 07xxxxxxxx" class="mt-1 w-full p-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 dark:text-white" />
+                <span class="mt-1 block text-[10px] font-normal text-slate-400">Ethiopian mobile number; each number can register one student account.</span>
+            </label>
+            <label class="block text-xs font-bold text-slate-500">Email address <span class="font-normal"></span>
+                <input name="email" type="email" maxlength="254" autocomplete="email" placeholder="student@example.com" class="mt-1 w-full p-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 dark:text-white" />
+                <span class="mt-1 block text-[10px] font-normal text-slate-400">Provide a phone number, an email address, or both. Email can be used if SMS delivery fails.</span>
+            </label>
+            <label class="block text-xs font-bold text-slate-500">Password
+                <input name="password" required minlength="8" type="password" autocomplete="new-password" placeholder="At least 8 characters with a number" class="mt-1 w-full p-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 dark:text-white" />
+            </label>
+            <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-black text-xs uppercase tracking-wider p-4 rounded-xl">Submit Registration</button>
+        </form>
+        <p class="text-center text-xs text-slate-500 mt-5">Already registered? <a href="{{ url_for('login') }}" class="text-blue-600 font-bold hover:underline">Sign in</a></p>
+    </main>
+</body>
+</html>

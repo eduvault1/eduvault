@@ -1,0 +1,307 @@
+{% extends 'base.html' %}
+{% block content %}
+{% if not exam_access_granted %}
+<section class="max-w-lg mx-auto px-6 py-16">
+    <div class="bg-white dark:bg-slate-900 border border-amber-200 dark:border-amber-900 rounded-3xl shadow-xl p-6 sm:p-8">
+        <span class="text-[10px] font-black uppercase tracking-widest text-amber-600">Exam identity check</span>
+        <h1 class="text-2xl font-black text-slate-900 dark:text-white mt-2">Verify your student account</h1>
+        <p class="text-sm text-slate-500 dark:text-slate-400 mt-2">Enter the full name registered on your approved account and the Student Code issued by an administrator. Students cannot create or edit their own code.</p>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            {% for category, msg in messages %}<div class="mt-4 p-3 rounded-xl text-xs font-semibold bg-red-100 text-red-800">{{ msg }}</div>{% endfor %}
+          {% endif %}
+        {% endwith %}
+        <form method="POST" action="{{ url_for('verify_exam_identity', exam_id=exam_id) }}" class="space-y-4 mt-6">
+            <label class="block text-xs font-bold text-slate-500">Full Name
+                <input name="full_name" required autocomplete="name" class="mt-1 w-full p-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 dark:text-white" />
+            </label>
+            <label class="block text-xs font-bold text-slate-500">Student Code
+                <input name="student_code" required pattern="ST[0-9]{3,}" autocomplete="off" placeholder="Issued by administrator" class="mt-1 w-full p-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 dark:text-white" />
+            </label>
+            <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-black text-xs uppercase tracking-wider p-4 rounded-xl">Verify and enter exam</button>
+        </form>
+    </div>
+</section>
+{% endif %}
+<!-- Exam Interface with Sidebar -->
+<div class="exam-shell grid grid-cols-1 lg:grid-cols-12 gap-6 min-h-screen relative{% if not exam_access_granted %} hidden{% endif %}">
+
+    <!-- Left Sidebar: Question Navigator -->
+    <aside class="lg:col-span-3 bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 p-6 flex flex-col justify-between lg:sticky lg:top-20 lg:h-[calc(100vh-5rem)]">
+        <div>
+            <h3 class="text-sm font-extrabold text-slate-400 uppercase tracking-widest mb-4">Navigator</h3>
+            <div id="question-nav-grid" class="grid grid-cols-5 gap-2.5">
+                <!-- Dynamically Generated Navigation buttons -->
+            </div>
+        </div>
+        
+        <!-- Utility Widgets -->
+        <div class="mt-8 space-y-4 border-t border-slate-100 dark:border-slate-800 pt-4">
+            <div class="bg-slate-100 dark:bg-slate-800 p-4 rounded-xl">
+                <span class="text-[9px] font-black text-slate-400 uppercase tracking-wider block mb-2">Scratchpad Calculator</span>
+                <input type="text" id="calculator-input" placeholder="e.g., 25 * 12" oninput="runScratchCalc()" class="w-full bg-white dark:bg-slate-900 p-2 border border-slate-200 dark:border-slate-800 rounded text-xs font-mono">
+                <div id="calculator-output" class="text-xs font-bold font-mono mt-1 text-slate-700 dark:text-slate-300">Ans: </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Question Arena -->
+    <div class="lg:col-span-9 px-6 py-8 max-w-4xl mx-auto w-full">
+        <div id="exam-timer-header" class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 flex justify-between items-center mb-5">
+            <div>
+                <h1 id="exam-header-title" class="text-xl font-extrabold">Loading Exam Module...</h1>
+                <p id="exam-header-meta" class="text-xs text-slate-400 mt-0.5">Please wait...</p>
+            </div>
+            <div class="text-right">
+                <span class="text-[9px] font-black text-slate-400 uppercase block tracking-wider">Remaining Time</span>
+                <span id="exam-clock" class="text-2xl font-black text-red-600 font-mono tracking-tight">00:00</span>
+            </div>
+        </div>
+
+        <section id="exam-instructions" class="hidden mb-8 bg-blue-50/70 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-900 rounded-2xl p-5 sm:p-6" aria-labelledby="exam-instructions-title">
+            <h2 id="exam-instructions-title" class="text-sm font-black uppercase tracking-widest text-blue-700 dark:text-blue-300 mb-3">Exam Instructions</h2>
+            <div id="exam-instructions-content" class="exam-rich-content text-sm text-slate-700 dark:text-slate-200"></div>
+        </section>
+
+        <div id="score-banner" class="hidden mb-8"></div>
+
+        <div id="exam-arena" class="space-y-8">
+            <!-- Render Dynamic Questions -->
+        </div>
+
+        <div class="mt-10 flex justify-between">
+            <button onclick="endExam()" id="submit-paper-btn" class="bg-slate-900 dark:bg-slate-100 hover:bg-slate-800 text-white dark:text-slate-900 font-bold text-sm px-6 py-3 rounded-xl transition">Submit Paper</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    const examId = "{{ exam_id }}";
+    const examAccessGranted = {{ 'true' if exam_access_granted else 'false' }};
+    let timeLeft = 0;
+    let timerId;
+    let totalQuestions = 0;
+    let questionsData = [];
+    let isExamFinished = false;
+    let correctAnswersCount = 0;
+    let examDurationSeconds = 0;
+    const submittedAnswers = {};
+
+    if (examAccessGranted) Promise.all([
+        fetch('/api/exams').then(res => res.json()),
+        fetch(`/api/exams/${examId}/questions`).then(res => res.json())
+    ])
+    .then(([exams, questions]) => {
+        questionsData = questions;
+        totalQuestions = questions.length;
+        const container = document.getElementById('exam-arena');
+        const navGrid = document.getElementById('question-nav-grid');
+        
+        if (totalQuestions === 0) {
+            container.innerHTML = `<p class="text-slate-400 text-sm">No questions mapped for this exam.</p>`;
+            return;
+        }
+
+        const currentExam = exams.find(e => e.id == examId);
+        let minutesPerQuestion = 1.5;
+        if (currentExam) {
+            document.getElementById('exam-header-title').innerText = currentExam.title;
+            const category = currentExam.category.toLowerCase();
+            if (category.includes('math')) minutesPerQuestion = 3;
+            else if (category.includes('biology')) minutesPerQuestion = 2;
+        }
+
+        timeLeft = Number(currentExam?.duration_minutes) > 0
+            ? Number(currentExam.duration_minutes) * 60
+            : totalQuestions * minutesPerQuestion * 60;
+        examDurationSeconds = timeLeft;
+        document.getElementById('exam-header-meta').innerText = Number(currentExam?.duration_minutes) > 0
+            ? `${currentExam?.category || 'General'} | Duration: ${currentExam.duration_minutes} minutes`
+            : `${currentExam?.category || 'General'} | Rate: ${minutesPerQuestion} Mins/Question`;
+        renderRichContent(document.getElementById('exam-instructions-content'), currentExam?.instructions);
+        document.getElementById('exam-instructions').classList.toggle('hidden', !currentExam?.instructions?.trim());
+
+        // Render Navigation Grid
+        for (let i = 0; i < totalQuestions; i++) {
+            navGrid.innerHTML += `<button type="button" id="nav-btn-${questions[i].id}" aria-label="Go to question ${i + 1}" class="h-9 w-9 border border-slate-200 dark:border-slate-800 rounded-lg text-xs font-bold hover:bg-slate-100 dark:hover:bg-slate-800 transition text-slate-600 dark:text-slate-400">${i + 1}</button>`;
+            document.getElementById(`nav-btn-${questions[i].id}`).addEventListener('click', () => {
+                document.getElementById(`question-card-${questions[i].id}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        }
+
+        // Render Question Arena Cards with Auto LaTeX Cleaner
+        questions.forEach((q, index) => {
+            const card = document.createElement('div');
+            card.className = "bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800";
+            
+            card.id = `question-card-${q.id}`;
+            card.innerHTML = `<div class="question-passage exam-rich-content bg-blue-50/50 dark:bg-blue-950/20 border border-blue-100 dark:border-blue-900 rounded-xl p-4 mb-4 text-sm font-medium"></div>
+                <h3 class="question-title text-lg sm:text-xl font-bold text-slate-800 dark:text-white mb-4"></h3>
+                <div class="question-diagram exam-rich-content border border-slate-200 dark:border-slate-800 p-4 rounded-xl mb-4 text-sm bg-slate-50 dark:bg-slate-950 font-mono flex items-center gap-2"></div>
+                <div class="grid gap-3" id="options-box-${q.id}"></div>
+                <div id="exp-${q.id}" class="hidden p-4 bg-violet-50/50 dark:bg-violet-950/20 border border-violet-100 dark:border-violet-900 rounded-xl text-sm text-slate-600 dark:text-slate-400 mt-4 leading-relaxed font-medium"><strong class="text-violet-700 dark:text-violet-400 block mb-1">Explanation</strong><div class="explanation-content exam-rich-content"></div></div>`;
+
+            renderRichContent(card.querySelector('.question-title'), `${index + 1}. ${q.question_text || ''}`);
+            renderRichContent(card.querySelector('.question-passage'), q.passage_text);
+            card.querySelector('.question-passage').classList.toggle('hidden', !q.passage_text);
+            renderRichContent(card.querySelector('.question-diagram'), q.diagram_instruction ? `📐 ${q.diagram_instruction}` : '');
+            card.querySelector('.question-diagram').classList.toggle('hidden', !q.diagram_instruction);
+            renderRichContent(card.querySelector('.explanation-content'), q.explanation);
+            ['A', 'B', 'C', 'D'].forEach(option => {
+                const button = document.createElement('button');
+                button.type = 'button';
+                button.dataset.option = option;
+                button.className = 'option-btn text-left p-4 border border-slate-200 dark:border-slate-800 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800/50 transition font-medium text-sm text-slate-700 dark:text-slate-300';
+                const label = document.createElement('span');
+                label.className = 'font-black mr-2';
+                label.textContent = `${option}.`;
+                button.appendChild(label);
+                const content = document.createElement('span');
+                content.className = 'exam-rich-content';
+                button.appendChild(content);
+                renderRichContent(content, q[`option_${option.toLowerCase()}`]);
+                button.addEventListener('click', () => checkAnswer(button, option, q.correct_answer, q.id));
+                card.querySelector(`#options-box-${q.id}`).appendChild(button);
+            });
+            container.appendChild(card);
+        });
+
+        // 🌟 FORCE LATEX RENDERING ON DYNAMICALLY APPENDED QUESTIONS 🌟
+        setTimeout(() => {
+            if (typeof renderMathInElement === 'function') {
+                renderMathInElement(container, {
+                    delimiters: [
+                        {left: '$$', right: '$$', display: true},
+                        {left: '$', right: '$', display: false},
+                        {left: '\\(', right: '\\)', display: false},
+                        {left: '\\[', right: '\\]', display: true}
+                    ],
+                    throwOnError: false
+                });
+            }
+        }, 100);
+
+        startTimer();
+    });
+
+    function renderRichContent(element, value) {
+        if (!element) return;
+        const raw = value == null ? '' : String(value).replace(/\\\\/g, '\\');
+        if (!raw.trim()) { element.replaceChildren(); return; }
+        const source = /<[^>]+>/.test(raw) ? raw : raw.split(/\n{2,}/).map(part => `<p>${part.replace(/\n/g, '<br>')}</p>`).join('');
+        const clean = window.DOMPurify ? DOMPurify.sanitize(source, {
+            USE_PROFILES: { html: true },
+            ADD_ATTR: ['loading', 'alt', 'title']
+        }) : sanitizeRichHtml(source);
+        element.innerHTML = clean;
+        element.querySelectorAll('table').forEach(table => {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'exam-rich-table-wrap';
+            table.parentNode.insertBefore(wrapper, table);
+            wrapper.appendChild(table);
+        });
+        element.querySelectorAll('img').forEach(image => {
+            image.loading = 'lazy';
+            if (!image.alt) image.alt = 'Exam illustration';
+        });
+    }
+
+    function sanitizeRichHtml(source) {
+        const template = document.createElement('template');
+        template.innerHTML = source;
+        const allowedTags = new Set(['A', 'B', 'BR', 'CODE', 'EM', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'HR', 'I', 'IMG', 'LI', 'OL', 'P', 'PRE', 'SMALL', 'SPAN', 'STRONG', 'SUB', 'SUP', 'TABLE', 'TBODY', 'TD', 'TFOOT', 'TH', 'THEAD', 'TR', 'U', 'UL']);
+        const allowedAttributes = new Set(['alt', 'colspan', 'height', 'href', 'loading', 'rowspan', 'src', 'target', 'title', 'width']);
+        const nodes = [template.content, ...template.content.querySelectorAll('*')];
+        nodes.forEach(node => {
+            if (node.nodeType !== Node.ELEMENT_NODE) return;
+            if (!allowedTags.has(node.tagName)) {
+                node.replaceWith(...Array.from(node.childNodes));
+                return;
+            }
+            Array.from(node.attributes).forEach(attribute => {
+                const name = attribute.name.toLowerCase();
+                const value = attribute.value.trim();
+                const unsafeUrl = (name === 'href' || name === 'src') && !/^(https?:|data:image\/(?:png|jpeg|gif|webp);|#)/i.test(value);
+                if (name.startsWith('on') || !allowedAttributes.has(name) || unsafeUrl) node.removeAttribute(attribute.name);
+            });
+        });
+        return template.innerHTML;
+    }
+
+    function startTimer() {
+        timerId = setInterval(() => {
+            if (timeLeft <= 0) {
+                clearInterval(timerId);
+                endExam();
+            } else {
+                timeLeft--;
+                const mins = Math.floor(timeLeft / 60);
+                const secs = timeLeft % 60;
+                document.getElementById('exam-clock').innerText = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+            }
+        }, 1000);
+    }
+
+    function checkAnswer(button, selected, correct, qId) {
+        if (isExamFinished) return;
+        submittedAnswers[String(qId)] = selected;
+        const parent = button.parentElement;
+        const buttons = parent.querySelectorAll('.option-btn');
+        const navBtn = document.getElementById(`nav-btn-${qId}`);
+
+        buttons.forEach(btn => btn.disabled = true);
+
+        if (selected === correct) {
+            button.classList.add('bg-emerald-50', 'border-emerald-500', 'text-emerald-800');
+            correctAnswersCount++;
+        } else {
+            button.classList.add('bg-rose-50', 'border-rose-500', 'text-rose-800');
+            buttons.forEach(btn => {
+                if (btn.getAttribute('data-option') === correct) {
+                    btn.classList.add('bg-emerald-50', 'border-emerald-500', 'text-emerald-800');
+                }
+            });
+        }
+        document.getElementById(`exp-${qId}`).classList.remove('hidden');
+        navBtn?.classList.add('bg-emerald-50', 'border-emerald-500', 'text-emerald-800');
+    }
+
+    function endExam() {
+        if (isExamFinished) return;
+        isExamFinished = true;
+        clearInterval(timerId);
+
+        document.querySelectorAll('.option-btn').forEach(btn => btn.disabled = true);
+
+        const accuracy = Math.round((correctAnswersCount / totalQuestions) * 100);
+
+        fetch('/api/results/submit', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                exam_id: examId,
+                answers: submittedAnswers,
+                time_used: Math.max(0, examDurationSeconds - timeLeft)
+            })
+        })
+        .then(res => res.json())
+        .then(data => {
+            if (data.success) {
+                window.location.href = `/result/${data.result_id}`;
+            }
+        });
+    }
+
+    function runScratchCalc() {
+        const input = document.getElementById('calculator-input').value;
+        const output = document.getElementById('calculator-output');
+        try {
+            const clean = input.replace(/[^0-9+\-*/().\s]/g, '');
+            const ans = eval(clean);
+            output.innerText = `Ans: ${ans !== undefined ? ans : ""}`;
+        } catch (e) {
+            output.innerText = "Ans: Error";
+        }
+    }
+</script>
+{% endblock %}

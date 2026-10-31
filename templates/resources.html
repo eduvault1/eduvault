@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% block content %}
+<main id="resources-page" data-collection="{{ collection }}" class="min-h-screen bg-slate-50 px-4 py-8 dark:bg-slate-950 sm:py-12">
+  <div class="mx-auto max-w-7xl space-y-8">
+    <header class="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-emerald-950 via-teal-950 to-slate-950 p-7 text-white shadow-2xl sm:p-10">
+      <div class="pointer-events-none absolute -right-10 -top-16 h-64 w-64 rounded-full bg-emerald-400/15 blur-3xl"></div>
+      <a href="/" class="relative inline-flex items-center gap-2 text-sm font-bold text-emerald-200 hover:text-white">← EduVault Home</a>
+      <p class="relative mt-7 text-xs font-black uppercase tracking-[.2em] text-emerald-300">Digital learning library</p>
+      <h1 class="relative mt-2 text-3xl font-black sm:text-5xl">{{ collection_title }}</h1>
+      <p class="relative mt-4 max-w-3xl text-sm leading-6 text-emerald-50/80 sm:text-base">{{ collection_description }} Grade 9–12 learning materials are kept in their own collections for easier browsing.</p>
+      <div class="relative mt-6 flex flex-wrap gap-2 text-xs font-bold">
+        <span class="rounded-full border border-white/15 bg-white/10 px-3 py-1.5">{{ collection_title }}</span>
+      </div>
+    </header>
+
+    <nav aria-label="Resource collections" class="grid gap-3 sm:grid-cols-3">
+      <a href="/resources/textbooks" class="rounded-2xl border px-4 py-4 text-sm font-black transition {{ 'border-emerald-600 bg-emerald-700 text-white shadow-lg' if collection == 'textbooks' else 'border-slate-200 bg-white text-slate-700 hover:border-emerald-400 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-200' }}">Textbooks &amp; resources</a>
+      <a href="/resources/notes" class="rounded-2xl border px-4 py-4 text-sm font-black transition {{ 'border-emerald-600 bg-emerald-700 text-white shadow-lg' if collection == 'notes' else 'border-slate-200 bg-white text-slate-700 hover:border-emerald-400 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-200' }}">Notebook &amp; revision notes</a>
+      <a href="/resources/explanations" class="rounded-2xl border px-4 py-4 text-sm font-black transition {{ 'border-emerald-600 bg-emerald-700 text-white shadow-lg' if collection == 'explanations' else 'border-slate-200 bg-white text-slate-700 hover:border-emerald-400 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-200' }}">Exam explanations</a>
+    </nav>
+
+    <section class="grid gap-3 rounded-3xl border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900 sm:grid-cols-[1fr_180px] sm:p-5">
+      <label class="text-xs font-extrabold text-slate-600 dark:text-slate-300">Search library
+        <input id="resource-search" type="search" placeholder="Title, subject, topic..." class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm dark:border-slate-700 dark:bg-slate-950 dark:text-white">
+      </label>
+      <label class="text-xs font-extrabold text-slate-600 dark:text-slate-300">Grade
+        <select id="grade-filter" class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-3 py-3 text-sm dark:border-slate-700 dark:bg-slate-950 dark:text-white"><option value="all">All grades</option><option value="9">Grade 9</option><option value="10">Grade 10</option><option value="11">Grade 11</option><option value="12">Grade 12</option></select>
+      </label>
+    </section>
+
+    <div class="flex flex-wrap items-center justify-between gap-3">
+      <div><h2 class="text-xl font-black text-slate-900 dark:text-white">{{ collection_title }}</h2><p id="resource-count" class="mt-1 text-sm text-slate-500 dark:text-slate-400">Loading resources…</p></div>
+      <a href="/eduvault-system" class="rounded-xl bg-emerald-700 px-4 py-2.5 text-sm font-extrabold text-white shadow hover:bg-emerald-600">Open Examination System</a>
+    </div>
+    <div id="resource-grid" class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3"><div class="rounded-2xl border border-slate-200 bg-white p-6 text-sm text-slate-500 dark:border-slate-800 dark:bg-slate-900">Loading resources…</div></div>
+  </div>
+</main>
+
+<div id="reader-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/80 p-3 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="reader-title">
+  <section class="flex h-[92vh] w-full max-w-5xl flex-col overflow-hidden rounded-2xl bg-white shadow-2xl dark:bg-slate-900">
+    <div class="flex items-center justify-between gap-3 border-b border-slate-200 p-4 dark:border-slate-800"><h2 id="reader-title" class="truncate font-black text-slate-900 dark:text-white">Resource reader</h2><button id="reader-close" class="rounded-lg bg-slate-100 px-3 py-2 text-sm font-bold text-slate-700 dark:bg-slate-800 dark:text-white">Close</button></div>
+    <div id="reader-content" class="min-h-0 flex-1 overflow-auto p-5 text-slate-700 dark:text-slate-200"></div>
+  </section>
+</div>
+
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  let items = [];
+  const safe = value => String(value ?? '');
+  function card(item) {
+    const article = document.createElement('article');
+    article.className = 'flex min-h-60 flex-col rounded-3xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900';
+    const icon = document.createElement('div'); icon.className = 'mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-50 text-2xl dark:bg-emerald-950/50'; icon.textContent = item.kind === 'explanation' ? '✦' : item.kind === 'notebook' ? '▤' : '▣';
+    const badge = document.createElement('span'); badge.className = 'w-fit rounded-full bg-emerald-50 px-3 py-1 text-[10px] font-black uppercase tracking-wider text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-200'; badge.textContent = item.label;
+    const title = document.createElement('h3'); title.className = 'mt-3 text-lg font-black text-slate-900 dark:text-white'; title.textContent = item.title;
+    const meta = document.createElement('p'); meta.className = 'mt-2 text-xs font-bold text-slate-500 dark:text-slate-400'; meta.textContent = [item.grade ? `Grade ${item.grade}` : '', item.subject || '', item.unit_title || '', item.resource_type || ''].filter(Boolean).join(' · ');
+    const desc = document.createElement('p'); desc.className = 'mt-3 line-clamp-3 flex-1 text-sm leading-6 text-slate-600 dark:text-slate-300'; desc.textContent = item.summary || item.description || item.topic_title || item.saved_at ? (item.summary || item.description || item.topic_title || (item.saved_at ? `Saved ${new Date(item.saved_at).toLocaleDateString()}` : '')) : 'Open this item to study.';
+    const actions = document.createElement('div'); actions.className = 'mt-5 flex flex-wrap gap-2';
+    if (item.kind === 'notebook') {
+      const open = document.createElement('button'); open.className = 'rounded-xl bg-emerald-700 px-4 py-2.5 text-xs font-extrabold text-white hover:bg-emerald-600'; open.textContent = 'Read notes';
+      open.addEventListener('click', () => openNotes(item)); actions.append(open);
+    } else {
+      let href = item.kind === 'explanation' ? item.url : item.pdf_url || item.file_url || (item.file_name ? `/resource-files/${item.id}` : '');
+      if (href && !(/^https?:\/\//i.test(href) || href.startsWith('/'))) href = '';
+      if (href) { const open = document.createElement('a'); open.href = href; open.className = 'rounded-xl bg-emerald-700 px-4 py-2.5 text-xs font-extrabold text-white hover:bg-emerald-600'; open.textContent = item.kind === 'explanation' ? 'Review explanation' : 'Open resource'; if (item.kind !== 'explanation') { open.target = '_blank'; open.rel = 'noopener'; } actions.append(open); }
+      else { const unavailable = document.createElement('span'); unavailable.className = 'rounded-xl bg-slate-100 px-4 py-2.5 text-xs font-bold text-slate-500 dark:bg-slate-800'; unavailable.textContent = 'File not attached'; actions.append(unavailable); }
+    }
+    article.append(icon, badge, title, meta, desc, actions);
+    return article;
+  }
+  function openNotes(item) {
+    $('reader-title').textContent = item.title;
+    const box = $('reader-content'); box.replaceChildren();
+    const summary = document.createElement('p'); summary.className = 'mb-5 text-base font-semibold'; summary.textContent = item.summary || '';
+    const content = document.createElement('div'); content.className = 'whitespace-pre-wrap text-sm leading-7'; content.textContent = item.content || '';
+    box.append(summary, content);
+    if (item.source_attribution) { const source = document.createElement('p'); source.className = 'mt-6 border-t border-slate-200 pt-4 text-xs text-slate-500 dark:border-slate-700'; source.textContent = `Source: ${item.source_attribution}`; box.append(source); }
+    $('reader-modal').classList.remove('hidden'); $('reader-modal').classList.add('flex');
+  }
+  function render() {
+    const query = $('resource-search').value.trim().toLowerCase();
+    const grade = $('grade-filter').value;
+    const filtered = items.filter(item => {
+      const matchesText = [item.title, item.subject, item.description, item.summary, item.unit_title, item.topic_title, item.resource_type].join(' ').toLowerCase().includes(query);
+      return matchesText && (grade === 'all' || String(item.grade || '') === grade);
+    });
+    const grid = $('resource-grid'); grid.replaceChildren();
+    $('resource-count').textContent = `${filtered.length} resource${filtered.length === 1 ? '' : 's'} available`;
+    if (!filtered.length) { const empty = document.createElement('div'); empty.className = 'col-span-full rounded-2xl border border-dashed border-slate-300 bg-white p-10 text-center text-sm text-slate-500 dark:border-slate-700 dark:bg-slate-900'; empty.textContent = 'This collection is empty for the selected grade or search. Try another grade, or check back when more materials are added.'; grid.append(empty); return; }
+    filtered.forEach(item => grid.append(card(item)));
+  }
+  async function fetchJson(url, optional = false) {
+    try { const response = await fetch(url, {credentials:'same-origin'}); if (!response.ok) { if (optional && response.status === 401) return []; throw new Error(`Could not load ${url}`); } return await response.json(); }
+    catch (error) { if (optional) return []; throw error; }
+  }
+  async function load() {
+    const collectionName = $('resources-page').dataset.collection;
+    $('resource-grid').textContent = 'Loading resources…';
+    try {
+      if (collectionName === 'textbooks') {
+        const resources = await fetchJson('/api/resources');
+        items = resources.map(item => ({...item, kind:'library', label:item.resource_type || 'Books & resources'}));
+      } else if (collectionName === 'notes') {
+        const notes = await fetchJson('/api/learning/notes');
+        items = notes.map(item => ({...item, kind:'notebook', label:'Notebook · Revision notes'}));
+      } else {
+        const explanations = await fetchJson('/api/unified-exam/explanations', true);
+        items = explanations.map(item => ({...item, kind:'explanation', label:'EduVault exam explanation'}));
+      }
+      render();
+    } catch (error) { $('resource-grid').textContent = 'The resource library could not be loaded. Please refresh and try again.'; $('resource-count').textContent = ''; }
+  }
+  $('resource-search').addEventListener('input', render);
+  $('grade-filter').addEventListener('change', render);
+  $('reader-close').addEventListener('click', () => { $('reader-modal').classList.add('hidden'); $('reader-modal').classList.remove('flex'); });
+  $('reader-modal').addEventListener('click', event => { if (event.target === $('reader-modal')) $('reader-close').click(); });
+  load();
+})();
+</script>
+{% endblock %}

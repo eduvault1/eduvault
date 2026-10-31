@@ -1,0 +1,712 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+    
+    <!-- Back Navigation -->
+    <div class="mb-6">
+        <a href="/subject/{{ subject }}" class="inline-flex items-center gap-2 text-sm font-bold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition">
+            <span>←</span>
+            <span>Back to {{ subject }} Hub</span>
+        </a>
+    </div>
+
+    <!-- Header -->
+    <div class="mb-8">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+            <div>
+                <h1 class="text-2xl sm:text-3xl font-black text-slate-800 dark:text-white tracking-tight">
+                    {{ subject }} Chapters
+                </h1>
+                <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">
+                    Browse units, sections, and topics. Practice questions organized by curriculum.
+                </p>
+            </div>
+            <div class="flex items-center gap-3">
+                <select id="grade-selector" onchange="loadChapters()" class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-2.5 text-sm font-bold dark:text-white outline-none focus:ring-2 focus:ring-blue-500 transition">
+                    <option value="9">Grade 9</option>
+                    <option value="10">Grade 10</option>
+                    <option value="11">Grade 11</option>
+                    <option value="12" selected>Grade 12</option>
+                </select>
+                <button onclick="loadChapters()" class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition flex items-center gap-1.5 shadow-sm shadow-blue-500/20">
+                    <span>🔄</span> Refresh
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Summary -->
+    <div id="stats-summary" class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-4 text-center">
+            <div class="text-2xl font-black text-blue-600 dark:text-blue-400" id="stat-units">-</div>
+            <div class="text-[10px] text-slate-500 dark:text-slate-400 font-bold uppercase tracking-wider">Units</div>
+        </div>
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-4 text-center">
+            <div class="text-2xl font-black text-emerald-600 dark:text-emerald-400" id="stat-sections">-</div>
+            <div class="text-[10px] text-slate-500 dark:text-slate-400 font-bold uppercase tracking-wider">Sections</div>
+        </div>
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-4 text-center">
+            <div class="text-2xl font-black text-purple-600 dark:text-purple-400" id="stat-topics">-</div>
+            <div class="text-[10px] text-slate-500 dark:text-slate-400 font-bold uppercase tracking-wider">Topics</div>
+        </div>
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-4 text-center">
+            <div class="text-2xl font-black text-amber-600 dark:text-amber-400" id="stat-questions">-</div>
+            <div class="text-[10px] text-slate-500 dark:text-slate-400 font-bold uppercase tracking-wider">Questions</div>
+        </div>
+    </div>
+
+    <!-- Search & Filter -->
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 mb-6">
+        <div class="flex flex-wrap gap-3">
+            <div class="flex-grow min-w-[200px]">
+                <input type="text" id="chapter-search" placeholder="Search by unit, section, or topic..." 
+                       oninput="filterChapters()" 
+                       class="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-2.5 text-sm dark:text-white outline-none focus:ring-2 focus:ring-blue-500 transition">
+            </div>
+            <select id="chapter-category-filter" onchange="filterChapters()" aria-label="Filter chapters by category" class="bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-2.5 text-sm font-bold dark:text-white outline-none focus:ring-2 focus:ring-blue-500 transition">
+                <option value="all">All Chapter Categories</option>
+            </select>
+            <button onclick="resetFilters()" class="bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-bold px-4 py-2.5 rounded-xl transition">
+                Reset Filters
+            </button>
+        </div>
+    </div>
+
+    <!-- Chapter Grid -->
+    <div id="chapter-list" class="space-y-6">
+        <!-- Loading Skeleton -->
+        <div class="animate-pulse">
+            <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 h-32"></div>
+            <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 h-32 mt-4"></div>
+            <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 h-32 mt-4"></div>
+        </div>
+    </div>
+
+    <!-- No Results Message -->
+    <div id="no-results" class="hidden bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-8 text-center">
+        <div class="text-4xl mb-3">🔍</div>
+        <h3 class="text-lg font-bold text-slate-800 dark:text-white">No matching chapters found</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Try adjusting your search or filters.</p>
+        <button onclick="resetFilters()" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-6 py-2.5 rounded-xl transition">
+            Reset Filters
+        </button>
+    </div>
+
+</div>
+
+<!-- ============================================ -->
+<!-- PRACTICE MODAL -->
+<!-- ============================================ -->
+<div id="practice-modal" class="hidden fixed inset-0 bg-slate-950/90 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl w-full max-w-3xl max-h-[90vh] flex flex-col shadow-2xl">
+        
+        <!-- Modal Header -->
+        <div class="flex justify-between items-center border-b border-slate-200 dark:border-slate-800 p-4">
+            <div class="flex items-center gap-3">
+                <span class="text-2xl">📝</span>
+                <div>
+                    <h3 class="text-base font-black text-slate-800 dark:text-white" id="practice-modal-title">Practice: Unit 1</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400" id="practice-modal-subtitle">Loading questions...</p>
+                </div>
+            </div>
+            <button onclick="closePracticeModal()" class="text-slate-400 hover:text-slate-600 dark:hover:text-white text-xl font-bold p-1">✕</button>
+        </div>
+
+        <!-- Stats Bar -->
+        <div id="practice-stats" class="flex flex-wrap gap-3 p-4 border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950/50">
+            <div class="flex items-center gap-2 text-xs">
+                <span class="font-bold text-slate-500 dark:text-slate-400">Questions:</span>
+                <span id="practice-total" class="font-black text-slate-800 dark:text-white">0</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs">
+                <span class="font-bold text-slate-500 dark:text-slate-400">Attempted:</span>
+                <span id="practice-attempted" class="font-black text-blue-600 dark:text-blue-400">0</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs">
+                <span class="font-bold text-slate-500 dark:text-slate-400">Correct:</span>
+                <span id="practice-correct" class="font-black text-emerald-600 dark:text-emerald-400">0</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs">
+                <span class="font-bold text-slate-500 dark:text-slate-400">Accuracy:</span>
+                <span id="practice-accuracy" class="font-black text-amber-600 dark:text-amber-400">0%</span>
+            </div>
+        </div>
+
+        <!-- Questions List -->
+        <div id="practice-questions-list" class="flex-grow overflow-y-auto p-4 space-y-4 custom-scrollbar">
+            <!-- Loaded dynamically -->
+            <div class="text-center text-xs text-slate-400 py-8">
+                <div class="animate-spin inline-block text-2xl">⏳</div>
+                <p class="mt-2">Loading questions...</p>
+            </div>
+        </div>
+
+        <!-- Modal Footer -->
+        <div class="border-t border-slate-200 dark:border-slate-800 p-4 flex justify-between items-center">
+            <button onclick="closePracticeModal()" class="bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-700 dark:text-white text-xs font-bold px-4 py-2.5 rounded-xl transition">
+                Close
+            </button>
+            <button id="practice-submit-btn" onclick="submitPracticeResults()" class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-6 py-2.5 rounded-xl transition shadow-sm shadow-blue-500/20 disabled:opacity-50 disabled:cursor-not-allowed">
+                Submit Practice
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================ -->
+<!-- JAVASCRIPT -->
+<!-- ============================================ -->
+<script>
+    // ============================================
+    // STATE
+    // ============================================
+    let currentChapters = [];
+    let filteredChapters = [];
+    let practiceQuestions = [];
+    let practiceAnswers = {};
+    let currentPracticeType = 'unit'; // 'unit', 'section', 'topic'
+    let currentPracticeId = null;
+    let selectedUnitCategory = 'all';
+
+    // ============================================
+    // LOAD CHAPTERS
+    // ============================================
+    function loadChapters() {
+        const subject = "{{ subject }}";
+        const grade = document.getElementById('grade-selector').value;
+        
+        const list = document.getElementById('chapter-list');
+        list.innerHTML = `
+            <div class="animate-pulse">
+                <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 h-32"></div>
+                <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 h-32 mt-4"></div>
+            </div>
+        `;
+
+        // Reset stats
+        document.getElementById('stat-units').textContent = '-';
+        document.getElementById('stat-sections').textContent = '-';
+        document.getElementById('stat-topics').textContent = '-';
+        document.getElementById('stat-questions').textContent = '-';
+
+        fetch(`/api/curriculum/${encodeURIComponent(subject)}/${grade}`)
+            .then(res => {
+                if (!res.ok) throw new Error(`Server returned HTTP ${res.status}`);
+                return res.json();
+            })
+            .then(data => {
+                if (!Array.isArray(data)) throw new Error('The curriculum API returned an invalid response.');
+                currentChapters = data;
+                filteredChapters = data;
+                selectedUnitCategory = 'all';
+                populateChapterCategories(data);
+                filterChapters();
+                updateStats(data);
+            })
+            .catch(err => {
+                console.error('Error loading chapters:', err);
+                list.innerHTML = `
+                    <div class="bg-rose-50 dark:bg-rose-950/20 border border-rose-200 dark:border-rose-900 rounded-2xl p-8 text-center">
+                        <div class="text-3xl mb-2">❌</div>
+                        <p class="text-sm font-bold text-rose-600 dark:text-rose-400">Failed to load chapters</p>
+                        <p class="text-xs text-rose-500 dark:text-rose-300 mt-1">${err.message}</p>
+                        <button onclick="loadChapters()" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-4 py-2 rounded-xl transition">
+                            Try Again
+                        </button>
+                    </div>
+                `;
+            });
+    }
+
+    // ============================================
+    // RENDER CHAPTERS
+    // ============================================
+    function renderChapters(chapters) {
+        const list = document.getElementById('chapter-list');
+        const noResults = document.getElementById('no-results');
+
+        if (!chapters || chapters.length === 0) {
+            list.innerHTML = '';
+            noResults.classList.remove('hidden');
+            return;
+        }
+        noResults.classList.add('hidden');
+
+        list.innerHTML = '';
+        
+        chapters.forEach((unit, index) => {
+            const totalQuestions = unit.sections ? 
+                Object.values(unit.sections).reduce((sum, section) => {
+                    return sum + section.topics.reduce((s, t) => s + (t.question_count || 0), 0);
+                }, 0) : 0;
+
+            const hasQuestions = totalQuestions > 0;
+
+            list.innerHTML += `
+                <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+                    <!-- Unit Header -->
+                    <div class="p-6 bg-gradient-to-r from-blue-50/50 to-indigo-50/50 dark:from-blue-950/20 dark:to-indigo-950/20 border-b border-slate-200 dark:border-slate-800">
+                        <div class="flex flex-wrap items-center justify-between gap-4">
+                            <div class="flex items-center gap-4">
+                                <div class="bg-blue-600 text-white font-black text-sm w-10 h-10 rounded-xl flex items-center justify-center">
+                                    ${unit.unit_number || index + 1}
+                                </div>
+                                <div>
+                                    <h2 class="text-lg font-black text-slate-800 dark:text-white">${unit.unit_title || 'Unit ' + (unit.unit_number || index + 1)}</h2>
+                                    <div class="flex flex-wrap items-center gap-3 text-xs text-slate-500 dark:text-slate-400">
+                                        <span>📚 ${Object.keys(unit.sections || {}).length} sections</span>
+                                        <span>•</span>
+                                        <span>📝 ${totalQuestions} questions</span>
+                                        ${totalQuestions > 0 ? `<span class="text-emerald-600 dark:text-emerald-400 font-bold">✅ Available</span>` : `<span class="text-amber-600 dark:text-amber-400">⏳ No questions yet</span>`}
+                                    </div>
+                                </div>
+                            </div>
+                            ${hasQuestions ? `
+                                <button onclick="startUnitPractice('${unit.id}', '${unit.unit_title}')" 
+                                        class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-5 py-2.5 rounded-xl transition shadow-sm shadow-blue-500/20 flex items-center gap-1.5">
+                                    <span>▶️</span> Practice Unit
+                                </button>
+                            ` : `
+                                <span class="text-xs text-slate-400 bg-slate-100 dark:bg-slate-800 px-3 py-1.5 rounded-xl">No questions available</span>
+                            `}
+                        </div>
+                    </div>
+
+                    <!-- Sections -->
+                    <div class="p-4 space-y-3">
+                        ${unit.sections && Object.keys(unit.sections).length > 0 ? 
+                            Object.values(unit.sections).map(section => {
+                                const sectionQuestions = section.topics.reduce((s, t) => s + (t.question_count || 0), 0);
+                                return `
+                                    <div class="border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden">
+                                        <!-- Section Header -->
+                                        <div class="p-4 bg-slate-50 dark:bg-slate-950/50 flex flex-wrap items-center justify-between gap-3">
+                                            <div class="flex items-center gap-3">
+                                                <span class="bg-indigo-100 dark:bg-indigo-950/50 text-indigo-700 dark:text-indigo-400 font-bold text-xs w-8 h-8 rounded-lg flex items-center justify-center">${section.section_number || '•'}</span>
+                                                <div>
+                                                    <h3 class="text-sm font-bold text-slate-800 dark:text-white">${section.section_title || 'Section ' + (section.section_number || '')}</h3>
+                                                    <span class="text-[10px] text-slate-500 dark:text-slate-400">📝 ${sectionQuestions} questions</span>
+                                                </div>
+                                            </div>
+                                            ${sectionQuestions > 0 ? `
+                                                <button onclick="startSectionPractice('${section.id}', '${section.section_title}')" 
+                                                        class="bg-indigo-600 hover:bg-indigo-700 text-white text-[10px] font-bold px-3 py-1.5 rounded-lg transition">
+                                                    Practice Section
+                                                </button>
+                                            ` : `
+                                                <span class="text-[10px] text-slate-400">No questions</span>
+                                            `}
+                                        </div>
+
+                                        <!-- Topics -->
+                                        ${section.topics && section.topics.length > 0 ? `
+                                            <div class="p-3 bg-white dark:bg-slate-900 grid grid-cols-1 sm:grid-cols-2 gap-2">
+                                                ${section.topics.map(topic => `
+                                                    <div class="flex items-center justify-between p-3 bg-slate-50 dark:bg-slate-950/50 rounded-xl border border-slate-200 dark:border-slate-800">
+                                                        <div class="flex items-center gap-2 min-w-0">
+                                                            <span class="text-sm">📘</span>
+                                                            <div class="min-w-0">
+                                                                <div class="text-xs font-bold text-slate-700 dark:text-slate-300 truncate">${topic.topic_title || 'Topic'}</div>
+                                                                ${topic.subtopic ? `<div class="text-[10px] text-slate-500 dark:text-slate-400 truncate">${topic.subtopic}</div>` : ''}
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex items-center gap-2 flex-shrink-0">
+                                                            <span class="text-[10px] font-bold text-slate-500 dark:text-slate-400">${topic.question_count || 0}</span>
+                                                            ${topic.question_count > 0 ? `
+                                                                <button onclick="startTopicPractice('${topic.id}', '${topic.topic_title}')" 
+                                                                        class="bg-emerald-600 hover:bg-emerald-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-lg transition">
+                                                                    Practice
+                                                                </button>
+                                                            ` : `
+                                                                <span class="text-[10px] text-slate-400">⏳</span>
+                                                            `}
+                                                        </div>
+                                                    </div>
+                                                `).join('')}
+                                            </div>
+                                        ` : `
+                                            <div class="p-3 text-center text-xs text-slate-400">No topics available</div>
+                                        `}
+                                    </div>
+                                `;
+                            }).join('') : 
+                            `<div class="text-center text-xs text-slate-400 py-4">No sections available</div>`
+                        }
+                    </div>
+                </div>
+            `;
+        });
+
+    }
+
+    // ============================================
+    // UPDATE STATS
+    // ============================================
+    function updateStats(chapters) {
+        let totalUnits = 0;
+        let totalSections = 0;
+        let totalTopics = 0;
+        let totalQuestions = 0;
+
+        chapters.forEach(unit => {
+            totalUnits++;
+            if (unit.sections) {
+                const sections = Object.values(unit.sections);
+                totalSections += sections.length;
+                sections.forEach(section => {
+                    if (section.topics) {
+                        totalTopics += section.topics.length;
+                        section.topics.forEach(topic => {
+                            totalQuestions += topic.question_count || 0;
+                        });
+                    }
+                });
+            }
+        });
+
+        document.getElementById('stat-units').textContent = totalUnits;
+        document.getElementById('stat-sections').textContent = totalSections;
+        document.getElementById('stat-topics').textContent = totalTopics;
+        document.getElementById('stat-questions').textContent = totalQuestions;
+    }
+
+    // ============================================
+    // FILTER CHAPTERS
+    // ============================================
+    function populateChapterCategories(chapters) {
+        const selector = document.getElementById('chapter-category-filter');
+        if (!selector) return;
+        const previous = selectedUnitCategory;
+        const categories = chapters.map(unit => ({
+            id: String(unit.id),
+            title: unit.unit_title || `Unit ${unit.unit_number || ''}`.trim()
+        }));
+        selector.innerHTML = '<option value="all">All Chapter Categories</option>';
+        categories.forEach(category => {
+            const option = document.createElement('option');
+            option.value = category.id;
+            option.textContent = category.title;
+            selector.appendChild(option);
+        });
+        selector.value = categories.some(category => category.id === previous) ? previous : 'all';
+        selectedUnitCategory = selector.value;
+    }
+
+    function filterChapters() {
+        const searchInput = document.getElementById('chapter-search');
+        const categorySelector = document.getElementById('chapter-category-filter');
+        const search = (searchInput?.value || '').toLowerCase().trim();
+        selectedUnitCategory = categorySelector?.value || 'all';
+
+        const filtered = currentChapters.map(unit => {
+            if (selectedUnitCategory !== 'all' && String(unit.id) !== selectedUnitCategory) return null;
+
+            const unitTitle = String(unit.unit_title || '').toLowerCase();
+            const unitMatches = !search || unitTitle.includes(search);
+            const unitCopy = { ...unit, sections: {} };
+            let hasMatch = unitMatches;
+
+            Object.entries(unit.sections || {}).forEach(([key, section]) => {
+                const sectionTitle = String(section.section_title || '').toLowerCase();
+                const sectionMatches = !search || sectionTitle.includes(search);
+                const matchingTopics = (section.topics || []).filter(topic => {
+                    if (!search || unitMatches || sectionMatches) return true;
+                    return String(topic.topic_title || '').toLowerCase().includes(search) ||
+                        String(topic.subtopic || '').toLowerCase().includes(search);
+                });
+
+                if (sectionMatches || unitMatches || matchingTopics.length) {
+                    unitCopy.sections[key] = {
+                        ...section,
+                        topics: (unitMatches || sectionMatches) ? (section.topics || []) : matchingTopics
+                    };
+                    hasMatch = true;
+                }
+            });
+
+            return hasMatch ? unitCopy : null;
+        }).filter(Boolean);
+
+        filteredChapters = filtered;
+        renderChapters(filtered);
+    }
+
+    function resetFilters() {
+        document.getElementById('chapter-search').value = '';
+        const categorySelector = document.getElementById('chapter-category-filter');
+        if (categorySelector) categorySelector.value = 'all';
+        selectedUnitCategory = 'all';
+        filterChapters();
+    }
+
+    // ============================================
+    // PRACTICE MODAL - UNIT
+    // ============================================
+    function startUnitPractice(unitId, unitTitle) {
+        currentPracticeType = 'unit';
+        currentPracticeId = unitId;
+        document.getElementById('practice-modal-title').textContent = `📚 ${unitTitle}`;
+        document.getElementById('practice-modal-subtitle').textContent = `Practice all questions in this unit`;
+        openPracticeModal(`/api/curriculum/unit/${unitId}/questions`);
+    }
+
+    // ============================================
+    // PRACTICE MODAL - SECTION
+    // ============================================
+    function startSectionPractice(sectionId, sectionTitle) {
+        currentPracticeType = 'section';
+        currentPracticeId = sectionId;
+        document.getElementById('practice-modal-title').textContent = `📖 ${sectionTitle}`;
+        document.getElementById('practice-modal-subtitle').textContent = `Practice all questions in this section`;
+        // For sections, we need to get questions from all topics in the section
+        // We'll use a section endpoint or fetch from the unit and filter
+        openPracticeModal(`/api/curriculum/section/${sectionId}/questions`);
+    }
+
+    // ============================================
+    // PRACTICE MODAL - TOPIC
+    // ============================================
+    function startTopicPractice(topicId, topicTitle) {
+        currentPracticeType = 'topic';
+        currentPracticeId = topicId;
+        document.getElementById('practice-modal-title').textContent = `📘 ${topicTitle}`;
+        document.getElementById('practice-modal-subtitle').textContent = `Practice all questions in this topic`;
+        openPracticeModal(`/api/curriculum/topic/${topicId}/questions`);
+    }
+
+    // ============================================
+    // OPEN PRACTICE MODAL
+    // ============================================
+    function openPracticeModal(apiUrl) {
+        const modal = document.getElementById('practice-modal');
+        modal.classList.remove('hidden');
+        
+        practiceQuestions = [];
+        practiceAnswers = {};
+        
+        // Reset stats
+        document.getElementById('practice-total').textContent = '0';
+        document.getElementById('practice-attempted').textContent = '0';
+        document.getElementById('practice-correct').textContent = '0';
+        document.getElementById('practice-accuracy').textContent = '0%';
+        document.getElementById('practice-submit-btn').disabled = true;
+
+        // Load questions
+        const list = document.getElementById('practice-questions-list');
+        list.innerHTML = `
+            <div class="text-center text-xs text-slate-400 py-8">
+                <div class="animate-spin inline-block text-2xl">⏳</div>
+                <p class="mt-2">Loading practice questions...</p>
+            </div>
+        `;
+
+        fetch(apiUrl)
+            .then(res => res.json())
+            .then(questions => {
+                practiceQuestions = questions;
+                renderPracticeQuestions(questions);
+            })
+            .catch(err => {
+                list.innerHTML = `
+                    <div class="bg-rose-50 dark:bg-rose-950/20 p-6 rounded-2xl border border-rose-200 dark:border-rose-900 text-center text-rose-600 dark:text-rose-400 text-xs font-bold">
+                        ❌ Failed to load questions: ${err.message}
+                    </div>
+                `;
+            });
+    }
+
+    // ============================================
+    // RENDER PRACTICE QUESTIONS
+    // ============================================
+    function renderPracticeQuestions(questions) {
+        const list = document.getElementById('practice-questions-list');
+        
+        if (!questions || questions.length === 0) {
+            list.innerHTML = `
+                <div class="text-center py-8">
+                    <div class="text-3xl mb-2">📭</div>
+                    <p class="text-sm font-bold text-slate-600 dark:text-slate-400">No questions available</p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">This section doesn't have any practice questions yet.</p>
+                </div>
+            `;
+            document.getElementById('practice-submit-btn').disabled = true;
+            return;
+        }
+
+        document.getElementById('practice-total').textContent = questions.length;
+        document.getElementById('practice-submit-btn').disabled = false;
+
+        list.innerHTML = '';
+        questions.forEach((q, index) => {
+            const options = [
+                { label: 'A', text: q.option_a },
+                { label: 'B', text: q.option_b },
+                { label: 'C', text: q.option_c },
+                { label: 'D', text: q.option_d }
+            ].filter(opt => opt.text);
+
+            list.innerHTML += `
+                <div class="bg-slate-50 dark:bg-slate-950/50 border border-slate-200 dark:border-slate-800 rounded-xl p-5 space-y-3" id="practice-q-${q.id}">
+                    <!-- Question Header -->
+                    <div class="flex items-start justify-between gap-3">
+                        <div class="flex items-center gap-3">
+                            <span class="bg-blue-600 text-white font-black text-xs w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0">${index + 1}</span>
+                            <span class="text-xs font-medium text-slate-500 dark:text-slate-400">${q.exam_title || 'Practice Question'}</span>
+                        </div>
+                        <span class="text-[10px] font-bold text-slate-400">${q.correct_answer ? '✅ Has answer' : '📝 Multiple choice'}</span>
+                    </div>
+
+                    <!-- Question Text -->
+                    <div class="text-sm font-medium text-slate-800 dark:text-white">${escapeHtml(q.question_text)}</div>
+
+                    <!-- Options -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        ${options.map(opt => `
+                            <label class="flex items-start gap-3 p-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl cursor-pointer hover:border-blue-500 dark:hover:border-blue-500 transition group">
+                                <input type="radio" name="q_${q.id}" value="${opt.label}" 
+                                       onchange="selectPracticeAnswer(${q.id}, '${opt.label}')"
+                                       class="mt-0.5 w-4 h-4 text-blue-600 focus:ring-blue-500">
+                                <div class="text-xs">
+                                    <span class="font-bold text-blue-600 dark:text-blue-400">${opt.label}.</span>
+                                    <span class="text-slate-700 dark:text-slate-300">${escapeHtml(opt.text)}</span>
+                                </div>
+                            </label>
+                        `).join('')}
+                    </div>
+
+                    <!-- Explanation (hidden until answered) -->
+                    <div id="practice-exp-${q.id}" class="hidden p-3 bg-indigo-50 dark:bg-indigo-950/20 border border-indigo-200 dark:border-indigo-900 rounded-xl text-xs text-slate-700 dark:text-slate-300">
+                        <span class="font-bold text-indigo-600 dark:text-indigo-400">💡 Explanation:</span>
+                        <span>${escapeHtml(q.explanation || 'No explanation provided.')}</span>
+                    </div>
+                </div>
+            `;
+        });
+    }
+
+    // ============================================
+    // PRACTICE ANSWER SELECTION
+    // ============================================
+    function selectPracticeAnswer(questionId, selected) {
+        practiceAnswers[questionId] = selected;
+        
+        // Find the question
+        const q = practiceQuestions.find(q => q.id === questionId);
+        if (!q) return;
+
+        // Show explanation
+        const expDiv = document.getElementById(`practice-exp-${questionId}`);
+        if (expDiv) {
+            expDiv.classList.remove('hidden');
+            
+            // Highlight correct/incorrect
+            const options = document.querySelectorAll(`#practice-q-${questionId} .border`);
+            options.forEach(opt => {
+                const radio = opt.querySelector('input[type="radio"]');
+                if (radio) {
+                    const label = radio.value;
+                    if (label === q.correct_answer) {
+                        opt.classList.add('border-emerald-500', 'bg-emerald-50', 'dark:bg-emerald-950/20');
+                        opt.classList.remove('border-slate-200', 'dark:border-slate-800');
+                    } else if (label === selected && selected !== q.correct_answer) {
+                        opt.classList.add('border-rose-500', 'bg-rose-50', 'dark:bg-rose-950/20');
+                        opt.classList.remove('border-slate-200', 'dark:border-slate-800');
+                    }
+                }
+            });
+        }
+
+        // Update stats
+        updatePracticeStats();
+    }
+
+    // ============================================
+    // UPDATE PRACTICE STATS
+    // ============================================
+    function updatePracticeStats() {
+        const total = practiceQuestions.length;
+        const attempted = Object.keys(practiceAnswers).length;
+        
+        let correct = 0;
+        practiceQuestions.forEach(q => {
+            if (practiceAnswers[q.id] && practiceAnswers[q.id] === q.correct_answer) {
+                correct++;
+            }
+        });
+
+        const accuracy = attempted > 0 ? Math.round((correct / attempted) * 100) : 0;
+
+        document.getElementById('practice-attempted').textContent = attempted;
+        document.getElementById('practice-correct').textContent = correct;
+        document.getElementById('practice-accuracy').textContent = accuracy + '%';
+    }
+
+    // ============================================
+    // SUBMIT PRACTICE RESULTS
+    // ============================================
+    function submitPracticeResults() {
+        const total = practiceQuestions.length;
+        const attempted = Object.keys(practiceAnswers).length;
+        
+        if (attempted === 0) {
+            alert('Please answer at least one question before submitting.');
+            return;
+        }
+
+        let correct = 0;
+        let incorrect = 0;
+        practiceQuestions.forEach(q => {
+            if (practiceAnswers[q.id]) {
+                if (practiceAnswers[q.id] === q.correct_answer) {
+                    correct++;
+                } else {
+                    incorrect++;
+                }
+            }
+        });
+
+        const accuracy = Math.round((correct / attempted) * 100);
+
+        const message = `
+📊 Practice Results:
+━━━━━━━━━━━━━━━━━━━
+📝 Total Questions: ${total}
+✅ Attempted: ${attempted}
+🎯 Correct: ${correct}
+❌ Incorrect: ${incorrect}
+📈 Accuracy: ${accuracy}%
+━━━━━━━━━━━━━━━━━━━
+${accuracy >= 80 ? '🌟 Excellent work! Keep it up!' : 
+  accuracy >= 60 ? '💪 Good effort! Review the explanations.' : 
+  '📚 Keep practicing! Review the material and try again.'}
+        `;
+
+        alert(message);
+        closePracticeModal();
+    }
+
+    // ============================================
+    // CLOSE PRACTICE MODAL
+    // ============================================
+    function closePracticeModal() {
+        document.getElementById('practice-modal').classList.add('hidden');
+        practiceQuestions = [];
+        practiceAnswers = {};
+        currentPracticeType = null;
+        currentPracticeId = null;
+    }
+
+    // ============================================
+    // UTILITY FUNCTIONS
+    // ============================================
+    function escapeHtml(text) {
+        if (!text) return '';
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+
+    console.log('📚 Chapter practice module initialized!');
+</script>
+
+{% endblock %}

@@ -1,0 +1,918 @@
+{
+  "grade": 10,
+  "subject": "English",
+  "curriculum": "Ethiopian New Curriculum",
+  "units": [
+    {
+      "unit_number": 1,
+      "unit_title": "Population Growth",
+      "sections": [
+        {
+          "section_number": "1.1",
+          "section_title": "Listening: Population Explosion",
+          "topics": [
+            {
+              "topic_title": "Listening",
+              "subtopics": [
+                "Listening for gist",
+                "Listening for specific information",
+                "Population explosion",
+                "Population challenges"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.2",
+          "section_title": "Speaking",
+          "topics": [
+            {
+              "topic_title": "Speaking",
+              "subtopics": [
+                "Asking for opinions",
+                "Expressing opinions",
+                "Discussion"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.3",
+          "section_title": "Reading: Population Growth",
+          "topics": [
+            {
+              "topic_title": "Reading",
+              "subtopics": [
+                "Skimming",
+                "Scanning",
+                "Intensive reading",
+                "Main ideas",
+                "Supporting details"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Simple present tense",
+                "Degrees of comparison",
+                "Sentence construction"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.5",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Completing paragraphs",
+                "Paragraph development",
+                "Discourse markers",
+                "Punctuation"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.6",
+          "section_title": "Vocabulary and Pronunciation",
+          "topics": [
+            {
+              "topic_title": "Vocabulary and Pronunciation",
+              "subtopics": [
+                "Word formation with prefixes",
+                "Phrasal verbs with fall",
+                "Short vowels",
+                "Long vowels",
+                "Diphthongs"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "unit_title": "Travel Behaviors",
+      "sections": [
+        {
+          "section_number": "2.1",
+          "section_title": "Listening",
+          "topics": [
+            {
+              "topic_title": "Listening",
+              "subtopics": [
+                "Travel experiences",
+                "Listening for information",
+                "Understanding travel conversations"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.2",
+          "section_title": "Speaking",
+          "topics": [
+            {
+              "topic_title": "Speaking",
+              "subtopics": [
+                "Talking about travel",
+                "Giving information",
+                "Travel conversations"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.3",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Reading",
+              "subtopics": [
+                "Travel texts",
+                "Reading strategies",
+                "Main ideas and details"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Modal verbs",
+                "Phrasal verbs",
+                "Simple past tense",
+                "Types of sentences"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.5",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Summary writing",
+                "Describing people",
+                "Punctuation: comma, semicolon and colon"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.6",
+          "section_title": "Vocabulary and Pronunciation",
+          "topics": [
+            {
+              "topic_title": "Vocabulary and Pronunciation",
+              "subtopics": [
+                "Travel vocabulary",
+                "Diphthongs",
+                "Pure vowels",
+                "Consonants"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "unit_title": "Punctuality",
+      "sections": [
+        {
+          "section_number": "3.1",
+          "section_title": "Listening",
+          "topics": [
+            {
+              "topic_title": "Listening",
+              "subtopics": [
+                "Listening for main ideas",
+                "Listening for details",
+                "Time and punctuality"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.2",
+          "section_title": "Speaking",
+          "topics": [
+            {
+              "topic_title": "Speaking",
+              "subtopics": [
+                "Discussing punctuality",
+                "Giving opinions",
+                "Making suggestions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.3",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Reading",
+              "subtopics": [
+                "Reading for gist",
+                "Scanning",
+                "Understanding punctuality texts"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Adverbs of frequency",
+                "Time expressions",
+                "Tense review"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.5",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Paragraph organization",
+                "Writing about punctuality",
+                "Connecting ideas"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.6",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Vocabulary",
+              "subtopics": [
+                "Time vocabulary",
+                "Punctuality expressions",
+                "Contextual meaning"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "unit_title": "Tourist Attractions",
+      "sections": [
+        {
+          "section_number": "4.1",
+          "section_title": "Listening",
+          "topics": [
+            {
+              "topic_title": "Listening",
+              "subtopics": [
+                "Tourist information",
+                "Listening for specific details",
+                "Following directions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.2",
+          "section_title": "Speaking",
+          "topics": [
+            {
+              "topic_title": "Speaking",
+              "subtopics": [
+                "Describing tourist attractions",
+                "Giving directions",
+                "Providing tourist information"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.3",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Reading",
+              "subtopics": [
+                "Tourism texts",
+                "Identifying facts",
+                "Reading for details"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.4",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Tourism Vocabulary",
+              "subtopics": [
+                "Tourist attractions",
+                "Travel expressions",
+                "Descriptive vocabulary"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.5",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Descriptive structures",
+                "Prepositions of place",
+                "Giving directions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.6",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Describing places",
+                "Tourist brochures",
+                "Informative paragraphs"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "unit_title": "Honey Processing",
+      "sections": [
+        {
+          "section_number": "5.1",
+          "section_title": "Listening: Honey Processing",
+          "topics": [
+            {
+              "topic_title": "Listening",
+              "subtopics": [
+                "Listening about honey processing",
+                "Following a process",
+                "Identifying details"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.2",
+          "section_title": "Speaking",
+          "topics": [
+            {
+              "topic_title": "Speaking",
+              "subtopics": [
+                "Describing processes",
+                "Agricultural discussion",
+                "Presenting information"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.3",
+          "section_title": "Reading: The Importance of Honey",
+          "topics": [
+            {
+              "topic_title": "Reading",
+              "subtopics": [
+                "Importance of honey",
+                "Reading for information",
+                "Main ideas and supporting details"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.4",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Vocabulary",
+              "subtopics": [
+                "Honey and beekeeping terms",
+                "Agricultural vocabulary",
+                "Context clues"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.5",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Process language",
+                "Passive constructions",
+                "Sequencing expressions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.6",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Report writing",
+                "Process description",
+                "Organizing information"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "unit_title": "Migration",
+      "sections": [
+        {
+          "section_number": "6.1",
+          "section_title": "Listening",
+          "topics": [
+            {
+              "topic_title": "Listening",
+              "subtopics": [
+                "Migration information",
+                "Listening for causes and effects",
+                "Interpreting information"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.2",
+          "section_title": "Speaking",
+          "topics": [
+            {
+              "topic_title": "Speaking",
+              "subtopics": [
+                "Discussing migration",
+                "Debate",
+                "Expressing viewpoints"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.3",
+          "section_title": "Reading: Migration in Ethiopia",
+          "topics": [
+            {
+              "topic_title": "Reading",
+              "subtopics": [
+                "Migration in Ethiopia",
+                "Reading graphs and information",
+                "Causes and effects"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.4",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Migration Vocabulary",
+              "subtopics": [
+                "Migration terms",
+                "Contextual meaning",
+                "Word formation"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.5",
+          "section_title": "Grammar: Tense",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Tenses",
+                "Sequencing events",
+                "Passive voice"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.6",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Report writing",
+                "Describing events",
+                "Cause-and-effect writing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 7,
+      "unit_title": "Branding Ethiopia and National Identity",
+      "sections": [
+        {
+          "section_number": "7.1",
+          "section_title": "Listening",
+          "topics": [
+            {
+              "topic_title": "Listening",
+              "subtopics": [
+                "National identity",
+                "Listening for ideas",
+                "Identifying supporting information"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.2",
+          "section_title": "Speaking",
+          "topics": [
+            {
+              "topic_title": "Speaking",
+              "subtopics": [
+                "Discussing identity",
+                "Presentations",
+                "Expressing viewpoints"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.3",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Reading",
+              "subtopics": [
+                "Branding Ethiopia",
+                "National identity texts",
+                "Critical reading"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.4",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Vocabulary",
+              "subtopics": [
+                "Identity vocabulary",
+                "Branding terms",
+                "Word meaning in context"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.5",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Grammar in context",
+                "Sentence structures",
+                "Connectors"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.6",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Reflective writing",
+                "Informative writing",
+                "Organizing ideas"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 8,
+      "unit_title": "The Healing Power of Plants",
+      "sections": [
+        {
+          "section_number": "8.1",
+          "section_title": "Listening",
+          "topics": [
+            {
+              "topic_title": "Listening",
+              "subtopics": [
+                "Traditional medicine",
+                "Listening for specific information",
+                "Radio interview comprehension"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "8.2",
+          "section_title": "Speaking",
+          "topics": [
+            {
+              "topic_title": "Speaking",
+              "subtopics": [
+                "Discussing medicinal plants",
+                "Giving information",
+                "Expressing opinions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "8.3",
+          "section_title": "Reading: Traditional Medicine and Moringa",
+          "topics": [
+            {
+              "topic_title": "Reading",
+              "subtopics": [
+                "Traditional medicine",
+                "Moringa",
+                "Descriptive reading",
+                "Scientific and cultural information"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "8.4",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Vocabulary",
+              "subtopics": [
+                "Medicinal plant vocabulary",
+                "Health terms",
+                "Contextual meaning"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "8.5",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Modal verbs",
+                "Expressing possibility",
+                "Expressing obligation",
+                "Advice"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "8.6",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Informative essays",
+                "Descriptive writing",
+                "Organizing factual information"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 9,
+      "unit_title": "Multilingualism",
+      "sections": [
+        {
+          "section_number": "9.1",
+          "section_title": "Listening",
+          "topics": [
+            {
+              "topic_title": "Listening",
+              "subtopics": [
+                "Multilingualism",
+                "Language diversity",
+                "Listening for key ideas"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "9.2",
+          "section_title": "Speaking",
+          "topics": [
+            {
+              "topic_title": "Speaking",
+              "subtopics": [
+                "Public speaking",
+                "Discussing language diversity",
+                "Expressing viewpoints"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "9.3",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Reading",
+              "subtopics": [
+                "Multilingualism texts",
+                "Language diversity",
+                "Reading comprehension"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "9.4",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Vocabulary",
+              "subtopics": [
+                "Language-related vocabulary",
+                "Contextual meaning",
+                "Word relationships"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "9.5",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Comparative forms",
+                "Superlative forms",
+                "Comparison structures"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "9.6",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Letter writing",
+                "Public communication",
+                "Organizing arguments"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 10,
+      "unit_title": "Digital vs Satellite Television",
+      "sections": [
+        {
+          "section_number": "10.1",
+          "section_title": "Listening",
+          "topics": [
+            {
+              "topic_title": "Listening",
+              "subtopics": [
+                "Television technologies",
+                "Listening for comparison",
+                "Identifying advantages and disadvantages"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "10.2",
+          "section_title": "Speaking",
+          "topics": [
+            {
+              "topic_title": "Speaking",
+              "subtopics": [
+                "Comparing technologies",
+                "Expressing opinions",
+                "Discussion and presentation"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "10.3",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Reading",
+              "subtopics": [
+                "Digital television",
+                "Satellite television",
+                "Comparison texts",
+                "Critical reading"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "10.4",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Technology Vocabulary",
+              "subtopics": [
+                "Digital media terms",
+                "Television technology",
+                "Contextual vocabulary"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "10.5",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Relative clauses",
+                "Defining relative clauses",
+                "Non-defining relative clauses"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "10.6",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Opinion writing",
+                "Comparison writing",
+                "Informative writing"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

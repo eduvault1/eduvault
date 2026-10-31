@@ -1,0 +1,598 @@
+{
+  "grade": 12,
+  "subject": "Biology",
+  "curriculum": "Ethiopian New Curriculum",
+  "units": [
+    {
+      "unit_number": 1,
+      "unit_title": "Application of Biology in Day-to-Day Life",
+      "sections": [
+        {
+          "section_number": "1.1",
+          "section_title": "Application of Biology in Conservation of Natural Resources",
+          "topics": [
+            {
+              "topic_title": "Conservation Biology",
+              "subtopics": [
+                "Natural resources",
+                "Renewable and non-renewable resources",
+                "Conservation of biodiversity",
+                "Conservation of species and habitats"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.2",
+          "section_title": "Application of Biology in Food and Nutrition Security",
+          "topics": [
+            {
+              "topic_title": "Food and Nutrition",
+              "subtopics": [
+                "Food security",
+                "Nutrition",
+                "Food production",
+                "Food preservation",
+                "Biological approaches to food security"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.3",
+          "section_title": "Application of Biology in School Gardening",
+          "topics": [
+            {
+              "topic_title": "School Gardening",
+              "subtopics": [
+                "School gardens",
+                "Crop production",
+                "Soil management",
+                "Plant propagation",
+                "Nutrition and school gardens"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.4",
+          "section_title": "Application of Biology in Biotechnology",
+          "topics": [
+            {
+              "topic_title": "Biotechnology",
+              "subtopics": [
+                "Fermentation",
+                "Traditional biotechnology",
+                "Injera production",
+                "Tella production",
+                "Dairy products",
+                "Bread production"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.5",
+          "section_title": "Application of Biology in Genetic Engineering",
+          "topics": [
+            {
+              "topic_title": "Genetic Engineering",
+              "subtopics": [
+                "Genetic engineering",
+                "Transgenic organisms",
+                "Genetically modified crops",
+                "Genetically modified animals",
+                "Applications of genetic engineering"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.6",
+          "section_title": "Application of Biology in Tissue Culture",
+          "topics": [
+            {
+              "topic_title": "Tissue Culture",
+              "subtopics": [
+                "Plant tissue culture",
+                "Micropropagation",
+                "Applications of tissue culture",
+                "Advantages of tissue culture"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.7",
+          "section_title": "Application of Biology in Health",
+          "topics": [
+            {
+              "topic_title": "Biology and Health",
+              "subtopics": [
+                "Insulin",
+                "Antibiotics",
+                "Vaccines",
+                "Biosensors",
+                "Biological applications in medicine"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "unit_title": "Microorganisms",
+      "sections": [
+        {
+          "section_number": "2.1",
+          "section_title": "Overview of Microorganisms",
+          "topics": [
+            {
+              "topic_title": "Microorganisms",
+              "subtopics": [
+                "Characteristics of microorganisms",
+                "Diversity of microorganisms",
+                "Classification of microorganisms",
+                "Microscopic organisms"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.2",
+          "section_title": "Bacteria",
+          "topics": [
+            {
+              "topic_title": "Bacteria",
+              "subtopics": [
+                "Bacterial structure",
+                "Bacterial classification",
+                "Bacterial reproduction",
+                "Bacterial nutrition",
+                "Economic importance of bacteria"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.3",
+          "section_title": "Archaea",
+          "topics": [
+            {
+              "topic_title": "Archaea",
+              "subtopics": [
+                "Characteristics of archaea",
+                "Archaeal cell structure",
+                "Extremophiles",
+                "Ecological importance of archaea"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.4",
+          "section_title": "Fungi",
+          "topics": [
+            {
+              "topic_title": "Fungi",
+              "subtopics": [
+                "Fungal structure",
+                "Classification of fungi",
+                "Fungal reproduction",
+                "Economic importance of fungi",
+                "Fungi in food production"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.5",
+          "section_title": "Protozoa",
+          "topics": [
+            {
+              "topic_title": "Protozoa",
+              "subtopics": [
+                "Characteristics of protozoa",
+                "Protozoan diversity",
+                "Protozoan nutrition",
+                "Protozoan diseases"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.6",
+          "section_title": "Viruses",
+          "topics": [
+            {
+              "topic_title": "Viruses",
+              "subtopics": [
+                "Viral structure",
+                "Viral replication",
+                "Types of viruses",
+                "Viral diseases",
+                "Virus prevention and control"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.7",
+          "section_title": "Normal Microbiota and Uses of Microorganisms",
+          "topics": [
+            {
+              "topic_title": "Microbiota and Uses",
+              "subtopics": [
+                "Normal microbiota",
+                "Human microbiome",
+                "Industrial microorganisms",
+                "Environmental applications",
+                "Medical applications",
+                "Traditional food and drink"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "unit_title": "Energy Transformation",
+      "sections": [
+        {
+          "section_number": "3.1",
+          "section_title": "Cell Communication",
+          "topics": [
+            {
+              "topic_title": "Cell Communication",
+              "subtopics": [
+                "Cell signaling",
+                "Cell receptors",
+                "Signal transduction",
+                "Cellular responses"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.2",
+          "section_title": "Metabolism",
+          "topics": [
+            {
+              "topic_title": "Cellular Metabolism",
+              "subtopics": [
+                "Metabolism",
+                "Anabolism",
+                "Catabolism",
+                "ATP",
+                "Energy transfer"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.3",
+          "section_title": "Photosynthesis",
+          "topics": [
+            {
+              "topic_title": "Photosynthesis",
+              "subtopics": [
+                "Chloroplast structure",
+                "Photosynthetic pigments",
+                "Light-dependent reactions",
+                "Light-independent reactions",
+                "Carbon fixation",
+                "Factors affecting photosynthesis"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.4",
+          "section_title": "Cellular Respiration",
+          "topics": [
+            {
+              "topic_title": "Cellular Respiration",
+              "subtopics": [
+                "Glycolysis",
+                "Krebs cycle",
+                "Electron transport chain",
+                "Chemiosmosis",
+                "ATP production",
+                "Aerobic respiration"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.5",
+          "section_title": "Fermentation and Anaerobic Respiration",
+          "topics": [
+            {
+              "topic_title": "Anaerobic Respiration",
+              "subtopics": [
+                "Fermentation",
+                "Alcoholic fermentation",
+                "Lactic acid fermentation",
+                "Anaerobic respiration",
+                "Applications of fermentation"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "unit_title": "Evolution",
+      "sections": [
+        {
+          "section_number": "4.1",
+          "section_title": "Origin of Life",
+          "topics": [
+            {
+              "topic_title": "Origin of Life",
+              "subtopics": [
+                "Origin of life",
+                "Early Earth",
+                "Chemical evolution",
+                "Miller-Urey experiment",
+                "Origin of first cells"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.2",
+          "section_title": "Theories of Evolution",
+          "topics": [
+            {
+              "topic_title": "Evolutionary Theories",
+              "subtopics": [
+                "Lamarck's theory",
+                "Darwin's theory",
+                "Natural selection",
+                "Modern evolutionary theory"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.3",
+          "section_title": "Evidence for Evolution",
+          "topics": [
+            {
+              "topic_title": "Evidence of Evolution",
+              "subtopics": [
+                "Fossil evidence",
+                "Comparative anatomy",
+                "Comparative embryology",
+                "Molecular evidence",
+                "Biogeography"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.4",
+          "section_title": "Variation and Natural Selection",
+          "topics": [
+            {
+              "topic_title": "Evolutionary Processes",
+              "subtopics": [
+                "Variation",
+                "Mutation",
+                "Natural selection",
+                "Genetic drift",
+                "Gene flow",
+                "Reproductive isolation",
+                "Speciation"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.5",
+          "section_title": "Human Evolution",
+          "topics": [
+            {
+              "topic_title": "Human Evolution",
+              "subtopics": [
+                "Human ancestry",
+                "Hominins",
+                "Australopithecus",
+                "Homo species",
+                "Human evolution in Ethiopia",
+                "Lucy"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "unit_title": "The Human Body Systems",
+      "sections": [
+        {
+          "section_number": "5.1",
+          "section_title": "Nervous System",
+          "topics": [
+            {
+              "topic_title": "Nervous System",
+              "subtopics": [
+                "Neurons",
+                "Nerve impulses",
+                "Synapses",
+                "Central nervous system",
+                "Peripheral nervous system",
+                "Reflex action",
+                "Drug effects"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.2",
+          "section_title": "Endocrine System",
+          "topics": [
+            {
+              "topic_title": "Endocrine System",
+              "subtopics": [
+                "Hormones",
+                "Endocrine glands",
+                "Pituitary gland",
+                "Thyroid gland",
+                "Adrenal glands",
+                "Pancreas",
+                "Hormonal regulation"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.3",
+          "section_title": "Homeostasis",
+          "topics": [
+            {
+              "topic_title": "Homeostasis",
+              "subtopics": [
+                "Homeostasis",
+                "Negative feedback",
+                "Positive feedback",
+                "Thermoregulation",
+                "Osmoregulation",
+                "Blood glucose regulation"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.4",
+          "section_title": "Sensory Organs",
+          "topics": [
+            {
+              "topic_title": "Sensory Systems",
+              "subtopics": [
+                "Sensory receptors",
+                "Eye",
+                "Vision",
+                "Ear",
+                "Hearing",
+                "Balance",
+                "Smell",
+                "Taste",
+                "Touch"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.5",
+          "section_title": "Coordination of Human Body Systems",
+          "topics": [
+            {
+              "topic_title": "Body Coordination",
+              "subtopics": [
+                "Nervous coordination",
+                "Hormonal coordination",
+                "Integration of organ systems",
+                "Maintaining internal balance"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "unit_title": "Climate Change",
+      "sections": [
+        {
+          "section_number": "6.1",
+          "section_title": "Climate and Climate Change",
+          "topics": [
+            {
+              "topic_title": "Climate Change",
+              "subtopics": [
+                "Weather and climate",
+                "Climate change",
+                "Global warming",
+                "Greenhouse effect",
+                "Greenhouse gases"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.2",
+          "section_title": "Causes of Climate Change",
+          "topics": [
+            {
+              "topic_title": "Causes",
+              "subtopics": [
+                "Human activities",
+                "Fossil fuels",
+                "Deforestation",
+                "Agriculture",
+                "Industrial emissions",
+                "Natural causes"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.3",
+          "section_title": "Effects of Climate Change",
+          "topics": [
+            {
+              "topic_title": "Impacts of Climate Change",
+              "subtopics": [
+                "Biodiversity loss",
+                "Agricultural impacts",
+                "Human health",
+                "Water resources",
+                "Extreme weather",
+                "Natural disasters"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.4",
+          "section_title": "Climate Change Mitigation and Adaptation",
+          "topics": [
+            {
+              "topic_title": "Mitigation and Adaptation",
+              "subtopics": [
+                "Climate change mitigation",
+                "Climate adaptation",
+                "Renewable energy",
+                "Afforestation",
+                "Sustainable agriculture",
+                "Climate resilience"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.5",
+          "section_title": "Climate Change Responses in Ethiopia and Internationally",
+          "topics": [
+            {
+              "topic_title": "Climate Action",
+              "subtopics": [
+                "Ethiopian climate policies",
+                "Green Legacy initiative",
+                "International agreements",
+                "Climate conventions",
+                "Community participation"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

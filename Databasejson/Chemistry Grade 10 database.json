@@ -1,0 +1,1223 @@
+{
+  "grade": 10,
+  "subject": "Chemistry",
+  "curriculum": "Ethiopian New Curriculum",
+  "textbook": "Chemistry Student Textbook Grade 10",
+  "units": [
+    {
+      "unit_number": 1,
+      "unit_title": "Chemical Reactions and Stoichiometry",
+      "sections": [
+        {
+          "section_number": "1.1",
+          "section_title": "Introduction",
+          "page": 2,
+          "topics": [
+            {
+              "topic_title": "Chemical Reactions",
+              "subtopics": [
+                "Definition of chemical reaction",
+                "Examples of chemical reactions",
+                "Physical changes and chemical changes",
+                "Evidence of chemical reactions"
+              ]
+            },
+            {
+              "topic_title": "Reactants and Products",
+              "subtopics": [
+                "Reactants",
+                "Products",
+                "Chemical composition changes"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.2",
+          "section_title": "Chemical Equations",
+          "page": 3,
+          "topics": [
+            {
+              "topic_title": "Writing Chemical Equations",
+              "subtopics": [
+                "Word equations",
+                "Chemical equations",
+                "Reactant and product notation",
+                "State symbols"
+              ]
+            },
+            {
+              "topic_title": "Balancing Chemical Equations",
+              "subtopics": [
+                "Law of conservation of mass",
+                "Inspection method",
+                "Least Common Multiple method",
+                "Algebraic method",
+                "Coefficients and subscripts"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.3",
+          "section_title": "Types of Chemical Reactions",
+          "page": 11,
+          "topics": [
+            {
+              "topic_title": "Combination Reactions",
+              "subtopics": [
+                "Definition",
+                "General form",
+                "Examples"
+              ]
+            },
+            {
+              "topic_title": "Decomposition Reactions",
+              "subtopics": [
+                "Definition",
+                "General form",
+                "Examples"
+              ]
+            },
+            {
+              "topic_title": "Single Replacement Reactions",
+              "subtopics": [
+                "Definition",
+                "General form",
+                "Examples",
+                "Activity series concept"
+              ]
+            },
+            {
+              "topic_title": "Double Replacement Reactions",
+              "subtopics": [
+                "Definition",
+                "General form",
+                "Examples",
+                "Precipitation reactions",
+                "Neutralization reactions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.4",
+          "section_title": "Oxidation and Reduction Reactions",
+          "page": 20,
+          "topics": [
+            {
+              "topic_title": "Oxidation and Reduction",
+              "subtopics": [
+                "Definition of oxidation",
+                "Definition of reduction",
+                "Oxygen-based definition",
+                "Hydrogen-based definition",
+                "Electron-transfer definition"
+              ]
+            },
+            {
+              "topic_title": "Oxidizing and Reducing Agents",
+              "subtopics": [
+                "Oxidizing agent",
+                "Reducing agent",
+                "Identification of oxidized substance",
+                "Identification of reduced substance"
+              ]
+            },
+            {
+              "topic_title": "Oxidation Numbers",
+              "subtopics": [
+                "Oxidation state",
+                "Rules for assigning oxidation numbers",
+                "Oxidation number changes",
+                "Redox identification"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.5",
+          "section_title": "Molecular and Formula Masses, the Mole Concept and Chemical Formulas",
+          "page": 28,
+          "topics": [
+            {
+              "topic_title": "Molecular Mass and Formula Mass",
+              "subtopics": [
+                "Relative atomic mass",
+                "Molecular mass",
+                "Formula mass",
+                "Calculating molecular mass",
+                "Calculating formula mass"
+              ]
+            },
+            {
+              "topic_title": "Molar Mass",
+              "subtopics": [
+                "Definition of molar mass",
+                "Molar mass calculations",
+                "Molar mass and moles"
+              ]
+            },
+            {
+              "topic_title": "Mole Concept",
+              "subtopics": [
+                "Definition of mole",
+                "Avogadro constant",
+                "Number of particles",
+                "Moles and mass",
+                "Moles and gas volume at STP"
+              ]
+            },
+            {
+              "topic_title": "Chemical Formulas",
+              "subtopics": [
+                "Empirical formula",
+                "Molecular formula",
+                "Determining empirical formula",
+                "Determining molecular formula"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.6",
+          "section_title": "Stoichiometry",
+          "page": 34,
+          "topics": [
+            {
+              "topic_title": "Stoichiometric Relationships",
+              "subtopics": [
+                "Mole-mole calculations",
+                "Mass-mass calculations",
+                "Volume-volume calculations",
+                "Mass-volume calculations"
+              ]
+            },
+            {
+              "topic_title": "Limiting Reactant",
+              "subtopics": [
+                "Definition",
+                "Determining limiting reactant",
+                "Excess reactant"
+              ]
+            },
+            {
+              "topic_title": "Chemical Yield",
+              "subtopics": [
+                "Theoretical yield",
+                "Actual yield",
+                "Percentage yield"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "unit_title": "Solutions",
+      "sections": [
+        {
+          "section_number": "2.1",
+          "section_title": "Heterogeneous and Homogeneous Mixtures",
+          "page": 53,
+          "topics": [
+            {
+              "topic_title": "Mixtures",
+              "subtopics": [
+                "Definition of mixture",
+                "Homogeneous mixtures",
+                "Heterogeneous mixtures"
+              ]
+            },
+            {
+              "topic_title": "Suspensions and Colloids",
+              "subtopics": [
+                "Suspensions",
+                "Colloids",
+                "Solutions",
+                "Differences among solutions, colloids and suspensions"
+              ]
+            },
+            {
+              "topic_title": "Components of Solutions",
+              "subtopics": [
+                "Solute",
+                "Solvent",
+                "Solution",
+                "Types of solutions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.2",
+          "section_title": "The Solution Process",
+          "page": 59,
+          "topics": [
+            {
+              "topic_title": "Dissolution",
+              "subtopics": [
+                "Solution formation",
+                "Solute-solvent interactions",
+                "Dissolution process"
+              ]
+            },
+            {
+              "topic_title": "Solvation and Hydration",
+              "subtopics": [
+                "Solvation",
+                "Hydration",
+                "Energy changes during dissolution"
+              ]
+            },
+            {
+              "topic_title": "Factors Affecting Dissolution",
+              "subtopics": [
+                "Temperature",
+                "Stirring",
+                "Particle size",
+                "Nature of solute and solvent"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.3",
+          "section_title": "Solubility as an Equilibrium Process",
+          "page": 73,
+          "topics": [
+            {
+              "topic_title": "Solubility",
+              "subtopics": [
+                "Definition of solubility",
+                "Soluble and insoluble substances",
+                "Saturated solutions",
+                "Unsaturated solutions",
+                "Supersaturated solutions"
+              ]
+            },
+            {
+              "topic_title": "Factors Affecting Solubility",
+              "subtopics": [
+                "Temperature effect",
+                "Pressure effect on gases",
+                "Nature of solute and solvent"
+              ]
+            },
+            {
+              "topic_title": "Solubility Curves",
+              "subtopics": [
+                "Reading solubility curves",
+                "Using solubility data",
+                "Crystallization"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.4",
+          "section_title": "Ways of Expressing Concentration of Solution",
+          "page": 81,
+          "topics": [
+            {
+              "topic_title": "Concentration",
+              "subtopics": [
+                "Qualitative concentration",
+                "Quantitative concentration",
+                "Dilute solutions",
+                "Concentrated solutions"
+              ]
+            },
+            {
+              "topic_title": "Molarity",
+              "subtopics": [
+                "Definition of molarity",
+                "Molarity calculations",
+                "Moles and volume"
+              ]
+            },
+            {
+              "topic_title": "Molality",
+              "subtopics": [
+                "Definition of molality",
+                "Molality calculations"
+              ]
+            },
+            {
+              "topic_title": "Mass Percent",
+              "subtopics": [
+                "Mass percent of solute",
+                "Calculating mass percent"
+              ]
+            },
+            {
+              "topic_title": "Volume Percent",
+              "subtopics": [
+                "Volume percent",
+                "Calculating volume percent"
+              ]
+            },
+            {
+              "topic_title": "Parts Per Million",
+              "subtopics": [
+                "ppm definition",
+                "ppm calculations",
+                "Applications"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.5",
+          "section_title": "Preparation of Solutions",
+          "page": 94,
+          "topics": [
+            {
+              "topic_title": "Preparation from a Solid Solute",
+              "subtopics": [
+                "Required apparatus",
+                "Calculating required mass",
+                "Dissolving solute",
+                "Making up to volume"
+              ]
+            },
+            {
+              "topic_title": "Preparation by Dilution",
+              "subtopics": [
+                "Stock solution",
+                "Dilution equation",
+                "Serial dilution",
+                "Laboratory procedure"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.6",
+          "section_title": "Solution Stoichiometry",
+          "page": 98,
+          "topics": [
+            {
+              "topic_title": "Stoichiometry in Solution",
+              "subtopics": [
+                "Molarity relationships",
+                "Mole calculations in solution",
+                "Mass calculations in solution",
+                "Volume calculations in solution"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.7",
+          "section_title": "Describing Reactions in Solution",
+          "page": 101,
+          "topics": [
+            {
+              "topic_title": "Ionic Equations",
+              "subtopics": [
+                "Molecular equations",
+                "Complete ionic equations",
+                "Net ionic equations",
+                "Spectator ions"
+              ]
+            },
+            {
+              "topic_title": "Precipitation Reactions",
+              "subtopics": [
+                "Formation of precipitates",
+                "Solubility rules",
+                "Writing net ionic equations"
+              ]
+            },
+            {
+              "topic_title": "Acid-Base Reactions in Solution",
+              "subtopics": [
+                "Neutralization",
+                "Acid-base ionic equations"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "unit_title": "Important Inorganic Compounds",
+      "sections": [
+        {
+          "section_number": "3.1",
+          "section_title": "Introduction",
+          "page": 110,
+          "topics": [
+            {
+              "topic_title": "Inorganic Compounds",
+              "subtopics": [
+                "Definition",
+                "Classification",
+                "Oxides",
+                "Acids",
+                "Bases",
+                "Salts"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.2",
+          "section_title": "Oxides",
+          "page": 111,
+          "topics": [
+            {
+              "topic_title": "Acidic Oxides",
+              "subtopics": [
+                "Definition",
+                "Examples",
+                "Reactions with water",
+                "Reactions with bases"
+              ]
+            },
+            {
+              "topic_title": "Basic Oxides",
+              "subtopics": [
+                "Definition",
+                "Examples",
+                "Reactions with water",
+                "Reactions with acids"
+              ]
+            },
+            {
+              "topic_title": "Amphoteric Oxides",
+              "subtopics": [
+                "Definition",
+                "Examples",
+                "Acidic behavior",
+                "Basic behavior"
+              ]
+            },
+            {
+              "topic_title": "Neutral Oxides",
+              "subtopics": [
+                "Definition",
+                "Examples",
+                "Properties"
+              ]
+            },
+            {
+              "topic_title": "Peroxides",
+              "subtopics": [
+                "Definition",
+                "Examples",
+                "Properties",
+                "Reactions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.3",
+          "section_title": "Acids",
+          "page": 122,
+          "topics": [
+            {
+              "topic_title": "Arrhenius Concept of Acids",
+              "subtopics": [
+                "Definition of acid",
+                "Ionization in water",
+                "Hydrogen ions"
+              ]
+            },
+            {
+              "topic_title": "Properties and Reactions of Acids",
+              "subtopics": [
+                "Reaction with metals",
+                "Reaction with bases",
+                "Reaction with carbonates",
+                "Reaction with metal oxides",
+                "Indicators"
+              ]
+            },
+            {
+              "topic_title": "Strength and Concentration of Acids",
+              "subtopics": [
+                "Strong acids",
+                "Weak acids",
+                "Concentrated acids",
+                "Dilute acids"
+              ]
+            },
+            {
+              "topic_title": "Preparation of Acids",
+              "subtopics": [
+                "Laboratory preparation",
+                "Industrial preparation",
+                "Common acids"
+              ]
+            },
+            {
+              "topic_title": "pH Scale",
+              "subtopics": [
+                "Definition of pH",
+                "pH scale",
+                "Acidic solutions",
+                "Neutral solutions",
+                "Alkaline solutions",
+                "Indicators"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.4",
+          "section_title": "Bases",
+          "page": 140,
+          "topics": [
+            {
+              "topic_title": "Arrhenius Concept of Bases",
+              "subtopics": [
+                "Definition of base",
+                "Hydroxide ions",
+                "Dissociation in water"
+              ]
+            },
+            {
+              "topic_title": "Strength and Preparation of Bases",
+              "subtopics": [
+                "Strong bases",
+                "Weak bases",
+                "Preparation of bases",
+                "Soluble bases"
+              ]
+            },
+            {
+              "topic_title": "Uses of Bases",
+              "subtopics": [
+                "Household uses",
+                "Industrial uses",
+                "Agricultural uses",
+                "Common bases"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.5",
+          "section_title": "Salts",
+          "page": 148,
+          "topics": [
+            {
+              "topic_title": "Formation of Salts",
+              "subtopics": [
+                "Acid-base neutralization",
+                "Acid-metal reactions",
+                "Acid-carbonate reactions",
+                "Precipitation"
+              ]
+            },
+            {
+              "topic_title": "Classification of Salts",
+              "subtopics": [
+                "Normal salts",
+                "Acid salts",
+                "Basic salts"
+              ]
+            },
+            {
+              "topic_title": "Preparation of Salts",
+              "subtopics": [
+                "Preparation from acids and metals",
+                "Preparation from acids and bases",
+                "Preparation from acids and carbonates",
+                "Precipitation method"
+              ]
+            },
+            {
+              "topic_title": "Properties and Uses of Salts",
+              "subtopics": [
+                "Physical properties",
+                "Solubility",
+                "Uses of common salts"
+              ]
+            },
+            {
+              "topic_title": "Ion Tests",
+              "subtopics": [
+                "Testing cations",
+                "Testing anions",
+                "Common qualitative tests"
+              ]
+            },
+            {
+              "topic_title": "Plant Nutrients",
+              "subtopics": [
+                "Essential nutrients",
+                "Nitrogen compounds",
+                "Phosphorus compounds",
+                "Potassium compounds",
+                "Fertilizer salts"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "unit_title": "Energy Changes and Electrochemistry",
+      "sections": [
+        {
+          "section_number": "4.1",
+          "section_title": "Introduction",
+          "page": 167,
+          "topics": [
+            {
+              "topic_title": "Energy Changes in Chemical Reactions",
+              "subtopics": [
+                "Chemical energy",
+                "Energy transfer",
+                "Internal energy",
+                "System and surroundings",
+                "Exothermic reactions",
+                "Endothermic reactions"
+              ]
+            },
+            {
+              "topic_title": "Energy Diagrams",
+              "subtopics": [
+                "Energy profile",
+                "Reactants and products",
+                "Energy released",
+                "Energy absorbed"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.2",
+          "section_title": "Energy Changes in Electrochemistry",
+          "page": 174,
+          "topics": [
+            {
+              "topic_title": "Electrochemistry",
+              "subtopics": [
+                "Definition of electrochemistry",
+                "Chemical energy and electrical energy",
+                "Redox reactions in electrochemistry"
+              ]
+            },
+            {
+              "topic_title": "Electrochemical Energy",
+              "subtopics": [
+                "Energy conversion",
+                "Spontaneous reactions",
+                "Non-spontaneous reactions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.3",
+          "section_title": "Electrochemical Cells",
+          "page": 182,
+          "topics": [
+            {
+              "topic_title": "Electrochemical Cells",
+              "subtopics": [
+                "Definition",
+                "Electrodes",
+                "Electrolytes",
+                "Anode",
+                "Cathode",
+                "Electron flow"
+              ]
+            },
+            {
+              "topic_title": "Voltaic/Galvanic Cells",
+              "subtopics": [
+                "Chemical energy to electrical energy",
+                "Oxidation at anode",
+                "Reduction at cathode",
+                "Cell potential"
+              ]
+            },
+            {
+              "topic_title": "Types of Cells",
+              "subtopics": [
+                "Primary cells",
+                "Secondary cells",
+                "Fuel cells",
+                "Common examples"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.4",
+          "section_title": "Electrolysis",
+          "page": 187,
+          "topics": [
+            {
+              "topic_title": "Electrolytic Cells",
+              "subtopics": [
+                "Definition",
+                "Electrical energy to chemical energy",
+                "Electrodes",
+                "Electrolytes"
+              ]
+            },
+            {
+              "topic_title": "Electrolysis",
+              "subtopics": [
+                "Electrolysis of molten electrolytes",
+                "Oxidation half-reaction",
+                "Reduction half-reaction",
+                "Overall reaction"
+              ]
+            },
+            {
+              "topic_title": "Applications of Electrolysis",
+              "subtopics": [
+                "Electroplating",
+                "Extraction of metals",
+                "Purification of metals",
+                "Industrial applications"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "unit_title": "Metals and Nonmetals",
+      "sections": [
+        {
+          "section_number": "5.1",
+          "section_title": "Introduction",
+          "page": 199,
+          "topics": [
+            {
+              "topic_title": "Metals and Nonmetals",
+              "subtopics": [
+                "Classification of elements",
+                "Occurrence in nature",
+                "Minerals",
+                "Ores",
+                "Metallic minerals",
+                "Nonmetallic minerals"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.2",
+          "section_title": "General Properties of Metals and Production of Some Metals",
+          "page": 200,
+          "topics": [
+            {
+              "topic_title": "Physical Properties of Metals",
+              "subtopics": [
+                "Lustre",
+                "Malleability",
+                "Ductility",
+                "Conductivity",
+                "Density",
+                "Melting and boiling points",
+                "Sonority"
+              ]
+            },
+            {
+              "topic_title": "Chemical Properties of Metals",
+              "subtopics": [
+                "Reaction with oxygen",
+                "Reaction with water",
+                "Reaction with acids",
+                "Displacement reactions",
+                "Reactivity"
+              ]
+            },
+            {
+              "topic_title": "Extraction of Metals",
+              "subtopics": [
+                "Metallurgy",
+                "Concentration of ores",
+                "Ore dressing",
+                "Roasting",
+                "Calcination",
+                "Reduction",
+                "Electrolytic reduction",
+                "Purification"
+              ]
+            },
+            {
+              "topic_title": "Alloys",
+              "subtopics": [
+                "Definition of alloy",
+                "Formation of alloys",
+                "Properties of alloys",
+                "Examples of alloys",
+                "Carat and composition of gold alloys"
+              ]
+            },
+            {
+              "topic_title": "Production of Aluminum",
+              "subtopics": [
+                "Occurrence of aluminum",
+                "Bauxite",
+                "Extraction",
+                "Electrolysis",
+                "Uses of aluminum"
+              ]
+            },
+            {
+              "topic_title": "Production of Iron",
+              "subtopics": [
+                "Occurrence of iron",
+                "Iron ores",
+                "Blast furnace",
+                "Reduction of iron oxides",
+                "Pig iron",
+                "Uses of iron"
+              ]
+            },
+            {
+              "topic_title": "Production of Copper",
+              "subtopics": [
+                "Occurrence of copper",
+                "Copper ores",
+                "Extraction",
+                "Purification",
+                "Uses of copper"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.3",
+          "section_title": "Production of Some Important Nonmetals",
+          "page": 218,
+          "topics": [
+            {
+              "topic_title": "General Properties of Nonmetals",
+              "subtopics": [
+                "Physical properties",
+                "Chemical properties",
+                "Electrical conductivity",
+                "Melting and boiling points"
+              ]
+            },
+            {
+              "topic_title": "Nitrogen",
+              "subtopics": [
+                "Occurrence",
+                "Extraction",
+                "Properties",
+                "Uses"
+              ]
+            },
+            {
+              "topic_title": "Phosphorus",
+              "subtopics": [
+                "Occurrence",
+                "Extraction",
+                "Properties",
+                "Uses"
+              ]
+            },
+            {
+              "topic_title": "Oxygen",
+              "subtopics": [
+                "Occurrence",
+                "Preparation",
+                "Properties",
+                "Uses"
+              ]
+            },
+            {
+              "topic_title": "Sulfur",
+              "subtopics": [
+                "Occurrence",
+                "Extraction",
+                "Properties",
+                "Uses"
+              ]
+            },
+            {
+              "topic_title": "Chlorine",
+              "subtopics": [
+                "Occurrence",
+                "Preparation",
+                "Properties",
+                "Uses"
+              ]
+            },
+            {
+              "topic_title": "Important Nonmetal Compounds",
+              "subtopics": [
+                "Carbon dioxide",
+                "Sodium carbonate",
+                "Ammonia",
+                "Nitric acid",
+                "Phosphoric acid",
+                "Calcium phosphate",
+                "Sulfur dioxide",
+                "Sulfuric acid"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "unit_title": "Hydrocarbons and Their Natural Sources",
+      "sections": [
+        {
+          "section_number": "6.1",
+          "section_title": "Introduction",
+          "page": 235,
+          "topics": [
+            {
+              "topic_title": "Hydrocarbons",
+              "subtopics": [
+                "Definition",
+                "Composition",
+                "Classification",
+                "Saturated hydrocarbons",
+                "Unsaturated hydrocarbons",
+                "Aromatic hydrocarbons"
+              ]
+            },
+            {
+              "topic_title": "Organic Chemistry Basics",
+              "subtopics": [
+                "Carbon bonding",
+                "Carbon chains",
+                "Functional classification"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.2",
+          "section_title": "Saturated Hydrocarbons: Alkanes (CₙH₂ₙ₊₂)",
+          "page": 240,
+          "topics": [
+            {
+              "topic_title": "Alkanes",
+              "subtopics": [
+                "Definition",
+                "General formula",
+                "Homologous series",
+                "Structural formulas",
+                "Condensed formulas"
+              ]
+            },
+            {
+              "topic_title": "Nomenclature of Alkanes",
+              "subtopics": [
+                "IUPAC naming",
+                "Straight-chain alkanes",
+                "Branched-chain alkanes",
+                "Prefixes",
+                "Numbering carbon chains"
+              ]
+            },
+            {
+              "topic_title": "Isomerism in Alkanes",
+              "subtopics": [
+                "Structural isomerism",
+                "Chain isomerism",
+                "Drawing isomers",
+                "Naming isomers"
+              ]
+            },
+            {
+              "topic_title": "Physical Properties of Alkanes",
+              "subtopics": [
+                "Boiling points",
+                "Melting points",
+                "Solubility",
+                "Density",
+                "State of matter"
+              ]
+            },
+            {
+              "topic_title": "Chemical Properties of Alkanes",
+              "subtopics": [
+                "Combustion",
+                "Complete combustion",
+                "Incomplete combustion",
+                "Substitution reactions",
+                "Halogenation"
+              ]
+            },
+            {
+              "topic_title": "Uses of Alkanes",
+              "subtopics": [
+                "Fuels",
+                "Cooking gas",
+                "Heating",
+                "Petroleum products",
+                "Industrial applications"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.3",
+          "section_title": "Unsaturated Hydrocarbons: Alkenes, Alkynes and Aromatic Hydrocarbons",
+          "page": 262,
+          "topics": [
+            {
+              "topic_title": "Alkenes",
+              "subtopics": [
+                "Definition",
+                "General formula",
+                "Double bond",
+                "Nomenclature",
+                "Structural formulas",
+                "Isomerism"
+              ]
+            },
+            {
+              "topic_title": "Physical Properties of Alkenes",
+              "subtopics": [
+                "Boiling points",
+                "Solubility",
+                "Physical state"
+              ]
+            },
+            {
+              "topic_title": "Chemical Properties of Alkenes",
+              "subtopics": [
+                "Combustion",
+                "Addition reactions",
+                "Hydrogenation",
+                "Halogenation",
+                "Hydration",
+                "Polymerization"
+              ]
+            },
+            {
+              "topic_title": "Uses of Alkenes",
+              "subtopics": [
+                "Polymer production",
+                "Ethanol production",
+                "Industrial uses"
+              ]
+            },
+            {
+              "topic_title": "Alkynes",
+              "subtopics": [
+                "Definition",
+                "General formula",
+                "Triple bond",
+                "Nomenclature",
+                "Structural formulas",
+                "Isomerism"
+              ]
+            },
+            {
+              "topic_title": "Physical and Chemical Properties of Alkynes",
+              "subtopics": [
+                "Physical properties",
+                "Combustion",
+                "Addition reactions",
+                "Hydrogenation",
+                "Halogenation"
+              ]
+            },
+            {
+              "topic_title": "Uses of Alkynes",
+              "subtopics": [
+                "Acetylene",
+                "Welding",
+                "Industrial applications"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.4",
+          "section_title": "Aromatic Hydrocarbons: Benzene",
+          "page": 285,
+          "topics": [
+            {
+              "topic_title": "Benzene",
+              "subtopics": [
+                "Structure of benzene",
+                "Molecular formula",
+                "Ring structure",
+                "Aromaticity"
+              ]
+            },
+            {
+              "topic_title": "Properties of Benzene",
+              "subtopics": [
+                "Physical properties",
+                "Chemical properties",
+                "Combustion",
+                "Substitution reactions"
+              ]
+            },
+            {
+              "topic_title": "Uses of Benzene",
+              "subtopics": [
+                "Industrial uses",
+                "Chemical manufacture",
+                "Solvent applications"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.5",
+          "section_title": "Natural Sources of Hydrocarbons",
+          "page": 290,
+          "topics": [
+            {
+              "topic_title": "Petroleum",
+              "subtopics": [
+                "Formation of petroleum",
+                "Composition",
+                "Crude oil",
+                "Fractional distillation",
+                "Petroleum fractions"
+              ]
+            },
+            {
+              "topic_title": "Natural Gas",
+              "subtopics": [
+                "Composition",
+                "Methane",
+                "Uses",
+                "Environmental effects"
+              ]
+            },
+            {
+              "topic_title": "Coal",
+              "subtopics": [
+                "Formation",
+                "Composition",
+                "Uses",
+                "Coal products"
+              ]
+            },
+            {
+              "topic_title": "Hydrocarbon Resources and Environment",
+              "subtopics": [
+                "Fossil fuels",
+                "Energy use",
+                "Air pollution",
+                "Greenhouse gases",
+                "Environmental impacts"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

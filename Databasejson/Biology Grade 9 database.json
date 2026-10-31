@@ -1,0 +1,851 @@
+{
+  "grade": 9,
+  "subject": "Biology",
+  "curriculum": "Ethiopian New Curriculum",
+  "publisher": "Ministry of Education of Ethiopia",
+  "textbook_year": 2023,
+  "units": [
+    {
+      "unit_number": 1,
+      "unit_title": "Introduction to Biology",
+      "sections": [
+        {
+          "section_number": "1.1",
+          "section_title": "Biology as a Science",
+          "topics": [
+            {
+              "topic_title": "Definition and Scope of Biology",
+              "subtopics": [
+                "Definition of biology",
+                "Branches of biology",
+                "Scope of biology",
+                "Importance of biology"
+              ]
+            },
+            {
+              "topic_title": "Biology and Other Sciences",
+              "subtopics": [
+                "Biology and chemistry",
+                "Biology and physics",
+                "Biology and mathematics",
+                "Biology and earth sciences",
+                "Interdisciplinary applications"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.2",
+          "section_title": "Scientific Methods and Processes",
+          "topics": [
+            {
+              "topic_title": "Scientific Method",
+              "subtopics": [
+                "Observation",
+                "Question",
+                "Hypothesis",
+                "Prediction",
+                "Experiment",
+                "Data collection",
+                "Data analysis",
+                "Conclusion",
+                "Communication of results"
+              ]
+            },
+            {
+              "topic_title": "Scientific Investigation",
+              "subtopics": [
+                "Variables",
+                "Independent variable",
+                "Dependent variable",
+                "Controlled variables",
+                "Control group",
+                "Experimental design",
+                "Replication"
+              ]
+            },
+            {
+              "topic_title": "Scientific Ethics and Safety",
+              "subtopics": [
+                "Responsible scientific practice",
+                "Laboratory safety",
+                "Ethical treatment of organisms",
+                "Recording and reporting data honestly"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.3",
+          "section_title": "Tools Used by Biologists",
+          "topics": [
+            {
+              "topic_title": "Laboratory Tools",
+              "subtopics": [
+                "Common biology laboratory apparatus",
+                "Uses of laboratory equipment",
+                "Safe handling of equipment"
+              ]
+            },
+            {
+              "topic_title": "Microscope",
+              "subtopics": [
+                "Parts of a light microscope",
+                "Functions of microscope parts",
+                "Magnification",
+                "Resolution",
+                "Microscope handling",
+                "Preparing specimens"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "unit_title": "Living Things and Their Classification",
+      "sections": [
+        {
+          "section_number": "2.1",
+          "section_title": "Characteristics of Living Things",
+          "topics": [
+            {
+              "topic_title": "Characteristics of Life",
+              "subtopics": [
+                "Cellular organization",
+                "Nutrition",
+                "Respiration",
+                "Growth",
+                "Movement",
+                "Response to stimuli",
+                "Excretion",
+                "Reproduction",
+                "Adaptation",
+                "Homeostasis"
+              ]
+            },
+            {
+              "topic_title": "Living and Non-living Things",
+              "subtopics": [
+                "Differences between living and non-living things",
+                "Viruses and the characteristics of life"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.2",
+          "section_title": "Classification of Living Organisms",
+          "topics": [
+            {
+              "topic_title": "Biological Classification",
+              "subtopics": [
+                "Need for classification",
+                "Taxonomy",
+                "Taxonomic categories",
+                "Species",
+                "Genus",
+                "Family",
+                "Order",
+                "Class",
+                "Phylum",
+                "Kingdom",
+                "Domain"
+              ]
+            },
+            {
+              "topic_title": "Binomial Nomenclature",
+              "subtopics": [
+                "Linnaean system",
+                "Scientific names",
+                "Genus name",
+                "Species name",
+                "Rules of binomial nomenclature"
+              ]
+            },
+            {
+              "topic_title": "Five-Kingdom Classification",
+              "subtopics": [
+                "Monera",
+                "Protista",
+                "Fungi",
+                "Plantae",
+                "Animalia",
+                "Basis of five-kingdom classification"
+              ]
+            },
+            {
+              "topic_title": "Taxonomy in Ethiopia",
+              "subtopics": [
+                "Ethiopian taxonomists",
+                "Biological collections",
+                "Local biodiversity studies",
+                "Importance of taxonomy in Ethiopia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "unit_title": "Cells",
+      "sections": [
+        {
+          "section_number": "3.1",
+          "section_title": "Cell Theory",
+          "topics": [
+            {
+              "topic_title": "Discovery of Cells",
+              "subtopics": [
+                "Robert Hooke",
+                "Leeuwenhoek",
+                "Development of microscopy",
+                "Cell observations"
+              ]
+            },
+            {
+              "topic_title": "Cell Theory",
+              "subtopics": [
+                "Cell theory statements",
+                "Cells as basic units of life",
+                "Cells from pre-existing cells",
+                "Modern cell theory"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.2",
+          "section_title": "Structure and Function of Cells",
+          "topics": [
+            {
+              "topic_title": "Prokaryotic and Eukaryotic Cells",
+              "subtopics": [
+                "Prokaryotic cells",
+                "Eukaryotic cells",
+                "Differences between prokaryotes and eukaryotes"
+              ]
+            },
+            {
+              "topic_title": "Cell Membrane",
+              "subtopics": [
+                "Structure",
+                "Phospholipid bilayer",
+                "Membrane proteins",
+                "Selective permeability",
+                "Functions"
+              ]
+            },
+            {
+              "topic_title": "Cytoplasm and Nucleus",
+              "subtopics": [
+                "Cytoplasm",
+                "Nucleus",
+                "Nuclear envelope",
+                "Nucleolus",
+                "Chromatin"
+              ]
+            },
+            {
+              "topic_title": "Cell Organelles",
+              "subtopics": [
+                "Mitochondria",
+                "Ribosomes",
+                "Endoplasmic reticulum",
+                "Golgi apparatus",
+                "Lysosomes",
+                "Vacuoles",
+                "Chloroplasts",
+                "Cell wall",
+                "Centrioles"
+              ]
+            },
+            {
+              "topic_title": "Plant and Animal Cells",
+              "subtopics": [
+                "Structures common to both",
+                "Structures unique to plant cells",
+                "Structures unique to animal cells",
+                "Comparison of plant and animal cells"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.3",
+          "section_title": "Movement of Substances Across the Cell Membrane",
+          "topics": [
+            {
+              "topic_title": "Passive Transport",
+              "subtopics": [
+                "Diffusion",
+                "Osmosis",
+                "Facilitated diffusion",
+                "Concentration gradient"
+              ]
+            },
+            {
+              "topic_title": "Active Transport",
+              "subtopics": [
+                "Definition",
+                "Energy requirement",
+                "Protein pumps",
+                "Movement against concentration gradient"
+              ]
+            },
+            {
+              "topic_title": "Bulk Transport",
+              "subtopics": [
+                "Endocytosis",
+                "Exocytosis",
+                "Phagocytosis",
+                "Pinocytosis"
+              ]
+            },
+            {
+              "topic_title": "Effects of Osmosis on Cells",
+              "subtopics": [
+                "Hypotonic solution",
+                "Hypertonic solution",
+                "Isotonic solution",
+                "Plasmolysis",
+                "Turgidity"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.4",
+          "section_title": "Levels of Biological Organization",
+          "topics": [
+            {
+              "topic_title": "Biological Organization",
+              "subtopics": [
+                "Organelle",
+                "Cell",
+                "Tissue",
+                "Organ",
+                "Organ system",
+                "Organism",
+                "Population",
+                "Community",
+                "Ecosystem",
+                "Biosphere"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "unit_title": "Reproduction",
+      "sections": [
+        {
+          "section_number": "4.1",
+          "section_title": "Introduction to Reproduction",
+          "topics": [
+            {
+              "topic_title": "Reproduction",
+              "subtopics": [
+                "Definition",
+                "Importance",
+                "Asexual reproduction",
+                "Sexual reproduction",
+                "Comparison of asexual and sexual reproduction"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.2",
+          "section_title": "Asexual Reproduction",
+          "topics": [
+            {
+              "topic_title": "Types of Asexual Reproduction",
+              "subtopics": [
+                "Binary fission",
+                "Budding",
+                "Fragmentation",
+                "Spore formation",
+                "Vegetative propagation"
+              ]
+            },
+            {
+              "topic_title": "Advantages and Disadvantages",
+              "subtopics": [
+                "Rapid reproduction",
+                "Genetic similarity",
+                "Adaptation",
+                "Genetic variation limitations"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.3",
+          "section_title": "Human Reproductive System",
+          "topics": [
+            {
+              "topic_title": "Male Reproductive System",
+              "subtopics": [
+                "Testes",
+                "Scrotum",
+                "Epididymis",
+                "Vas deferens",
+                "Seminal vesicles",
+                "Prostate gland",
+                "Penis",
+                "Sperm production"
+              ]
+            },
+            {
+              "topic_title": "Female Reproductive System",
+              "subtopics": [
+                "Ovaries",
+                "Fallopian tubes",
+                "Uterus",
+                "Cervix",
+                "Vagina",
+                "Egg production"
+              ]
+            },
+            {
+              "topic_title": "Gametes",
+              "subtopics": [
+                "Sperm cells",
+                "Egg cells",
+                "Gamete formation",
+                "Functions of gametes"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.4",
+          "section_title": "Menstrual Cycle, Fertilization and Pregnancy",
+          "topics": [
+            {
+              "topic_title": "Menstrual Cycle",
+              "subtopics": [
+                "Menstruation",
+                "Follicular phase",
+                "Ovulation",
+                "Luteal phase",
+                "Hormonal regulation"
+              ]
+            },
+            {
+              "topic_title": "Fertilization",
+              "subtopics": [
+                "Sperm and egg fusion",
+                "Zygote formation",
+                "Implantation"
+              ]
+            },
+            {
+              "topic_title": "Pregnancy and Birth",
+              "subtopics": [
+                "Embryonic development",
+                "Placenta",
+                "Umbilical cord",
+                "Fetal development",
+                "Labor",
+                "Birth"
+              ]
+            },
+            {
+              "topic_title": "Birth Control",
+              "subtopics": [
+                "Natural methods",
+                "Barrier methods",
+                "Hormonal methods",
+                "Intrauterine devices",
+                "Permanent methods",
+                "Effectiveness and considerations"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.5",
+          "section_title": "Sexually Transmitted Infections",
+          "topics": [
+            {
+              "topic_title": "STIs",
+              "subtopics": [
+                "Definition",
+                "Modes of transmission",
+                "Common sexually transmitted infections",
+                "Symptoms",
+                "Complications",
+                "Prevention",
+                "Treatment and testing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "unit_title": "Human Health, Nutrition, and Disease",
+      "sections": [
+        {
+          "section_number": "5.1",
+          "section_title": "Food and Nutrition",
+          "topics": [
+            {
+              "topic_title": "Food and Nutrients",
+              "subtopics": [
+                "Definition of food",
+                "Definition of nutrition",
+                "Macronutrients",
+                "Micronutrients",
+                "Water",
+                "Dietary fiber"
+              ]
+            },
+            {
+              "topic_title": "Carbohydrates",
+              "subtopics": [
+                "Simple carbohydrates",
+                "Complex carbohydrates",
+                "Sources",
+                "Functions",
+                "Energy value"
+              ]
+            },
+            {
+              "topic_title": "Proteins",
+              "subtopics": [
+                "Amino acids",
+                "Protein sources",
+                "Functions",
+                "Essential amino acids"
+              ]
+            },
+            {
+              "topic_title": "Lipids",
+              "subtopics": [
+                "Fats",
+                "Oils",
+                "Fatty acids",
+                "Functions",
+                "Sources"
+              ]
+            },
+            {
+              "topic_title": "Vitamins",
+              "subtopics": [
+                "Fat-soluble vitamins",
+                "Water-soluble vitamins",
+                "Functions",
+                "Food sources",
+                "Deficiency effects"
+              ]
+            },
+            {
+              "topic_title": "Minerals",
+              "subtopics": [
+                "Major minerals",
+                "Trace minerals",
+                "Functions",
+                "Food sources",
+                "Deficiency effects"
+              ]
+            },
+            {
+              "topic_title": "Water",
+              "subtopics": [
+                "Functions of water",
+                "Water balance",
+                "Hydration"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.2",
+          "section_title": "Balanced Diet and Malnutrition",
+          "topics": [
+            {
+              "topic_title": "Balanced Diet",
+              "subtopics": [
+                "Definition",
+                "Food groups",
+                "Nutrient requirements",
+                "Balanced meal planning"
+              ]
+            },
+            {
+              "topic_title": "Malnutrition",
+              "subtopics": [
+                "Undernutrition",
+                "Overnutrition",
+                "Causes",
+                "Effects",
+                "Prevention"
+              ]
+            },
+            {
+              "topic_title": "Deficiency Diseases",
+              "subtopics": [
+                "Protein-energy malnutrition",
+                "Vitamin deficiency diseases",
+                "Mineral deficiency diseases",
+                "Prevention"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.3",
+          "section_title": "Substance Abuse",
+          "topics": [
+            {
+              "topic_title": "Psychoactive Substances",
+              "subtopics": [
+                "Definition",
+                "Alcohol",
+                "Tobacco",
+                "Other addictive substances",
+                "Effects on the body"
+              ]
+            },
+            {
+              "topic_title": "Substance Abuse and Health",
+              "subtopics": [
+                "Addiction",
+                "Physical effects",
+                "Mental and social effects",
+                "Prevention",
+                "Treatment and rehabilitation"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.4",
+          "section_title": "Diseases",
+          "topics": [
+            {
+              "topic_title": "Infectious Diseases",
+              "subtopics": [
+                "Definition",
+                "Causative agents",
+                "Bacteria",
+                "Viruses",
+                "Fungi",
+                "Protozoa",
+                "Transmission",
+                "Prevention",
+                "Treatment"
+              ]
+            },
+            {
+              "topic_title": "Non-infectious Diseases",
+              "subtopics": [
+                "Definition",
+                "Genetic diseases",
+                "Nutritional diseases",
+                "Lifestyle diseases",
+                "Cancer",
+                "Cardiovascular diseases",
+                "Prevention"
+              ]
+            },
+            {
+              "topic_title": "Disease Prevention and Control",
+              "subtopics": [
+                "Personal hygiene",
+                "Immunization",
+                "Sanitation",
+                "Healthy lifestyle",
+                "Early diagnosis",
+                "Community health measures"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "unit_title": "Ecology",
+      "sections": [
+        {
+          "section_number": "6.1",
+          "section_title": "Introduction to Ecology",
+          "topics": [
+            {
+              "topic_title": "Ecology",
+              "subtopics": [
+                "Definition",
+                "Scope",
+                "Ecological levels of organization",
+                "Organism",
+                "Population",
+                "Community",
+                "Ecosystem",
+                "Biosphere"
+              ]
+            },
+            {
+              "topic_title": "Habitat and Niche",
+              "subtopics": [
+                "Habitat",
+                "Ecological niche",
+                "Niche differentiation"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.2",
+          "section_title": "Components of an Ecosystem",
+          "topics": [
+            {
+              "topic_title": "Biotic Components",
+              "subtopics": [
+                "Producers",
+                "Consumers",
+                "Decomposers",
+                "Detritivores",
+                "Interactions among organisms"
+              ]
+            },
+            {
+              "topic_title": "Abiotic Components",
+              "subtopics": [
+                "Light",
+                "Temperature",
+                "Water",
+                "Soil",
+                "Air",
+                "Mineral nutrients",
+                "pH",
+                "Humidity"
+              ]
+            },
+            {
+              "topic_title": "Ecosystem Structure and Function",
+              "subtopics": [
+                "Energy flow",
+                "Nutrient cycling",
+                "Productivity",
+                "Ecological balance"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.3",
+          "section_title": "Food Relationships",
+          "topics": [
+            {
+              "topic_title": "Food Chains",
+              "subtopics": [
+                "Producers",
+                "Primary consumers",
+                "Secondary consumers",
+                "Tertiary consumers",
+                "Decomposers",
+                "Grazing food chains",
+                "Detritus food chains"
+              ]
+            },
+            {
+              "topic_title": "Food Webs",
+              "subtopics": [
+                "Interconnected food chains",
+                "Trophic relationships",
+                "Food-web interpretation"
+              ]
+            },
+            {
+              "topic_title": "Ecological Pyramids",
+              "subtopics": [
+                "Pyramid of numbers",
+                "Pyramid of biomass",
+                "Pyramid of energy",
+                "Trophic levels"
+              ]
+            },
+            {
+              "topic_title": "Energy Flow",
+              "subtopics": [
+                "Energy transfer",
+                "Energy loss",
+                "Ten-percent concept",
+                "Primary productivity"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.4",
+          "section_title": "Ecological Relationships",
+          "topics": [
+            {
+              "topic_title": "Intraspecific Relationships",
+              "subtopics": [
+                "Competition",
+                "Cooperation",
+                "Territoriality",
+                "Social behavior"
+              ]
+            },
+            {
+              "topic_title": "Interspecific Relationships",
+              "subtopics": [
+                "Predation",
+                "Parasitism",
+                "Mutualism",
+                "Commensalism",
+                "Competition"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.5",
+          "section_title": "Ecological Succession and Biomes",
+          "topics": [
+            {
+              "topic_title": "Ecological Succession",
+              "subtopics": [
+                "Definition",
+                "Primary succession",
+                "Secondary succession",
+                "Pioneer species",
+                "Climax community"
+              ]
+            },
+            {
+              "topic_title": "Biomes",
+              "subtopics": [
+                "Definition",
+                "Terrestrial biomes",
+                "Aquatic biomes",
+                "Climate and biome distribution",
+                "Major biome characteristics"
+              ]
+            },
+            {
+              "topic_title": "Ethiopian Ecosystems",
+              "subtopics": [
+                "Ethiopian ecological regions",
+                "Local biodiversity",
+                "Human impacts on ecosystems",
+                "Conservation importance"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

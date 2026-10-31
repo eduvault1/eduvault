@@ -1,0 +1,867 @@
+{
+  "grade": 9,
+  "subject": "Chemistry",
+  "curriculum": "Ethiopian New Curriculum",
+  "units": [
+    {
+      "unit_number": 1,
+      "unit_title": "Chemistry and Its Importance",
+      "sections": [
+        {
+          "section_number": "1.1",
+          "section_title": "Definition and Scope of Chemistry",
+          "page": 2,
+          "topics": [
+            {
+              "topic_title": "Definition of Chemistry",
+              "subtopics": [
+                "Meaning of chemistry",
+                "Chemistry as the study of matter",
+                "Composition of matter",
+                "Structure of matter",
+                "Properties of matter",
+                "Changes in matter",
+                "Energy changes associated with matter"
+              ]
+            },
+            {
+              "topic_title": "Scope of Chemistry",
+              "subtopics": [
+                "Organic chemistry",
+                "Inorganic chemistry",
+                "Physical chemistry",
+                "Analytical chemistry",
+                "Biochemistry",
+                "Industrial chemistry",
+                "Environmental chemistry"
+              ]
+            },
+            {
+              "topic_title": "Branches of Chemistry",
+              "subtopics": [
+                "Organic chemistry",
+                "Inorganic chemistry",
+                "Physical chemistry",
+                "Analytical chemistry",
+                "Biochemistry"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.2",
+          "section_title": "Relationship between Chemistry and Other Natural Sciences",
+          "page": 6,
+          "topics": [
+            {
+              "topic_title": "Chemistry and Physics",
+              "subtopics": [
+                "Relationship between chemistry and physics",
+                "Physical properties of matter",
+                "Energy and chemical processes"
+              ]
+            },
+            {
+              "topic_title": "Chemistry and Biology",
+              "subtopics": [
+                "Chemical processes in living organisms",
+                "Biochemistry",
+                "Chemistry of biological systems"
+              ]
+            },
+            {
+              "topic_title": "Chemistry and Medicine",
+              "subtopics": [
+                "Medicines",
+                "Pharmaceutical chemistry",
+                "Chemical analysis in medicine"
+              ]
+            },
+            {
+              "topic_title": "Chemistry and Geology",
+              "subtopics": [
+                "Minerals",
+                "Rocks",
+                "Chemical composition of the Earth"
+              ]
+            },
+            {
+              "topic_title": "Chemistry and Other Sciences",
+              "subtopics": [
+                "Environmental science",
+                "Agricultural science",
+                "Food science"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.3",
+          "section_title": "The Role Chemistry Plays in Production and in the Society",
+          "page": 8,
+          "topics": [
+            {
+              "topic_title": "Chemistry in Agriculture",
+              "subtopics": [
+                "Fertilizers",
+                "Pesticides",
+                "Herbicides",
+                "Soil chemistry",
+                "Improving agricultural productivity"
+              ]
+            },
+            {
+              "topic_title": "Chemistry in Medicine",
+              "subtopics": [
+                "Drug production",
+                "Medicines",
+                "Medical analysis",
+                "Pharmaceutical products"
+              ]
+            },
+            {
+              "topic_title": "Chemistry in Food Production",
+              "subtopics": [
+                "Food preservation",
+                "Food processing",
+                "Food additives",
+                "Food quality"
+              ]
+            },
+            {
+              "topic_title": "Chemistry in Building Construction",
+              "subtopics": [
+                "Cement",
+                "Concrete",
+                "Glass",
+                "Construction materials"
+              ]
+            },
+            {
+              "topic_title": "Chemistry in Everyday Life",
+              "subtopics": [
+                "Clothing",
+                "Shelter",
+                "Clean water",
+                "Energy",
+                "Household chemicals",
+                "Personal care products"
+              ]
+            },
+            {
+              "topic_title": "Chemistry and Society",
+              "subtopics": [
+                "Improving quality of life",
+                "Industrial development",
+                "Environmental protection",
+                "Health and sanitation"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.4",
+          "section_title": "Some Common Chemical Industries in Ethiopia",
+          "page": 12,
+          "topics": [
+            {
+              "topic_title": "Chemical Industries",
+              "subtopics": [
+                "Definition of industry",
+                "Definition of chemical industry",
+                "Chemical products",
+                "Importance of chemical industries"
+              ]
+            },
+            {
+              "topic_title": "Chemical Industries in Ethiopia",
+              "subtopics": [
+                "Cement industry",
+                "Fertilizer industry",
+                "Soap and detergent industry",
+                "Paint industry",
+                "Pharmaceutical industry",
+                "Food and beverage chemical processing",
+                "Textile industry",
+                "Leather industry"
+              ]
+            },
+            {
+              "topic_title": "Careers in Chemistry",
+              "subtopics": [
+                "Chemist",
+                "Laboratory technician",
+                "Pharmaceutical careers",
+                "Industrial chemistry careers",
+                "Environmental chemistry careers"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "unit_title": "Measurements and Scientific Methods",
+      "sections": [
+        {
+          "section_number": "2.1",
+          "section_title": "Measurements and Units in Chemistry",
+          "page": 19,
+          "topics": [
+            {
+              "topic_title": "Measurement in Chemistry",
+              "subtopics": [
+                "Meaning of measurement",
+                "Physical quantities",
+                "Measuring physical quantities",
+                "Units of measurement"
+              ]
+            },
+            {
+              "topic_title": "SI Units",
+              "subtopics": [
+                "International System of Units",
+                "Seven SI base quantities",
+                "Seven SI base units",
+                "Unit symbols",
+                "Derived SI units"
+              ]
+            },
+            {
+              "topic_title": "SI Prefixes",
+              "subtopics": [
+                "Large-unit prefixes",
+                "Small-unit prefixes",
+                "Unit conversion",
+                "Powers of ten"
+              ]
+            },
+            {
+              "topic_title": "Factor-Label Method",
+              "subtopics": [
+                "Conversion factors",
+                "Unit cancellation",
+                "Single-step conversions",
+                "Multi-step conversions"
+              ]
+            },
+            {
+              "topic_title": "Uncertainty in Measurement",
+              "subtopics": [
+                "Meaning of uncertainty",
+                "Certain digits",
+                "Uncertain digits",
+                "Sources of measurement uncertainty",
+                "Estimating uncertainty"
+              ]
+            },
+            {
+              "topic_title": "Accuracy and Precision",
+              "subtopics": [
+                "Definition of accuracy",
+                "Definition of precision",
+                "Difference between accuracy and precision",
+                "Systematic errors",
+                "Random errors"
+              ]
+            },
+            {
+              "topic_title": "Significant Figures",
+              "subtopics": [
+                "Definition of significant figures",
+                "Identifying significant figures",
+                "Rules for significant figures",
+                "Significant figures in calculations",
+                "Rounding calculated results"
+              ]
+            },
+            {
+              "topic_title": "Scientific Notation",
+              "subtopics": [
+                "Definition of scientific notation",
+                "Writing large numbers in scientific notation",
+                "Writing small numbers in scientific notation",
+                "Calculations using scientific notation"
+              ]
+            },
+            {
+              "topic_title": "Basic Mathematical Techniques",
+              "subtopics": [
+                "Ratios",
+                "Proportions",
+                "Percentages",
+                "Basic calculations used in chemistry"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.2",
+          "section_title": "Chemistry as Experimental Science",
+          "page": 35,
+          "topics": [
+            {
+              "topic_title": "Chemistry as an Experimental Science",
+              "subtopics": [
+                "Observation",
+                "Classification",
+                "Measurement",
+                "Experimentation",
+                "Interpretation of data",
+                "Drawing conclusions"
+              ]
+            },
+            {
+              "topic_title": "Scientific Method",
+              "subtopics": [
+                "Observation",
+                "Question",
+                "Hypothesis",
+                "Experiment",
+                "Data collection",
+                "Data analysis",
+                "Conclusion"
+              ]
+            },
+            {
+              "topic_title": "Laboratory Skills",
+              "subtopics": [
+                "Using laboratory apparatus",
+                "Measuring substances",
+                "Recording observations",
+                "Recording experimental data",
+                "Interpreting experimental results"
+              ]
+            },
+            {
+              "topic_title": "Laboratory Safety",
+              "subtopics": [
+                "Laboratory safety rules",
+                "Safe handling of chemicals",
+                "Personal protective equipment",
+                "Chemical hazards",
+                "Emergency procedures"
+              ]
+            },
+            {
+              "topic_title": "Laboratory Apparatus",
+              "subtopics": [
+                "Common laboratory apparatus",
+                "Uses of laboratory apparatus",
+                "Proper handling of apparatus"
+              ]
+            },
+            {
+              "topic_title": "Laboratory Report",
+              "subtopics": [
+                "Title",
+                "Objective",
+                "Materials",
+                "Procedure",
+                "Observation",
+                "Results",
+                "Discussion",
+                "Conclusion"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "unit_title": "Structure of the Atom",
+      "sections": [
+        {
+          "section_number": "3.1",
+          "section_title": "Historical Development of the Atomic Theories of Matter",
+          "page": 51,
+          "topics": [
+            {
+              "topic_title": "Early Ideas about Matter",
+              "subtopics": [
+                "Ancient Greek ideas about matter",
+                "Democritus",
+                "Atomism",
+                "Continuous versus discontinuous matter"
+              ]
+            },
+            {
+              "topic_title": "Development of Atomic Theory",
+              "subtopics": [
+                "Development of atomic ideas",
+                "Scientific evidence for atomic theory",
+                "Evolution of atomic models"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.2",
+          "section_title": "Fundamental Laws of Chemical Reactions",
+          "page": 56,
+          "topics": [
+            {
+              "topic_title": "Law of Conservation of Mass",
+              "subtopics": [
+                "Statement of the law",
+                "Explanation of the law",
+                "Applications",
+                "Examples"
+              ]
+            },
+            {
+              "topic_title": "Law of Definite Proportions",
+              "subtopics": [
+                "Statement of the law",
+                "Constant composition",
+                "Examples",
+                "Applications"
+              ]
+            },
+            {
+              "topic_title": "Law of Multiple Proportions",
+              "subtopics": [
+                "Statement of the law",
+                "Simple whole-number ratios",
+                "Examples",
+                "Applications"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.3",
+          "section_title": "Atomic Theory",
+          "page": 64,
+          "topics": [
+            {
+              "topic_title": "Dalton's Atomic Theory",
+              "subtopics": [
+                "Dalton's postulates",
+                "Atoms and elements",
+                "Atoms in compounds",
+                "Chemical reactions and rearrangement of atoms"
+              ]
+            },
+            {
+              "topic_title": "Limitations of Dalton's Theory",
+              "subtopics": [
+                "Discovery of subatomic particles",
+                "Existence of isotopes",
+                "Existence of ions",
+                "Modern modifications of atomic theory"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.4",
+          "section_title": "Discoveries of Fundamental Subatomic Particles and the Atomic Nucleus",
+          "page": 69,
+          "topics": [
+            {
+              "topic_title": "Discovery of the Electron",
+              "subtopics": [
+                "Cathode ray experiments",
+                "J. J. Thomson",
+                "Properties of electrons",
+                "Electron charge and mass"
+              ]
+            },
+            {
+              "topic_title": "Discovery of the Proton",
+              "subtopics": [
+                "Positive rays",
+                "Proton",
+                "Properties of protons"
+              ]
+            },
+            {
+              "topic_title": "Discovery of the Neutron",
+              "subtopics": [
+                "James Chadwick",
+                "Neutron",
+                "Properties of neutrons"
+              ]
+            },
+            {
+              "topic_title": "Rutherford's Nuclear Model",
+              "subtopics": [
+                "Gold foil experiment",
+                "Alpha particle scattering",
+                "Atomic nucleus",
+                "Nuclear model of the atom",
+                "Limitations of Rutherford's model"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.5",
+          "section_title": "Composition of an Atom and the Isotopes",
+          "page": 85,
+          "topics": [
+            {
+              "topic_title": "Composition of the Atom",
+              "subtopics": [
+                "Protons",
+                "Neutrons",
+                "Electrons",
+                "Nucleus",
+                "Electron cloud"
+              ]
+            },
+            {
+              "topic_title": "Atomic Number",
+              "subtopics": [
+                "Definition of atomic number",
+                "Number of protons",
+                "Atomic number of elements",
+                "Determining atomic number"
+              ]
+            },
+            {
+              "topic_title": "Mass Number",
+              "subtopics": [
+                "Definition of mass number",
+                "Protons and neutrons",
+                "Calculating mass number",
+                "Calculating number of neutrons"
+              ]
+            },
+            {
+              "topic_title": "Isotopes",
+              "subtopics": [
+                "Definition of isotopes",
+                "Isotopes of elements",
+                "Isotopic notation",
+                "Examples of isotopes",
+                "Properties of isotopes",
+                "Applications of isotopes"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "unit_title": "Periodic Classification of Elements",
+      "sections": [
+        {
+          "section_number": "4.1",
+          "section_title": "Historical Development of Periodic Classification of the Elements",
+          "page": 110,
+          "topics": [
+            {
+              "topic_title": "Early Classification of Elements",
+              "subtopics": [
+                "Need for classification",
+                "Early attempts to classify elements"
+              ]
+            },
+            {
+              "topic_title": "Dobereiner's Triads",
+              "subtopics": [
+                "Dobereiner's triads",
+                "Characteristics of triads",
+                "Limitations of triads"
+              ]
+            },
+            {
+              "topic_title": "Newlands' Law of Octaves",
+              "subtopics": [
+                "Law of octaves",
+                "Arrangement of elements",
+                "Limitations of Newlands' law"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.2",
+          "section_title": "Mendeleev's Classification of the Elements",
+          "page": 113,
+          "topics": [
+            {
+              "topic_title": "Mendeleev's Periodic Table",
+              "subtopics": [
+                "Mendeleev's periodic law",
+                "Arrangement of elements",
+                "Increasing atomic mass",
+                "Groups and periods"
+              ]
+            },
+            {
+              "topic_title": "Achievements of Mendeleev's Table",
+              "subtopics": [
+                "Prediction of undiscovered elements",
+                "Prediction of properties",
+                "Correction of atomic masses",
+                "Gaps in the periodic table"
+              ]
+            },
+            {
+              "topic_title": "Limitations of Mendeleev's Table",
+              "subtopics": [
+                "Position of hydrogen",
+                "Isotopes",
+                "Anomalous pairs",
+                "Noble gases"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.3",
+          "section_title": "The Modern Periodic Table",
+          "page": 116,
+          "topics": [
+            {
+              "topic_title": "Modern Periodic Law",
+              "subtopics": [
+                "Statement of modern periodic law",
+                "Atomic number as basis of classification"
+              ]
+            },
+            {
+              "topic_title": "Organization of the Modern Periodic Table",
+              "subtopics": [
+                "Periods",
+                "Groups",
+                "Group numbers",
+                "Period numbers",
+                "Electronic structure and periodic position"
+              ]
+            },
+            {
+              "topic_title": "Classification of Elements",
+              "subtopics": [
+                "Metals",
+                "Non-metals",
+                "Metalloids",
+                "Representative elements",
+                "Noble gases"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.4",
+          "section_title": "The Major Trends in the Periodic Table",
+          "page": 125,
+          "topics": [
+            {
+              "topic_title": "Atomic Radius",
+              "subtopics": [
+                "Definition of atomic radius",
+                "Atomic radius across a period",
+                "Atomic radius down a group"
+              ]
+            },
+            {
+              "topic_title": "Ionization Energy",
+              "subtopics": [
+                "Definition of ionization energy",
+                "Ionization energy across a period",
+                "Ionization energy down a group"
+              ]
+            },
+            {
+              "topic_title": "Electronegativity",
+              "subtopics": [
+                "Definition of electronegativity",
+                "Electronegativity across a period",
+                "Electronegativity down a group"
+              ]
+            },
+            {
+              "topic_title": "Metallic Character",
+              "subtopics": [
+                "Definition of metallic character",
+                "Metallic character across a period",
+                "Metallic character down a group"
+              ]
+            },
+            {
+              "topic_title": "Non-metallic Character",
+              "subtopics": [
+                "Definition of non-metallic character",
+                "Non-metallic character across a period",
+                "Non-metallic character down a group"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "unit_title": "Chemical Bonding",
+      "sections": [
+        {
+          "section_number": "5.1",
+          "section_title": "Chemical Bonding",
+          "page": 141,
+          "topics": [
+            {
+              "topic_title": "Introduction to Chemical Bonding",
+              "subtopics": [
+                "Definition of chemical bond",
+                "Why atoms form bonds",
+                "Chemical stability",
+                "Valence electrons"
+              ]
+            },
+            {
+              "topic_title": "Octet Rule",
+              "subtopics": [
+                "Statement of the octet rule",
+                "Stable electron configuration",
+                "Duet rule",
+                "Valence shell"
+              ]
+            },
+            {
+              "topic_title": "Types of Chemical Bonds",
+              "subtopics": [
+                "Ionic bonding",
+                "Covalent bonding",
+                "Metallic bonding"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.2",
+          "section_title": "Ionic Bonding",
+          "page": 143,
+          "topics": [
+            {
+              "topic_title": "Formation of Ions",
+              "subtopics": [
+                "Cations",
+                "Anions",
+                "Loss of electrons",
+                "Gain of electrons",
+                "Electron configuration of ions"
+              ]
+            },
+            {
+              "topic_title": "Formation of Ionic Bonds",
+              "subtopics": [
+                "Electron transfer",
+                "Electrostatic attraction",
+                "Formation of ionic compounds",
+                "Lewis representation of ionic bonding"
+              ]
+            },
+            {
+              "topic_title": "Ionic Compounds",
+              "subtopics": [
+                "Ionic crystal lattice",
+                "Formula of ionic compounds",
+                "Properties of ionic compounds",
+                "Melting and boiling points",
+                "Solubility",
+                "Electrical conductivity"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.3",
+          "section_title": "Covalent Bonding",
+          "page": 154,
+          "topics": [
+            {
+              "topic_title": "Covalent Bond",
+              "subtopics": [
+                "Definition of covalent bonding",
+                "Sharing of electrons",
+                "Valence electrons",
+                "Formation of covalent molecules"
+              ]
+            },
+            {
+              "topic_title": "Types of Covalent Bonds",
+              "subtopics": [
+                "Single covalent bond",
+                "Double covalent bond",
+                "Triple covalent bond"
+              ]
+            },
+            {
+              "topic_title": "Lewis Structures",
+              "subtopics": [
+                "Lewis symbols",
+                "Lewis dot structures",
+                "Drawing Lewis structures",
+                "Shared electron pairs",
+                "Lone electron pairs"
+              ]
+            },
+            {
+              "topic_title": "Polar and Non-polar Covalent Bonds",
+              "subtopics": [
+                "Electronegativity difference",
+                "Polar covalent bond",
+                "Non-polar covalent bond",
+                "Bond polarity"
+              ]
+            },
+            {
+              "topic_title": "Properties of Covalent Compounds",
+              "subtopics": [
+                "Melting points",
+                "Boiling points",
+                "Electrical conductivity",
+                "Solubility",
+                "Molecular nature"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.4",
+          "section_title": "Metallic Bonding",
+          "page": 167,
+          "topics": [
+            {
+              "topic_title": "Metallic Bond",
+              "subtopics": [
+                "Definition of metallic bonding",
+                "Metal cations",
+                "Delocalized electrons",
+                "Electron sea model",
+                "Metallic lattice"
+              ]
+            },
+            {
+              "topic_title": "Properties of Metals",
+              "subtopics": [
+                "Electrical conductivity",
+                "Thermal conductivity",
+                "Malleability",
+                "Ductility",
+                "Lustre",
+                "Strength"
+              ]
+            },
+            {
+              "topic_title": "Explanation of Metallic Properties",
+              "subtopics": [
+                "Role of delocalized electrons",
+                "Electrical conduction",
+                "Thermal conduction",
+                "Malleability and ductility"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

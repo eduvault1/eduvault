@@ -1,0 +1,990 @@
+{
+  "grade": 12,
+  "subject": "Chemistry",
+  "curriculum": "Ethiopian New Curriculum",
+  "publisher": "Ministry of Education of Ethiopia",
+  "textbook_year": 2023,
+  "units": [
+    {
+      "unit_number": 1,
+      "unit_title": "Acid-Base Equilibria",
+      "sections": [
+        {
+          "section_number": "1.1",
+          "section_title": "Acid-Base Concepts",
+          "page": 3,
+          "topics": [
+            {
+              "topic_title": "Arrhenius Concept of Acids and Bases",
+              "subtopics": [
+                "Arrhenius acids",
+                "Arrhenius bases",
+                "Ionization in water",
+                "Hydrogen ions",
+                "Hydroxide ions"
+              ]
+            },
+            {
+              "topic_title": "Brønsted-Lowry Concept of Acids and Bases",
+              "subtopics": [
+                "Brønsted-Lowry acids",
+                "Brønsted-Lowry bases",
+                "Proton donors",
+                "Proton acceptors",
+                "Conjugate acid-base pairs",
+                "Amphiprotic substances"
+              ]
+            },
+            {
+              "topic_title": "Lewis Concept of Acids and Bases",
+              "subtopics": [
+                "Lewis acids",
+                "Lewis bases",
+                "Electron-pair acceptors",
+                "Electron-pair donors",
+                "Lewis acid-base reactions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.2",
+          "section_title": "Ionic Equilibria of Weak Acids and Bases",
+          "page": 14,
+          "topics": [
+            {
+              "topic_title": "Ionization of Water",
+              "subtopics": [
+                "Autoionization of water",
+                "Hydronium ion",
+                "Hydroxide ion",
+                "Ion-product constant of water",
+                "Kw"
+              ]
+            },
+            {
+              "topic_title": "Measures of the Strength of Acids and Bases in Aqueous Solution",
+              "subtopics": [
+                "Strong and weak acids",
+                "Strong and weak bases",
+                "Ka",
+                "Kb",
+                "pKa",
+                "pKb",
+                "Acid/base strength"
+              ]
+            },
+            {
+              "topic_title": "pH and pOH",
+              "subtopics": [
+                "Definition of pH",
+                "Definition of pOH",
+                "pH calculations",
+                "pOH calculations",
+                "Relationship between pH and pOH"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.3",
+          "section_title": "Common Ion Effect and Buffer Solution",
+          "page": 31,
+          "topics": [
+            {
+              "topic_title": "The Common Ion Effect",
+              "subtopics": [
+                "Definition",
+                "Effect on weak-electrolyte ionization",
+                "Equilibrium shift"
+              ]
+            },
+            {
+              "topic_title": "Buffer Solutions",
+              "subtopics": [
+                "Definition of buffer",
+                "Acidic buffers",
+                "Basic buffers",
+                "Buffer action",
+                "Henderson-Hasselbalch equation",
+                "Buffer capacity"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.4",
+          "section_title": "Hydrolysis of Salts",
+          "page": 40,
+          "topics": [
+            {
+              "topic_title": "Salt Hydrolysis",
+              "subtopics": [
+                "Hydrolysis of salts",
+                "Hydrolysis of cations",
+                "Hydrolysis of anions",
+                "Acidic salts",
+                "Basic salts",
+                "Neutral salts"
+              ]
+            },
+            {
+              "topic_title": "pH of Salt Solutions",
+              "subtopics": [
+                "Calculating pH of salt solutions",
+                "Ka and Kb relationships",
+                "Conjugate acid-base strength"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.5",
+          "section_title": "Acid-Base Indicators",
+          "page": 48,
+          "topics": [
+            {
+              "topic_title": "Acid-Base Indicators",
+              "subtopics": [
+                "Definition",
+                "Indicator equilibrium",
+                "Color change",
+                "Transition range",
+                "Common indicators"
+              ]
+            },
+            {
+              "topic_title": "Choice of Indicators",
+              "subtopics": [
+                "Indicator selection",
+                "Equivalence point",
+                "Endpoint"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.6",
+          "section_title": "Acid-Base Titrations",
+          "page": 55,
+          "topics": [
+            {
+              "topic_title": "Acid-Base Titration",
+              "subtopics": [
+                "Definition",
+                "Standard solution",
+                "Titrant",
+                "Analyte",
+                "Equivalence point",
+                "Endpoint"
+              ]
+            },
+            {
+              "topic_title": "Titration Curves",
+              "subtopics": [
+                "Strong acid-strong base titration",
+                "Weak acid-strong base titration",
+                "Strong acid-weak base titration",
+                "Weak acid-weak base titration",
+                "Titration curve interpretation"
+              ]
+            },
+            {
+              "topic_title": "Calculations in Acid-Base Titrations",
+              "subtopics": [
+                "Molarity calculations",
+                "Stoichiometric calculations",
+                "Equivalence-point calculations",
+                "Unknown concentration"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "unit_title": "Electrochemistry",
+      "sections": [
+        {
+          "section_number": "2.1",
+          "section_title": "Introduction",
+          "page": 77,
+          "topics": [
+            {
+              "topic_title": "Electrochemistry",
+              "subtopics": [
+                "Definition",
+                "Redox reactions",
+                "Chemical energy and electrical energy",
+                "Electrochemical systems"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.2",
+          "section_title": "Electrochemical Cells",
+          "page": 78,
+          "topics": [
+            {
+              "topic_title": "Voltaic/Galvanic Cells",
+              "subtopics": [
+                "Spontaneous redox reactions",
+                "Anode",
+                "Cathode",
+                "Electrolyte",
+                "Electron flow",
+                "Salt bridge"
+              ]
+            },
+            {
+              "topic_title": "Cell Notation",
+              "subtopics": [
+                "Cell diagram",
+                "Standard cell notation",
+                "Half-cells"
+              ]
+            },
+            {
+              "topic_title": "Cell Potential",
+              "subtopics": [
+                "Electrode potential",
+                "Standard electrode potential",
+                "Standard cell potential",
+                "Predicting spontaneity"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.3",
+          "section_title": "Standard Reduction Potentials",
+          "page": 91,
+          "topics": [
+            {
+              "topic_title": "Standard Hydrogen Electrode",
+              "subtopics": [
+                "SHE",
+                "Reference electrode",
+                "Standard conditions"
+              ]
+            },
+            {
+              "topic_title": "Standard Reduction Potentials",
+              "subtopics": [
+                "Reduction potential",
+                "Electrochemical series",
+                "Oxidizing strength",
+                "Reducing strength"
+              ]
+            },
+            {
+              "topic_title": "Calculating Cell Potentials",
+              "subtopics": [
+                "E°cell",
+                "Cathode and anode potentials",
+                "Spontaneity from cell potential"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.4",
+          "section_title": "Electrolysis",
+          "page": 101,
+          "topics": [
+            {
+              "topic_title": "Electrolytic Cells",
+              "subtopics": [
+                "Non-spontaneous reactions",
+                "Electrolytic cell components",
+                "Anode and cathode",
+                "External power source"
+              ]
+            },
+            {
+              "topic_title": "Electrolysis of Molten Compounds",
+              "subtopics": [
+                "Molten salts",
+                "Electrode reactions",
+                "Products of electrolysis"
+              ]
+            },
+            {
+              "topic_title": "Electrolysis of Aqueous Solutions",
+              "subtopics": [
+                "Aqueous electrolysis",
+                "Competing ions",
+                "Products at electrodes",
+                "Factors determining products"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.5",
+          "section_title": "Quantitative Aspects of Electrolysis",
+          "page": 117,
+          "topics": [
+            {
+              "topic_title": "Faraday's Laws of Electrolysis",
+              "subtopics": [
+                "First law",
+                "Second law",
+                "Electrochemical equivalent"
+              ]
+            },
+            {
+              "topic_title": "Electrolysis Calculations",
+              "subtopics": [
+                "Charge",
+                "Current",
+                "Time",
+                "Moles of electrons",
+                "Mass deposited",
+                "Faraday constant"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.6",
+          "section_title": "Industrial Applications of Electrolysis",
+          "page": 123,
+          "topics": [
+            {
+              "topic_title": "Electroplating",
+              "subtopics": [
+                "Principle",
+                "Procedure",
+                "Applications",
+                "Factors affecting electroplating"
+              ]
+            },
+            {
+              "topic_title": "Electrometallurgy",
+              "subtopics": [
+                "Extraction of metals",
+                "Purification of metals",
+                "Electrorefining"
+              ]
+            },
+            {
+              "topic_title": "Industrial Electrolysis",
+              "subtopics": [
+                "Chlor-alkali process",
+                "Production of chlorine",
+                "Production of sodium hydroxide",
+                "Production of hydrogen"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "unit_title": "Industrial Chemistry",
+      "sections": [
+        {
+          "section_number": "3.1",
+          "section_title": "Introduction",
+          "page": 136,
+          "topics": [
+            {
+              "topic_title": "Industrial Chemistry",
+              "subtopics": [
+                "Definition",
+                "Importance",
+                "Chemical industries",
+                "Industrial processes"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.2",
+          "section_title": "Natural Resources and Industry",
+          "page": 138,
+          "topics": [
+            {
+              "topic_title": "Natural Resources (Raw Materials)",
+              "subtopics": [
+                "Mineral resources",
+                "Water",
+                "Air",
+                "Biomass",
+                "Fossil resources",
+                "Agricultural raw materials"
+              ]
+            },
+            {
+              "topic_title": "Industry",
+              "subtopics": [
+                "Definition of industry",
+                "Types of industries",
+                "Chemical manufacturing",
+                "Industrial processes",
+                "Factors affecting industrial location"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.3",
+          "section_title": "Manufacturing of Valuable Products/Chemicals",
+          "page": 142,
+          "topics": [
+            {
+              "topic_title": "Ammonia (NH3)",
+              "subtopics": [
+                "Raw materials",
+                "Haber process",
+                "Equilibrium in ammonia production",
+                "Industrial conditions",
+                "Catalyst",
+                "Uses of ammonia"
+              ]
+            },
+            {
+              "topic_title": "Nitric Acid",
+              "subtopics": [
+                "Raw materials",
+                "Ostwald process",
+                "Oxidation of ammonia",
+                "Absorption of nitrogen oxides",
+                "Uses of nitric acid"
+              ]
+            },
+            {
+              "topic_title": "Nitrogen-Based Fertilizers",
+              "subtopics": [
+                "Ammonium nitrate",
+                "Urea",
+                "Ammonium sulfate",
+                "Fertilizer production",
+                "Agricultural importance"
+              ]
+            },
+            {
+              "topic_title": "Sulphuric Acid",
+              "subtopics": [
+                "Raw materials",
+                "Contact process",
+                "Sulfur dioxide",
+                "Sulfur trioxide",
+                "Catalyst",
+                "Absorption",
+                "Uses of sulfuric acid"
+              ]
+            },
+            {
+              "topic_title": "Some Common Pesticides and Herbicides",
+              "subtopics": [
+                "Definition of pesticides",
+                "Insecticides",
+                "Herbicides",
+                "Examples",
+                "Uses",
+                "Environmental concerns"
+              ]
+            },
+            {
+              "topic_title": "Sodium Carbonate",
+              "subtopics": [
+                "Raw materials",
+                "Solvay process",
+                "Process stages",
+                "Chemical equations",
+                "Uses"
+              ]
+            },
+            {
+              "topic_title": "Sodium Hydroxide (NaOH)",
+              "subtopics": [
+                "Chlor-alkali process",
+                "Electrolysis of brine",
+                "Products",
+                "Uses"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.4",
+          "section_title": "Some Manufacturing Industries in Ethiopia",
+          "page": 174,
+          "topics": [
+            {
+              "topic_title": "Glass Manufacturing",
+              "subtopics": [
+                "Raw materials",
+                "Glass production",
+                "Types of glass",
+                "Uses"
+              ]
+            },
+            {
+              "topic_title": "Manufacturing of Ceramics",
+              "subtopics": [
+                "Raw materials",
+                "Clay",
+                "Processing",
+                "Firing",
+                "Uses"
+              ]
+            },
+            {
+              "topic_title": "Cement",
+              "subtopics": [
+                "Raw materials",
+                "Cement manufacture",
+                "Clinker",
+                "Setting and hardening",
+                "Uses"
+              ]
+            },
+            {
+              "topic_title": "Sugar Manufacturing",
+              "subtopics": [
+                "Sugarcane",
+                "Sugar beet",
+                "Extraction of juice",
+                "Purification",
+                "Crystallization",
+                "Refining"
+              ]
+            },
+            {
+              "topic_title": "Paper and Pulp",
+              "subtopics": [
+                "Raw materials",
+                "Pulp production",
+                "Paper manufacture",
+                "Bleaching",
+                "Environmental issues"
+              ]
+            },
+            {
+              "topic_title": "Tannery",
+              "subtopics": [
+                "Animal hides and skins",
+                "Leather processing",
+                "Tanning",
+                "Finishing",
+                "Environmental concerns"
+              ]
+            },
+            {
+              "topic_title": "Food Processing and Preservation",
+              "subtopics": [
+                "Food processing",
+                "Preservation methods",
+                "Chemical preservatives",
+                "Drying",
+                "Fermentation",
+                "Packaging"
+              ]
+            },
+            {
+              "topic_title": "Manufacturing of Ethanol",
+              "subtopics": [
+                "Fermentation",
+                "Raw materials",
+                "Distillation",
+                "Uses of ethanol"
+              ]
+            },
+            {
+              "topic_title": "Soap and Detergent",
+              "subtopics": [
+                "Soap manufacture",
+                "Saponification",
+                "Detergents",
+                "Surfactants",
+                "Properties",
+                "Environmental considerations"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "unit_title": "Polymers",
+      "sections": [
+        {
+          "section_number": "4.1",
+          "section_title": "Introduction",
+          "page": 204,
+          "topics": [
+            {
+              "topic_title": "Polymers",
+              "subtopics": [
+                "Definition",
+                "Monomers",
+                "Polymer chains",
+                "Natural polymers",
+                "Synthetic polymers"
+              ]
+            },
+            {
+              "topic_title": "Classification of Polymers",
+              "subtopics": [
+                "Natural and synthetic polymers",
+                "Thermoplastics",
+                "Thermosetting polymers",
+                "Elastomers",
+                "Fibers"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.2",
+          "section_title": "Polymerization",
+          "page": 208,
+          "topics": [
+            {
+              "topic_title": "Addition Polymerization",
+              "subtopics": [
+                "Addition polymers",
+                "Monomers with double bonds",
+                "Chain-growth polymerization",
+                "Initiation",
+                "Propagation",
+                "Termination"
+              ]
+            },
+            {
+              "topic_title": "Condensation Polymerization",
+              "subtopics": [
+                "Condensation polymers",
+                "Step-growth polymerization",
+                "Functional groups",
+                "Elimination of small molecules"
+              ]
+            },
+            {
+              "topic_title": "Copolymers",
+              "subtopics": [
+                "Definition",
+                "Types of copolymers",
+                "Random copolymers",
+                "Alternating copolymers",
+                "Block copolymers",
+                "Graft copolymers"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.3",
+          "section_title": "Natural Polymers",
+          "page": 219,
+          "topics": [
+            {
+              "topic_title": "Carbohydrates",
+              "subtopics": [
+                "Monosaccharides",
+                "Disaccharides",
+                "Polysaccharides",
+                "Glucose",
+                "Fructose",
+                "Sucrose",
+                "Starch",
+                "Cellulose"
+              ]
+            },
+            {
+              "topic_title": "Proteins",
+              "subtopics": [
+                "Amino acids",
+                "Peptide bonds",
+                "Polypeptides",
+                "Protein structure",
+                "Functions of proteins"
+              ]
+            },
+            {
+              "topic_title": "Natural Rubber",
+              "subtopics": [
+                "Structure",
+                "Source",
+                "Vulcanization",
+                "Properties",
+                "Uses"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.4",
+          "section_title": "Synthetic Polymers",
+          "page": 231,
+          "topics": [
+            {
+              "topic_title": "Common Synthetic Polymers",
+              "subtopics": [
+                "Polyethylene",
+                "Polypropylene",
+                "Polyvinyl chloride",
+                "Polystyrene",
+                "Teflon",
+                "Nylon",
+                "Polyester"
+              ]
+            },
+            {
+              "topic_title": "Properties and Uses",
+              "subtopics": [
+                "Mechanical properties",
+                "Thermal properties",
+                "Chemical resistance",
+                "Packaging",
+                "Construction",
+                "Textiles",
+                "Household applications"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.5",
+          "section_title": "Environmental Effects of Polymers",
+          "page": 247,
+          "topics": [
+            {
+              "topic_title": "Polymer Waste",
+              "subtopics": [
+                "Plastic waste",
+                "Persistence",
+                "Land pollution",
+                "Water pollution"
+              ]
+            },
+            {
+              "topic_title": "Polymer Recycling",
+              "subtopics": [
+                "Reuse",
+                "Mechanical recycling",
+                "Chemical recycling",
+                "Energy recovery"
+              ]
+            },
+            {
+              "topic_title": "Biodegradable Polymers",
+              "subtopics": [
+                "Biodegradable plastics",
+                "Compostable materials",
+                "Advantages and limitations"
+              ]
+            },
+            {
+              "topic_title": "Environmental Management",
+              "subtopics": [
+                "Reducing plastic use",
+                "Waste segregation",
+                "Recycling systems",
+                "Sustainable alternatives"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "unit_title": "Introduction to Environmental Chemistry",
+      "sections": [
+        {
+          "section_number": "5.1",
+          "section_title": "Introduction",
+          "page": 258,
+          "topics": [
+            {
+              "topic_title": "Environmental Chemistry",
+              "subtopics": [
+                "Definition",
+                "Scope",
+                "Importance",
+                "Chemistry of the environment"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.2",
+          "section_title": "Components of the Environment",
+          "page": 260,
+          "topics": [
+            {
+              "topic_title": "Atmosphere",
+              "subtopics": [
+                "Composition of air",
+                "Atmospheric layers",
+                "Atmospheric gases"
+              ]
+            },
+            {
+              "topic_title": "Hydrosphere",
+              "subtopics": [
+                "Surface water",
+                "Groundwater",
+                "Water resources"
+              ]
+            },
+            {
+              "topic_title": "Lithosphere",
+              "subtopics": [
+                "Soil",
+                "Rocks",
+                "Minerals"
+              ]
+            },
+            {
+              "topic_title": "Biosphere",
+              "subtopics": [
+                "Living organisms",
+                "Interactions among organisms and environment"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.3",
+          "section_title": "Natural Cycles",
+          "page": 268,
+          "topics": [
+            {
+              "topic_title": "Water Cycle",
+              "subtopics": [
+                "Evaporation",
+                "Condensation",
+                "Precipitation",
+                "Infiltration",
+                "Runoff"
+              ]
+            },
+            {
+              "topic_title": "Carbon Cycle",
+              "subtopics": [
+                "Carbon dioxide",
+                "Photosynthesis",
+                "Respiration",
+                "Decomposition",
+                "Combustion"
+              ]
+            },
+            {
+              "topic_title": "Nitrogen Cycle",
+              "subtopics": [
+                "Nitrogen fixation",
+                "Nitrification",
+                "Assimilation",
+                "Ammonification",
+                "Denitrification"
+              ]
+            },
+            {
+              "topic_title": "Oxygen Cycle",
+              "subtopics": [
+                "Photosynthesis",
+                "Respiration",
+                "Oxidation processes"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.4",
+          "section_title": "Environmental Pollution",
+          "page": 278,
+          "topics": [
+            {
+              "topic_title": "Air Pollution",
+              "subtopics": [
+                "Primary pollutants",
+                "Secondary pollutants",
+                "Particulate matter",
+                "Carbon monoxide",
+                "Sulfur oxides",
+                "Nitrogen oxides",
+                "Volatile organic compounds"
+              ]
+            },
+            {
+              "topic_title": "Water Pollution",
+              "subtopics": [
+                "Sources",
+                "Industrial wastewater",
+                "Agricultural runoff",
+                "Domestic sewage",
+                "Chemical contaminants"
+              ]
+            },
+            {
+              "topic_title": "Land/Soil Pollution",
+              "subtopics": [
+                "Solid waste",
+                "Pesticides",
+                "Heavy metals",
+                "Industrial waste",
+                "Soil contamination"
+              ]
+            },
+            {
+              "topic_title": "Pollution Control",
+              "subtopics": [
+                "Emission control",
+                "Wastewater treatment",
+                "Solid-waste management",
+                "Pollution prevention"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.5",
+          "section_title": "Green Chemistry and Cleaner Production",
+          "page": 290,
+          "topics": [
+            {
+              "topic_title": "Green Chemistry",
+              "subtopics": [
+                "Definition",
+                "Principles of green chemistry",
+                "Waste prevention",
+                "Atom economy",
+                "Safer chemicals",
+                "Safer solvents",
+                "Energy efficiency"
+              ]
+            },
+            {
+              "topic_title": "Cleaner Production",
+              "subtopics": [
+                "Source reduction",
+                "Resource efficiency",
+                "Energy efficiency",
+                "Waste minimization",
+                "Sustainable industrial processes"
+              ]
+            },
+            {
+              "topic_title": "Sustainable Chemistry",
+              "subtopics": [
+                "Renewable feedstocks",
+                "Design for degradation",
+                "Environmental impact reduction",
+                "Circular economy concepts"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

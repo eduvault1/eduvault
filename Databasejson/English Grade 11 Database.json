@@ -1,0 +1,785 @@
+{
+  "grade": 11,
+  "subject": "English",
+  "curriculum": "Ethiopian New Curriculum",
+  "units": [
+    {
+      "unit_number": 1,
+      "unit_title": "Environmental Hazards",
+      "sections": [
+        {
+          "section_number": "1.1",
+          "section_title": "Listening and Speaking",
+          "topics": [
+            {
+              "topic_title": "Environmental Hazards",
+              "subtopics": [
+                "Listening for gist and details",
+                "Causes of environmental hazards",
+                "Debating causes",
+                "Expressing viewpoints"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.2",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Environmental Hazards",
+              "subtopics": [
+                "Skimming and scanning",
+                "Explicit information",
+                "Implicit information",
+                "Reading comprehension"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.3",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Vocabulary",
+              "subtopics": [
+                "Inferring word meaning from context",
+                "Environmental vocabulary",
+                "Word relationships"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Noun types",
+                "Clauses of concession",
+                "Sentence structures"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.5",
+          "section_title": "Writing and Pronunciation",
+          "topics": [
+            {
+              "topic_title": "Writing and Pronunciation",
+              "subtopics": [
+                "Summarizing stories",
+                "Punctuation",
+                "Monophthongs",
+                "Diphthongs"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "unit_title": "Civilization",
+      "sections": [
+        {
+          "section_number": "2.1",
+          "section_title": "Listening and Speaking",
+          "topics": [
+            {
+              "topic_title": "Civilization",
+              "subtopics": [
+                "Taking notes",
+                "Summarizing",
+                "Expressing preferences",
+                "Reflecting on messages"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.2",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Civilization",
+              "subtopics": [
+                "Reading for main ideas",
+                "Supporting details",
+                "Understanding cultural development"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.3",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Vocabulary",
+              "subtopics": [
+                "Civilization vocabulary",
+                "Contextual meaning",
+                "Word building"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Punctuation",
+                "Relative clauses",
+                "Reported speech",
+                "Present perfect",
+                "Past perfect"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.5",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Narrative writing",
+                "Summarizing",
+                "Organizing a narrative"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "unit_title": "Causes of Road Traffic Accidents",
+      "sections": [
+        {
+          "section_number": "3.1",
+          "section_title": "Listening and Speaking",
+          "topics": [
+            {
+              "topic_title": "Road Traffic Accidents",
+              "subtopics": [
+                "Listening and summarizing",
+                "Discussing causes",
+                "Expressing opinions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.2",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Road Safety",
+              "subtopics": [
+                "Skimming",
+                "Scanning",
+                "Comprehension",
+                "Inferring meaning from context"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.3",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Vocabulary",
+              "subtopics": [
+                "Traffic vocabulary",
+                "Context clues",
+                "Road-safety expressions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Adverbial clauses of reason",
+                "Adverbial clauses of result",
+                "Complex sentences"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.5",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Cause-and-effect essays",
+                "Summarizing texts",
+                "Organizing causes and effects"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "unit_title": "People and Natural Resources",
+      "sections": [
+        {
+          "section_number": "4.1",
+          "section_title": "Listening and Speaking",
+          "topics": [
+            {
+              "topic_title": "People and Natural Resources",
+              "subtopics": [
+                "Summarizing listening texts",
+                "Identifying main points",
+                "Presentations",
+                "Resource conservation discussions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.2",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Natural Resources",
+              "subtopics": [
+                "Reading for main points",
+                "Environmental information",
+                "Conservation"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.3",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Vocabulary",
+              "subtopics": [
+                "Natural-resource vocabulary",
+                "Prefixes",
+                "Suffixes",
+                "Phrasal verbs"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Adverbial clauses of purpose",
+                "Purpose expressions",
+                "Complex sentences"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.5",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Expository paragraphs",
+                "Explaining ideas",
+                "Resource conservation writing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "unit_title": "Irrigation",
+      "sections": [
+        {
+          "section_number": "5.1",
+          "section_title": "Listening and Speaking",
+          "topics": [
+            {
+              "topic_title": "Irrigation",
+              "subtopics": [
+                "Listening for details",
+                "Predicting messages",
+                "Retelling stories",
+                "Discussing irrigation"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.2",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Irrigation",
+              "subtopics": [
+                "Synthesizing information",
+                "Reading for detail",
+                "Irrigation systems and benefits"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.3",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Vocabulary",
+              "subtopics": [
+                "Agricultural vocabulary",
+                "Contextual meaning",
+                "Technical terms"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Adverbial clauses of cause",
+                "Adverbial clauses of purpose",
+                "Gerunds",
+                "Infinitives",
+                "Participles",
+                "Articles",
+                "Mood expressions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.5",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Process writing",
+                "Agricultural writing",
+                "Organizing information"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "unit_title": "Global Warming",
+      "sections": [
+        {
+          "section_number": "6.1",
+          "section_title": "Listening and Speaking",
+          "topics": [
+            {
+              "topic_title": "Global Warming",
+              "subtopics": [
+                "Listening for causes and effects",
+                "Presenting speeches",
+                "Discussing climate change"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.2",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Global Warming",
+              "subtopics": [
+                "Reading for information",
+                "Causes of global warming",
+                "Effects of global warming"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.3",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Vocabulary",
+              "subtopics": [
+                "Climate vocabulary",
+                "Inferring meaning",
+                "Environmental terminology"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Present and past tenses",
+                "Clauses of comparison",
+                "Conditional clauses"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.5",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Compare-and-contrast essays",
+                "Organizing comparisons",
+                "Climate-change writing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 7,
+      "unit_title": "Patriotism",
+      "sections": [
+        {
+          "section_number": "7.1",
+          "section_title": "Listening and Speaking",
+          "topics": [
+            {
+              "topic_title": "Patriotism",
+              "subtopics": [
+                "Predicting messages",
+                "Debating",
+                "Expressing viewpoints",
+                "National pride"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.2",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Patriotism",
+              "subtopics": [
+                "Reading about patriotism",
+                "Identifying main ideas",
+                "Understanding historical and social messages"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.3",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Vocabulary",
+              "subtopics": [
+                "Patriotism vocabulary",
+                "Historical vocabulary",
+                "Contextual meaning"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Verb wish",
+                "Simple past tense",
+                "Reported speech"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.5",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Business letters",
+                "Narrative essays",
+                "Writing about heroes"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 8,
+      "unit_title": "Efficiency of Health Services",
+      "sections": [
+        {
+          "section_number": "8.1",
+          "section_title": "Listening and Speaking",
+          "topics": [
+            {
+              "topic_title": "Health Services",
+              "subtopics": [
+                "Summarizing",
+                "Interviews",
+                "Panel discussions",
+                "Expressing opinions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "8.2",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Health Services",
+              "subtopics": [
+                "Reading for information",
+                "Identifying arguments",
+                "Health-service efficiency"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "8.3",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Vocabulary",
+              "subtopics": [
+                "Health-service vocabulary",
+                "Medical terms",
+                "Contextual meaning"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "8.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Quantifiers",
+                "Expressions of purpose",
+                "Quantity and amount"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "8.5",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Argumentative writing",
+                "Developing arguments",
+                "Supporting opinions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 9,
+      "unit_title": "Indigenous Conflict Resolution",
+      "sections": [
+        {
+          "section_number": "9.1",
+          "section_title": "Listening and Speaking",
+          "topics": [
+            {
+              "topic_title": "Conflict Resolution",
+              "subtopics": [
+                "Listening for key ideas",
+                "Oral presentations",
+                "Discussing traditional conflict resolution"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "9.2",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Indigenous Conflict Resolution",
+              "subtopics": [
+                "Thesis identification",
+                "Reading for arguments",
+                "Understanding traditional practices"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "9.3",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Vocabulary",
+              "subtopics": [
+                "Conflict-resolution vocabulary",
+                "Phrasal verbs",
+                "Contextual meaning"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "9.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Adverbs",
+                "Adverb placement",
+                "Phrasal verbs"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "9.5",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Summary writing",
+                "Argument development",
+                "Conflict-resolution writing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 10,
+      "unit_title": "Artificial Intelligence",
+      "sections": [
+        {
+          "section_number": "10.1",
+          "section_title": "Listening and Speaking",
+          "topics": [
+            {
+              "topic_title": "Artificial Intelligence",
+              "subtopics": [
+                "Note-taking",
+                "Synthesizing information",
+                "Public speaking",
+                "Discussing AI"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "10.2",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Artificial Intelligence",
+              "subtopics": [
+                "Reading for information",
+                "Understanding AI concepts",
+                "Identifying implications"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "10.3",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Technology Vocabulary",
+              "subtopics": [
+                "Artificial intelligence terminology",
+                "Technology vocabulary",
+                "Contextual meaning"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "10.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Conditional sentences",
+                "Simple present",
+                "Present progressive",
+                "Adverbs"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "10.5",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Descriptive essays",
+                "Describing technology",
+                "Organizing descriptive information"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

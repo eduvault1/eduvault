@@ -1,0 +1,501 @@
+{
+  "grade": 11,
+  "subject": "Biology",
+  "curriculum": "Ethiopian New Curriculum",
+  "units": [
+    {
+      "unit_number": 1,
+      "unit_title": "Biology and Technology",
+      "sections": [
+        {
+          "section_number": "1.1",
+          "section_title": "Learning from Nature",
+          "page": 8,
+          "topics": [
+            {
+              "topic_title": "Learning from Nature",
+              "subtopics": [
+                "Biomimicry",
+                "Learning from organisms",
+                "Biological models",
+                "Applications of biological ideas"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.2",
+          "section_title": "Biology and Technology",
+          "page": 12,
+          "topics": [
+            {
+              "topic_title": "Biology and Technology",
+              "subtopics": [
+                "Benefits of biology to technology",
+                "Uses of technology in biology",
+                "Biotechnology",
+                "Applications of biotechnology"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.3",
+          "section_title": "Impacts of Biology and Technology on Society and the Natural World",
+          "page": 17,
+          "topics": [
+            {
+              "topic_title": "Impacts of Biology and Technology",
+              "subtopics": [
+                "Impacts of biology on society",
+                "Impacts of biology on the natural world",
+                "Impacts of technology on society",
+                "Impacts of technology on the natural world"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.4",
+          "section_title": "Ethical Issues in Biology",
+          "page": 19,
+          "topics": [
+            {
+              "topic_title": "Ethics in Biology",
+              "subtopics": [
+                "Ethical issues in biological studies",
+                "Ethical treatment of plants and animals",
+                "Bioethics",
+                "Responsible biological research"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "unit_title": "Animals",
+      "sections": [
+        {
+          "section_number": "2.1",
+          "section_title": "Characteristics of Animals",
+          "page": 27,
+          "topics": [
+            {
+              "topic_title": "Characteristics of Animals",
+              "subtopics": [
+                "Animal characteristics",
+                "Multicellularity",
+                "Heterotrophic nutrition",
+                "Animal organization"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.2",
+          "section_title": "Invertebrates and Vertebrates",
+          "page": 29,
+          "topics": [
+            {
+              "topic_title": "Animal Diversity",
+              "subtopics": [
+                "Invertebrate animals",
+                "Vertebrate animals",
+                "Major animal groups",
+                "Comparison of vertebrates and invertebrates"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.3",
+          "section_title": "Reproduction in Animals",
+          "page": 31,
+          "topics": [
+            {
+              "topic_title": "Animal Reproduction",
+              "subtopics": [
+                "Asexual reproduction",
+                "Sexual reproduction",
+                "Reproduction in insects",
+                "Complete and incomplete metamorphosis",
+                "Reproduction in frogs",
+                "Reproduction in crocodiles",
+                "Reproduction in birds",
+                "Reproduction in rats"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.4",
+          "section_title": "The Economic Importance of Animals (Insects)",
+          "page": 48,
+          "topics": [
+            {
+              "topic_title": "Economic Importance of Insects",
+              "subtopics": [
+                "Beneficial insects",
+                "Harmful insects",
+                "Insects in agriculture",
+                "Insects in food and industry",
+                "Insect-related health effects"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.5",
+          "section_title": "Animal Behavior",
+          "page": 54,
+          "topics": [
+            {
+              "topic_title": "Animal Behavior",
+              "subtopics": [
+                "Types of animal behavior",
+                "Innate behavior",
+                "Learned behavior",
+                "Social behavior",
+                "Patterns of animal behavior"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "unit_title": "Enzymes",
+      "sections": [
+        {
+          "section_number": "3.1",
+          "section_title": "Nature of Enzymes",
+          "page": 67,
+          "topics": [
+            {
+              "topic_title": "Nature of Enzymes",
+              "subtopics": [
+                "Definition of enzymes",
+                "Enzyme structure",
+                "Active site",
+                "Enzyme specificity",
+                "Cofactors and coenzymes"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.2",
+          "section_title": "Functions of Enzymes",
+          "page": 76,
+          "topics": [
+            {
+              "topic_title": "Enzyme Functions",
+              "subtopics": [
+                "Enzyme catalysis",
+                "Activation energy",
+                "Enzyme-substrate complex",
+                "Lock-and-key model",
+                "Induced-fit model"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.3",
+          "section_title": "Factors Affecting the Functions of Enzymes",
+          "page": 83,
+          "topics": [
+            {
+              "topic_title": "Factors Affecting Enzyme Activity",
+              "subtopics": [
+                "Temperature",
+                "pH",
+                "Substrate concentration",
+                "Enzyme concentration",
+                "Inhibitors",
+                "Competitive inhibition",
+                "Non-competitive inhibition"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "unit_title": "Genetics",
+      "sections": [
+        {
+          "section_number": "4.1",
+          "section_title": "Mendelian Genetics",
+          "page": 99,
+          "topics": [
+            {
+              "topic_title": "Mendelian Genetics",
+              "subtopics": [
+                "Heredity",
+                "Genes and alleles",
+                "Mendel's experiments",
+                "Dominant and recessive traits",
+                "Monohybrid crosses",
+                "Dihybrid crosses",
+                "Punnett squares"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.2",
+          "section_title": "Chromosomal Basis of Inheritance",
+          "page": 112,
+          "topics": [
+            {
+              "topic_title": "Chromosomal Inheritance",
+              "subtopics": [
+                "Chromosomes",
+                "Homologous chromosomes",
+                "Sex chromosomes",
+                "Autosomes",
+                "Linkage",
+                "Crossing over"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.3",
+          "section_title": "DNA and RNA",
+          "page": 125,
+          "topics": [
+            {
+              "topic_title": "Nucleic Acids",
+              "subtopics": [
+                "DNA structure",
+                "DNA replication",
+                "RNA structure",
+                "Types of RNA",
+                "Transcription",
+                "Translation",
+                "Genetic code"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.4",
+          "section_title": "Mutation and Genetic Disorders",
+          "page": 145,
+          "topics": [
+            {
+              "topic_title": "Mutation and Genetic Disorders",
+              "subtopics": [
+                "Gene mutations",
+                "Chromosomal mutations",
+                "Causes of mutations",
+                "Genetic disorders",
+                "Mutagens",
+                "Genetic screening"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.5",
+          "section_title": "Genetic Engineering",
+          "page": 155,
+          "topics": [
+            {
+              "topic_title": "Genetic Engineering",
+              "subtopics": [
+                "Recombinant DNA",
+                "Restriction enzymes",
+                "DNA ligase",
+                "Vectors",
+                "Gene cloning",
+                "PCR",
+                "Applications of genetic engineering",
+                "Ethical issues"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "unit_title": "The Human Body Systems",
+      "sections": [
+        {
+          "section_number": "5.1",
+          "section_title": "The Musculoskeletal System",
+          "page": 176,
+          "topics": [
+            {
+              "topic_title": "Muscles and Skeleton",
+              "subtopics": [
+                "Types of muscles",
+                "Mechanism of action of skeletal muscles",
+                "Axial skeleton",
+                "Appendicular skeleton",
+                "Joints"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.2",
+          "section_title": "The Reproductive System",
+          "page": 192,
+          "topics": [
+            {
+              "topic_title": "Human Reproductive System",
+              "subtopics": [
+                "Male reproductive system",
+                "Female reproductive system",
+                "Gametogenesis",
+                "Menstrual cycle",
+                "Fertilization",
+                "Pregnancy",
+                "Hormonal regulation"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.3",
+          "section_title": "The Nervous System",
+          "page": 207,
+          "topics": [
+            {
+              "topic_title": "Nervous System",
+              "subtopics": [
+                "Neurons",
+                "Nerve impulses",
+                "Synapses",
+                "Central nervous system",
+                "Peripheral nervous system",
+                "Reflex action",
+                "Sense organs"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.4",
+          "section_title": "The Endocrine System",
+          "page": 217,
+          "topics": [
+            {
+              "topic_title": "Endocrine System",
+              "subtopics": [
+                "Hormones",
+                "Endocrine glands",
+                "Pituitary gland",
+                "Thyroid gland",
+                "Pancreas",
+                "Adrenal glands",
+                "Hormonal regulation"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.5",
+          "section_title": "Homeostasis",
+          "page": 224,
+          "topics": [
+            {
+              "topic_title": "Homeostasis",
+              "subtopics": [
+                "Homeostasis",
+                "Thermoregulation",
+                "Osmoregulation",
+                "Blood glucose regulation",
+                "Negative feedback",
+                "Positive feedback"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "unit_title": "Population and Natural Resources",
+      "sections": [
+        {
+          "section_number": "6.1",
+          "section_title": "Population",
+          "page": 238,
+          "topics": [
+            {
+              "topic_title": "Population Dynamics",
+              "subtopics": [
+                "Population size",
+                "Population density",
+                "Population dispersal",
+                "Exponential growth",
+                "Logistic growth",
+                "Demographic structure",
+                "Population regulation"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.2",
+          "section_title": "Natural Resources",
+          "page": 254,
+          "topics": [
+            {
+              "topic_title": "Natural Resources",
+              "subtopics": [
+                "Renewable resources",
+                "Non-renewable resources",
+                "Resource use",
+                "Resource management"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.3",
+          "section_title": "Conservation of Natural Resources in Ethiopia",
+          "page": 256,
+          "topics": [
+            {
+              "topic_title": "Conservation",
+              "subtopics": [
+                "Natural resource conservation",
+                "Biodiversity conservation",
+                "Protected areas",
+                "Sustainable resource use",
+                "Conservation in Ethiopia"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.4",
+          "section_title": "Impact of Traffic Accident on Wild and Domestic Animals",
+          "page": 262,
+          "topics": [
+            {
+              "topic_title": "Traffic Accidents and Animals",
+              "subtopics": [
+                "Road traffic impacts",
+                "Wildlife mortality",
+                "Domestic animal impacts",
+                "Habitat fragmentation",
+                "Mitigation measures"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block content %}
+<main class="min-h-screen bg-slate-50 px-4 py-9 dark:bg-slate-950 sm:py-12">
+  <div class="mx-auto max-w-7xl space-y-7">
+    <header class="rounded-[2rem] bg-gradient-to-br from-amber-950 via-slate-900 to-indigo-950 p-7 text-white shadow-2xl sm:p-10">
+      <p class="inline-flex rounded-full border border-amber-200/20 bg-white/10 px-3 py-1 text-xs font-black uppercase tracking-[.18em] text-amber-200">Your learning insights</p>
+      <h1 class="mt-5 text-3xl font-black sm:text-5xl">See what you know. Plan what to learn next.</h1>
+      <p class="mt-4 max-w-3xl text-sm leading-6 text-slate-200 sm:text-base">Review performance by Bloom level, Grade 9–12 curriculum unit, and topic. Recommendations use your results to focus your next practice.</p>
+    </header>
+
+    <section class="grid gap-4 sm:grid-cols-3">
+      <article class="rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900"><p class="text-sm text-slate-500">Completed exams</p><p id="total-exams" class="mt-2 text-3xl font-black text-slate-900 dark:text-white">—</p></article>
+      <article class="rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900"><p class="text-sm text-slate-500">Average accuracy</p><p id="average" class="mt-2 text-3xl font-black text-indigo-700 dark:text-indigo-300">—</p></article>
+      <article class="rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900"><p class="text-sm text-slate-500">Most recent exam</p><p id="recent" class="mt-2 text-3xl font-black text-amber-700 dark:text-amber-300">—</p></article>
+    </section>
+
+    <section class="grid gap-5 lg:grid-cols-2">
+      <article class="rounded-3xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900 sm:p-7"><h2 class="text-xl font-black text-slate-900 dark:text-white">Bloom taxonomy performance</h2><p class="mt-1 text-sm text-slate-500">Your results by question skill.</p><div id="bloom" class="mt-5 space-y-4"><p class="text-sm text-slate-500">Loading…</p></div></article>
+      <article class="rounded-3xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900 sm:p-7"><h2 class="text-xl font-black text-slate-900 dark:text-white">Next steps for you</h2><p class="mt-1 text-sm text-slate-500">AI recommendations are based on your recorded performance.</p><div id="recommendations" class="mt-5 space-y-3"><p class="text-sm text-slate-500">Loading…</p></div><a href="/exam-generator" class="mt-5 inline-flex rounded-xl bg-blue-700 px-4 py-3 font-bold text-white hover:bg-blue-600">Generate a focused exam →</a></article>
+    </section>
+
+    <section class="rounded-3xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900 sm:p-7">
+      <div><h2 class="text-xl font-black text-slate-900 dark:text-white">Unit and topic progress</h2><p class="mt-1 text-sm text-slate-500">See the curriculum areas where you are growing or could use more practice.</p></div>
+      <div id="curriculum-performance" class="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-3"><p class="text-sm text-slate-500">Loading…</p></div>
+    </section>
+
+    <section class="rounded-3xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900 sm:p-7"><h2 class="text-xl font-black text-slate-900 dark:text-white">Recent examination history</h2><div id="history" class="mt-4 space-y-2 text-sm"><p class="text-slate-500">Loading…</p></div></section>
+  </div>
+</main>
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const safe = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const progress = (accuracy, color='bg-emerald-500') => `<div class="mt-2 h-2 overflow-hidden rounded-full bg-slate-100 dark:bg-slate-800"><div class="h-full ${color}" style="width:${Math.max(0, Math.min(100, Number(accuracy)||0))}%"></div></div>`;
+
+  fetch('/api/learning/analytics').then(async response => {
+    const data = await response.json();
+    if (!response.ok) throw new Error(data.error || 'Analytics could not be loaded.');
+    const attempts = data.attempts || [];
+    $('total-exams').textContent = attempts.length;
+    $('average').textContent = attempts.length ? `${Math.round(attempts.reduce((sum, row) => sum + Number(row.accuracy || 0), 0) / attempts.length)}%` : '—';
+    $('recent').textContent = attempts.length ? `${Number(attempts[0].accuracy || 0)}%` : '—';
+
+    const blooms = data.bloom_performance || [];
+    $('bloom').innerHTML = blooms.length ? blooms.map(row => `<article><div class="flex justify-between gap-3 text-sm"><b class="text-slate-800 dark:text-slate-100">${safe(row.category)}</b><span class="text-slate-500">${Number(row.accuracy).toFixed(1)}% · ${row.correct}/${row.total}</span></div>${progress(row.accuracy, Number(row.accuracy)<65?'bg-rose-500':'bg-emerald-500')}</article>`).join('') : '<p class="text-sm text-slate-500">Bloom results will appear after you complete a tagged practice exam.</p>';
+
+    const recommendations = data.recommendations || [];
+    $('recommendations').innerHTML = recommendations.map(item => `<article class="rounded-2xl border border-amber-200 bg-amber-50 p-4 dark:border-amber-900 dark:bg-amber-950/30"><p class="text-[10px] font-black uppercase tracking-wider text-amber-700 dark:text-amber-300">${safe(item.area || 'Study guidance')}</p><h3 class="mt-1 font-extrabold text-slate-900 dark:text-white">${safe(item.title)}</h3><p class="mt-2 text-sm leading-5 text-slate-600 dark:text-slate-300">${safe(item.reason)}</p><p class="mt-2 text-sm font-bold text-slate-800 dark:text-slate-100">${safe(item.action)}</p></article>`).join('') || '<p class="text-sm text-slate-500">Complete a few practice exams to receive recommendations.</p>';
+
+    const areas = data.curriculum_performance || [];
+    $('curriculum-performance').innerHTML = areas.length ? areas.map(area => {
+      const low = Number(area.accuracy) < 65;
+      const color = low ? 'bg-rose-500' : Number(area.accuracy) >= 85 ? 'bg-emerald-500' : 'bg-blue-500';
+      const status = low ? 'Needs more practice' : Number(area.accuracy) >= 85 ? 'Strong area' : 'Progressing';
+      return `<article class="rounded-2xl border border-slate-200 p-4 dark:border-slate-800"><div class="flex items-start justify-between gap-3"><div><p class="text-[10px] font-black uppercase tracking-wider text-violet-600 dark:text-violet-300">Grade ${safe(area.grade)} · ${safe(area.subject)}</p><h3 class="mt-1 font-extrabold text-slate-900 dark:text-white">Unit ${safe(area.unit_number)}: ${safe(area.unit_title)}</h3><p class="mt-1 text-sm text-slate-500">${safe(area.topic_title)}</p></div><span class="text-xl font-black text-slate-900 dark:text-white">${Number(area.accuracy).toFixed(0)}%</span></div>${progress(area.accuracy, color)}<div class="mt-2 flex justify-between text-xs text-slate-500"><span>${status}</span><span>${area.correct}/${area.total} correct</span></div></article>`;
+    }).join('') : '<p class="text-sm text-slate-500">Topic progress appears after you complete an exam with curriculum-mapped questions.</p>';
+
+    $('history').innerHTML = attempts.map(row => `<article class="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-slate-200 p-3 dark:border-slate-800"><div><p class="font-bold text-slate-900 dark:text-white">${safe(row.exam_title)}</p><p class="mt-1 text-xs text-slate-500">${safe(row.subject)} · Grade ${safe(row.grade)} · ${safe(row.date_attempted)}</p></div><p class="font-black text-slate-800 dark:text-white">${Number(row.score||0)}/${Number(row.total_questions||0)} · ${Number(row.accuracy||0)}%</p></article>`).join('') || '<p class="text-sm text-slate-500">No completed exam records found yet.</p>';
+  }).catch(error => {
+    $('history').textContent = error.message || 'Analytics could not be loaded. Please try again.';
+    $('bloom').textContent = 'Analytics could not be loaded.';
+    $('curriculum-performance').textContent = 'Analytics could not be loaded.';
+  });
+})();
+</script>
+{% endblock %}

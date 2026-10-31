@@ -1,0 +1,917 @@
+{
+  "grade": 12,
+  "subject": "English",
+  "curriculum": "Ethiopian New Curriculum",
+  "units": [
+    {
+      "unit_number": 1,
+      "unit_title": "Sustainable Development",
+      "sections": [
+        {
+          "section_number": "1.1",
+          "section_title": "Listening",
+          "topics": [
+            {
+              "topic_title": "Listening Skills",
+              "subtopics": [
+                "Comprehending listening texts",
+                "Reordering incidents",
+                "Identifying main ideas and details"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.2",
+          "section_title": "Speaking",
+          "topics": [
+            {
+              "topic_title": "Speaking Skills",
+              "subtopics": [
+                "Group discussion",
+                "Public speaking",
+                "Connecting ideas to real-life experiences"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.3",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Reading Skills",
+              "subtopics": [
+                "Main ideas",
+                "Supporting details",
+                "Verbal reasoning",
+                "Comparison and contrast"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Expressions of comparison and contrast",
+                "Sentence fragments",
+                "Sentence correction"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.5",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing Skills",
+              "subtopics": [
+                "Paragraph organization",
+                "Comparative paragraphs",
+                "Contrast paragraphs"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.6",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Vocabulary",
+              "subtopics": [
+                "Sustainable-development vocabulary",
+                "Contextual meaning",
+                "Subject-specific vocabulary"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "unit_title": "Time Management",
+      "sections": [
+        {
+          "section_number": "2.1",
+          "section_title": "Listening",
+          "topics": [
+            {
+              "topic_title": "Listening Skills",
+              "subtopics": [
+                "Understanding listening texts",
+                "Main ideas",
+                "Supporting details"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.2",
+          "section_title": "Speaking",
+          "topics": [
+            {
+              "topic_title": "Speaking Skills",
+              "subtopics": [
+                "Time-management strategies",
+                "Group discussion",
+                "Giving advice"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.3",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Reading Skills",
+              "subtopics": [
+                "Main ideas",
+                "Supporting details",
+                "Guessing word meanings from context"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Gerunds",
+                "Infinitives",
+                "Gerund versus infinitive"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.5",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing Skills",
+              "subtopics": [
+                "Time-management plan",
+                "Planning and organization",
+                "Paragraph writing"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.6",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Vocabulary",
+              "subtopics": [
+                "Time-management vocabulary",
+                "Context clues",
+                "Word formation"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "unit_title": "Evidence on Traffic Accidents",
+      "sections": [
+        {
+          "section_number": "3.1",
+          "section_title": "Listening",
+          "topics": [
+            {
+              "topic_title": "Listening Skills",
+              "subtopics": [
+                "Listening to incidents",
+                "Retelling incidents",
+                "Main ideas and details"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.2",
+          "section_title": "Speaking",
+          "topics": [
+            {
+              "topic_title": "Speaking Skills",
+              "subtopics": [
+                "Causes of traffic accidents",
+                "Solutions to traffic accidents",
+                "Discussion"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.3",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Reading Skills",
+              "subtopics": [
+                "Main ideas",
+                "Supporting details",
+                "Evidence",
+                "Reading comprehension"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Passive voice",
+                "Active and passive sentences",
+                "Uses of passive voice"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.5",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing Skills",
+              "subtopics": [
+                "Narrative essay",
+                "Incident description",
+                "Organizing evidence"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.6",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Vocabulary",
+              "subtopics": [
+                "Traffic-accident vocabulary",
+                "Contextual meaning",
+                "Technical terms"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "unit_title": "Natural Resource Management",
+      "sections": [
+        {
+          "section_number": "4.1",
+          "section_title": "Listening",
+          "topics": [
+            {
+              "topic_title": "Listening Skills",
+              "subtopics": [
+                "Listening for main ideas",
+                "Listening for details",
+                "Resource-management information"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.2",
+          "section_title": "Speaking",
+          "topics": [
+            {
+              "topic_title": "Speaking Skills",
+              "subtopics": [
+                "Discussing natural resources",
+                "Expressing opinions",
+                "Giving presentations"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.3",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Reading Skills",
+              "subtopics": [
+                "Natural-resource texts",
+                "Main ideas",
+                "Supporting evidence",
+                "Critical reading"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Grammar in context",
+                "Complex sentences",
+                "Connectors and linking expressions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.5",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing Skills",
+              "subtopics": [
+                "Informative writing",
+                "Resource-management reports",
+                "Paragraph organization"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.6",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Vocabulary",
+              "subtopics": [
+                "Natural-resource vocabulary",
+                "Environmental terminology",
+                "Word meaning from context"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "unit_title": "Mechanized Agriculture",
+      "sections": [
+        {
+          "section_number": "5.1",
+          "section_title": "Listening",
+          "topics": [
+            {
+              "topic_title": "Listening Skills",
+              "subtopics": [
+                "Agricultural information",
+                "Listening for processes",
+                "Identifying details"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.2",
+          "section_title": "Speaking",
+          "topics": [
+            {
+              "topic_title": "Speaking Skills",
+              "subtopics": [
+                "Discussing mechanized farming",
+                "Presenting information",
+                "Giving explanations"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.3",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Reading Skills",
+              "subtopics": [
+                "Agricultural texts",
+                "Main ideas",
+                "Supporting details",
+                "Process information"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Grammar in context",
+                "Process expressions",
+                "Sentence structures"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.5",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing Skills",
+              "subtopics": [
+                "Process writing",
+                "Agricultural reports",
+                "Organizing technical information"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.6",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Vocabulary",
+              "subtopics": [
+                "Mechanized agriculture terms",
+                "Agricultural vocabulary",
+                "Contextual meaning"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "unit_title": "Green Economies",
+      "sections": [
+        {
+          "section_number": "6.1",
+          "section_title": "Listening",
+          "topics": [
+            {
+              "topic_title": "Listening Skills",
+              "subtopics": [
+                "Listening for key ideas",
+                "Understanding economic information",
+                "Identifying details"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.2",
+          "section_title": "Speaking",
+          "topics": [
+            {
+              "topic_title": "Speaking Skills",
+              "subtopics": [
+                "Discussing green economies",
+                "Expressing opinions",
+                "Group discussion"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.3",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Reading Skills",
+              "subtopics": [
+                "Green economy texts",
+                "Main ideas",
+                "Evidence and examples",
+                "Critical reading"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Grammar in context",
+                "Linking expressions",
+                "Complex sentence structures"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.5",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing Skills",
+              "subtopics": [
+                "Argumentative writing",
+                "Economic issues",
+                "Supporting arguments"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.6",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Vocabulary",
+              "subtopics": [
+                "Green-economy vocabulary",
+                "Economic terms",
+                "Environmental terminology"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 7,
+      "unit_title": "National Pride",
+      "sections": [
+        {
+          "section_number": "7.1",
+          "section_title": "Listening",
+          "topics": [
+            {
+              "topic_title": "Listening Skills",
+              "subtopics": [
+                "Listening to national symbols and pride",
+                "Comprehension questions",
+                "Main ideas and details"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.2",
+          "section_title": "Speaking",
+          "topics": [
+            {
+              "topic_title": "Speaking Skills",
+              "subtopics": [
+                "Discussing national pride",
+                "Public speaking",
+                "Expressing viewpoints"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.3",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Reading Skills",
+              "subtopics": [
+                "National identity texts",
+                "Main ideas",
+                "Supporting details",
+                "Critical reading"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Cleft sentences",
+                "Emphasis",
+                "Sentence transformation"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.5",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing Skills",
+              "subtopics": [
+                "Speech writing",
+                "Writing a speech on national pride",
+                "Organizing a speech"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.6",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Vocabulary",
+              "subtopics": [
+                "National identity vocabulary",
+                "National symbols",
+                "Contextual meaning"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 8,
+      "unit_title": "Telemedicine",
+      "sections": [
+        {
+          "section_number": "8.1",
+          "section_title": "Listening",
+          "topics": [
+            {
+              "topic_title": "Listening Skills",
+              "subtopics": [
+                "Listening to health-technology information",
+                "Summarizing information",
+                "Main ideas and details"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "8.2",
+          "section_title": "Speaking",
+          "topics": [
+            {
+              "topic_title": "Speaking Skills",
+              "subtopics": [
+                "Benefits of telemedicine",
+                "Challenges of telemedicine",
+                "Discussion and presentation"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "8.3",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Reading Skills",
+              "subtopics": [
+                "Telemedicine texts",
+                "Main ideas",
+                "Supporting details",
+                "Health technology"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "8.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Relative clauses",
+                "Defining relative clauses",
+                "Non-defining relative clauses"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "8.5",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing Skills",
+              "subtopics": [
+                "Report writing",
+                "Telemedicine report",
+                "Organizing factual information"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "8.6",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Vocabulary",
+              "subtopics": [
+                "Healthcare technology vocabulary",
+                "Telemedicine terms",
+                "Contextual meaning"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 9,
+      "unit_title": "Conflict Management",
+      "sections": [
+        {
+          "section_number": "9.1",
+          "section_title": "Listening",
+          "topics": [
+            {
+              "topic_title": "Listening Skills",
+              "subtopics": [
+                "Identifying causes of conflict",
+                "Listening for details",
+                "Summarizing information"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "9.2",
+          "section_title": "Speaking",
+          "topics": [
+            {
+              "topic_title": "Speaking Skills",
+              "subtopics": [
+                "Conflict-resolution strategies",
+                "Negotiation",
+                "Expressing viewpoints"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "9.3",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Reading Skills",
+              "subtopics": [
+                "Conflict and peacebuilding texts",
+                "Main ideas",
+                "Supporting evidence",
+                "Problem and solution"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "9.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Conditional sentences",
+                "Types of conditionals",
+                "Condition and result"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "9.5",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing Skills",
+              "subtopics": [
+                "Problem-solution essay",
+                "Identifying problems",
+                "Proposing solutions",
+                "Supporting solutions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "9.6",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Vocabulary",
+              "subtopics": [
+                "Conflict vocabulary",
+                "Peacebuilding terms",
+                "Contextual meaning"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 10,
+      "unit_title": "Robotics",
+      "sections": [
+        {
+          "section_number": "10.1",
+          "section_title": "Listening",
+          "topics": [
+            {
+              "topic_title": "Listening Skills",
+              "subtopics": [
+                "Taking notes",
+                "Listening for key ideas",
+                "Applications of robotics"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "10.2",
+          "section_title": "Speaking",
+          "topics": [
+            {
+              "topic_title": "Speaking Skills",
+              "subtopics": [
+                "Discussing robotics",
+                "Applications of robotics",
+                "Technology presentations"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "10.3",
+          "section_title": "Reading",
+          "topics": [
+            {
+              "topic_title": "Reading Skills",
+              "subtopics": [
+                "Robotics texts",
+                "Main ideas",
+                "Supporting details",
+                "Technology and society"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "10.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Causative structures",
+                "Have and get causatives",
+                "Causative constructions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "10.5",
+          "section_title": "Writing",
+          "topics": [
+            {
+              "topic_title": "Writing Skills",
+              "subtopics": [
+                "Descriptive essay",
+                "Describing robotics",
+                "Organizing descriptive information"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "10.6",
+          "section_title": "Vocabulary",
+          "topics": [
+            {
+              "topic_title": "Vocabulary",
+              "subtopics": [
+                "Robotics vocabulary",
+                "Technology terminology",
+                "Contextual meaning"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,370 @@
+{
+  "grade": 12,
+  "subject": "Mathematics",
+  "curriculum": "Ethiopian New Curriculum",
+  "units": [
+    {
+      "unit_number": 1,
+      "unit_title": "Sequence and Series",
+      "sections": [
+        {
+          "section_number": "1.1",
+          "section_title": "Sequences",
+          "topics": [
+            {
+              "topic_title": "Sequences",
+              "subtopics": [
+                "Definition of a sequence",
+                "Terms of a sequence",
+                "General term",
+                "Patterns and sequences"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.2",
+          "section_title": "Arithmetic and Geometric Sequences",
+          "topics": [
+            {
+              "topic_title": "Arithmetic and Geometric Sequences",
+              "subtopics": [
+                "Arithmetic sequences",
+                "Common difference",
+                "Geometric sequences",
+                "Common ratio",
+                "Nth term"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.3",
+          "section_title": "The Sigma Notation and Partial Sums",
+          "topics": [
+            {
+              "topic_title": "Sigma Notation and Partial Sums",
+              "subtopics": [
+                "Sigma notation",
+                "Properties of summation",
+                "Partial sums",
+                "Sum of arithmetic sequences",
+                "Sum of geometric sequences"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.4",
+          "section_title": "Infinite Series",
+          "topics": [
+            {
+              "topic_title": "Infinite Series",
+              "subtopics": [
+                "Infinite sequences",
+                "Infinite series",
+                "Convergence",
+                "Sum of an infinite geometric series"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.5",
+          "section_title": "Applications of Arithmetic and Geometric Progressions",
+          "topics": [
+            {
+              "topic_title": "Applications",
+              "subtopics": [
+                "Growth and decay",
+                "Compound interest",
+                "Installment payments",
+                "Population models",
+                "Real-life applications"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "unit_title": "Introduction to Calculus",
+      "sections": [
+        {
+          "section_number": "2.1",
+          "section_title": "Introduction to Derivatives",
+          "topics": [
+            {
+              "topic_title": "Derivatives",
+              "subtopics": [
+                "Rate of change",
+                "Gradient of a curve",
+                "Derivative from first principles",
+                "Differentiability",
+                "Derivative notation"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.2",
+          "section_title": "Application of Derivative",
+          "topics": [
+            {
+              "topic_title": "Applications of Derivatives",
+              "subtopics": [
+                "Increasing and decreasing functions",
+                "Stationary points",
+                "Maximum and minimum values",
+                "Optimization",
+                "Rate of change"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.3",
+          "section_title": "Introduction to Integrals",
+          "topics": [
+            {
+              "topic_title": "Integrals",
+              "subtopics": [
+                "Antiderivatives",
+                "Indefinite integrals",
+                "Basic integration rules",
+                "Definite integrals",
+                "Area under curves"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "unit_title": "Statistics",
+      "sections": [
+        {
+          "section_number": "3.1",
+          "section_title": "Measures of Absolute Dispersions",
+          "topics": [
+            {
+              "topic_title": "Absolute Dispersion",
+              "subtopics": [
+                "Range",
+                "Quartile deviation",
+                "Mean deviation",
+                "Variance",
+                "Standard deviation"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.2",
+          "section_title": "Relative Dispersions and Their Interpretations",
+          "topics": [
+            {
+              "topic_title": "Relative Dispersion",
+              "subtopics": [
+                "Coefficient of range",
+                "Coefficient of quartile deviation",
+                "Coefficient of variation",
+                "Comparing distributions",
+                "Interpretation"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.3",
+          "section_title": "Use of Cumulative Frequency Curves",
+          "topics": [
+            {
+              "topic_title": "Cumulative Frequency Curves",
+              "subtopics": [
+                "Cumulative frequency",
+                "Less-than ogive",
+                "Greater-than ogive",
+                "Median from an ogive",
+                "Quartiles and percentiles"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.4",
+          "section_title": "Sampling Techniques",
+          "topics": [
+            {
+              "topic_title": "Sampling",
+              "subtopics": [
+                "Population and sample",
+                "Sampling methods",
+                "Simple random sampling",
+                "Systematic sampling",
+                "Stratified sampling",
+                "Sampling errors"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "unit_title": "Introduction to Linear Programming",
+      "sections": [
+        {
+          "section_number": "4.1",
+          "section_title": "Revision on Linear Graphs",
+          "topics": [
+            {
+              "topic_title": "Linear Graphs",
+              "subtopics": [
+                "Linear equations",
+                "Linear inequalities",
+                "Coordinate graphs",
+                "Regions defined by inequalities"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.2",
+          "section_title": "Graphical Solutions of System of Linear Inequalities",
+          "topics": [
+            {
+              "topic_title": "Systems of Linear Inequalities",
+              "subtopics": [
+                "Constraints",
+                "Feasible regions",
+                "Graphical representation",
+                "Systems of inequalities"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.3",
+          "section_title": "Maximum and Minimum Value",
+          "topics": [
+            {
+              "topic_title": "Optimization",
+              "subtopics": [
+                "Objective functions",
+                "Corner-point method",
+                "Maximum value",
+                "Minimum value",
+                "Feasible solutions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.4",
+          "section_title": "Applications",
+          "topics": [
+            {
+              "topic_title": "Linear Programming Applications",
+              "subtopics": [
+                "Production problems",
+                "Diet problems",
+                "Transportation problems",
+                "Resource allocation",
+                "Profit and cost optimization"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.5",
+          "section_title": "Solving Linear Programming Problems Using Spreadsheet",
+          "topics": [
+            {
+              "topic_title": "Spreadsheet Applications",
+              "subtopics": [
+                "Spreadsheet modeling",
+                "Entering constraints",
+                "Objective functions",
+                "Optimization with spreadsheets",
+                "Interpreting results"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "unit_title": "Mathematical Applications in Business",
+      "sections": [
+        {
+          "section_number": "5.1",
+          "section_title": "Business Mathematics",
+          "topics": [
+            {
+              "topic_title": "Cost, Revenue and Profit",
+              "subtopics": [
+                "Cost",
+                "Revenue",
+                "Profit",
+                "Break-even analysis",
+                "Business calculations"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.2",
+          "section_title": "Time Value of Money",
+          "topics": [
+            {
+              "topic_title": "Time Value of Money",
+              "subtopics": [
+                "Simple interest",
+                "Compound interest",
+                "Present value",
+                "Future value",
+                "Time value of money"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.3",
+          "section_title": "Saving, Investment and Borrowing",
+          "topics": [
+            {
+              "topic_title": "Financial Mathematics",
+              "subtopics": [
+                "Savings",
+                "Investment",
+                "Loans",
+                "Annuities",
+                "Repayment schedules"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.4",
+          "section_title": "Taxation",
+          "topics": [
+            {
+              "topic_title": "Taxation",
+              "subtopics": [
+                "Taxable income",
+                "Tax rates",
+                "Income tax calculations",
+                "Tax deductions",
+                "Applications of taxation mathematics"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

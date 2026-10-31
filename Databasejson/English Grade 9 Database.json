@@ -1,0 +1,934 @@
+{
+  "grade": 9,
+  "subject": "English",
+  "curriculum": "Ethiopian New Curriculum",
+  "units": [
+    {
+      "unit_number": 1,
+      "unit_title": "Living in Urban Areas",
+      "sections": [
+        {
+          "section_number": "1.1",
+          "section_title": "Listening Skills",
+          "topics": [
+            {
+              "topic_title": "Listening",
+              "subtopics": [
+                "Listening for gist",
+                "Listening for specific information",
+                "Identifying main ideas",
+                "Understanding details"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.2",
+          "section_title": "Reading Skills",
+          "topics": [
+            {
+              "topic_title": "Reading",
+              "subtopics": [
+                "Skimming",
+                "Scanning",
+                "Main ideas",
+                "Supporting details",
+                "Reading comprehension"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.3",
+          "section_title": "Vocabulary Development",
+          "topics": [
+            {
+              "topic_title": "Urban Vocabulary",
+              "subtopics": [
+                "Urban life vocabulary",
+                "Context clues",
+                "Word meaning",
+                "Word formation"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Present simple",
+                "Present continuous",
+                "Question forms",
+                "Sentence structure"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.5",
+          "section_title": "Speaking Skills",
+          "topics": [
+            {
+              "topic_title": "Speaking",
+              "subtopics": [
+                "Expressing opinions",
+                "Describing urban life",
+                "Pair and group discussion",
+                "Agreeing and disagreeing"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.6",
+          "section_title": "Writing Skills",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Paragraph writing",
+                "Descriptive writing",
+                "Topic sentences",
+                "Supporting ideas"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "unit_title": "Study Skills",
+      "sections": [
+        {
+          "section_number": "2.1",
+          "section_title": "Listening Skills",
+          "topics": [
+            {
+              "topic_title": "Listening",
+              "subtopics": [
+                "Listening strategies",
+                "Taking notes",
+                "Identifying key information"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.2",
+          "section_title": "Reading Skills",
+          "topics": [
+            {
+              "topic_title": "Study Reading",
+              "subtopics": [
+                "Scanning",
+                "Skimming",
+                "Summarizing",
+                "Organizing information"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.3",
+          "section_title": "Vocabulary Development",
+          "topics": [
+            {
+              "topic_title": "Academic Vocabulary",
+              "subtopics": [
+                "Study-related vocabulary",
+                "Word families",
+                "Context clues",
+                "Dictionary skills"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Modals",
+                "Imperatives",
+                "Infinitives and gerunds",
+                "Sentence connectors"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.5",
+          "section_title": "Speaking Skills",
+          "topics": [
+            {
+              "topic_title": "Speaking",
+              "subtopics": [
+                "Giving advice",
+                "Asking for clarification",
+                "Discussing study habits",
+                "Presenting information"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.6",
+          "section_title": "Writing Skills",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Note-taking",
+                "Summarizing",
+                "Paragraph organization",
+                "Short compositions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "unit_title": "Traffic Accident",
+      "sections": [
+        {
+          "section_number": "3.1",
+          "section_title": "Listening Skills",
+          "topics": [
+            {
+              "topic_title": "Listening",
+              "subtopics": [
+                "Understanding road-safety information",
+                "Listening for causes and effects",
+                "Identifying details"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.2",
+          "section_title": "Reading Skills",
+          "topics": [
+            {
+              "topic_title": "Reading",
+              "subtopics": [
+                "Traffic accident texts",
+                "Finding causes",
+                "Finding effects",
+                "Reading comprehension"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.3",
+          "section_title": "Vocabulary Development",
+          "topics": [
+            {
+              "topic_title": "Traffic Vocabulary",
+              "subtopics": [
+                "Road and traffic terms",
+                "Accident vocabulary",
+                "Contextual meaning",
+                "Word formation"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Past simple",
+                "Past continuous",
+                "Cause and effect expressions",
+                "Conditional sentences"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.5",
+          "section_title": "Speaking Skills",
+          "topics": [
+            {
+              "topic_title": "Speaking",
+              "subtopics": [
+                "Describing accidents",
+                "Giving safety advice",
+                "Discussing causes and solutions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.6",
+          "section_title": "Writing Skills",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Narrative writing",
+                "Describing an event",
+                "Cause-and-effect paragraph"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "unit_title": "National Parks",
+      "sections": [
+        {
+          "section_number": "4.1",
+          "section_title": "Listening Skills",
+          "topics": [
+            {
+              "topic_title": "Listening",
+              "subtopics": [
+                "Listening about national parks",
+                "Identifying facts",
+                "Listening for details"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.2",
+          "section_title": "Reading Skills",
+          "topics": [
+            {
+              "topic_title": "Reading",
+              "subtopics": [
+                "Informative texts",
+                "Identifying facts and opinions",
+                "Main ideas and details"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.3",
+          "section_title": "Vocabulary Development",
+          "topics": [
+            {
+              "topic_title": "Environmental Vocabulary",
+              "subtopics": [
+                "Wildlife vocabulary",
+                "Conservation terms",
+                "Environmental expressions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Conditionals",
+              "subtopics": [
+                "Zero conditional",
+                "First conditional",
+                "Conditional clauses",
+                "Uses of conditionals"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.5",
+          "section_title": "Speaking Skills",
+          "topics": [
+            {
+              "topic_title": "Speaking",
+              "subtopics": [
+                "Describing places",
+                "Discussing conservation",
+                "Giving information"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.6",
+          "section_title": "Writing Skills",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Informative writing",
+                "Describing a place",
+                "Writing about conservation"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "unit_title": "Horticulture",
+      "sections": [
+        {
+          "section_number": "5.1",
+          "section_title": "Listening Skills",
+          "topics": [
+            {
+              "topic_title": "Listening",
+              "subtopics": [
+                "Listening about horticulture",
+                "Following processes",
+                "Identifying important information"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.2",
+          "section_title": "Reading Skills",
+          "topics": [
+            {
+              "topic_title": "Reading",
+              "subtopics": [
+                "Agricultural texts",
+                "Understanding processes",
+                "Reading for details"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.3",
+          "section_title": "Vocabulary Development",
+          "topics": [
+            {
+              "topic_title": "Horticulture Vocabulary",
+              "subtopics": [
+                "Plants and crops",
+                "Cultivation vocabulary",
+                "Agricultural terminology"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Conditional sentences",
+                "If clauses",
+                "Uses of conditionals"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.5",
+          "section_title": "Speaking Skills",
+          "topics": [
+            {
+              "topic_title": "Speaking",
+              "subtopics": [
+                "Describing agricultural processes",
+                "Giving instructions",
+                "Discussing sustainable practices"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.6",
+          "section_title": "Writing Skills",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Process writing",
+                "Informative paragraphs",
+                "Instructions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "unit_title": "Poverty in Ethiopia",
+      "sections": [
+        {
+          "section_number": "6.1",
+          "section_title": "Listening Skills",
+          "topics": [
+            {
+              "topic_title": "Listening",
+              "subtopics": [
+                "Listening for social issues",
+                "Identifying causes and effects",
+                "Note-taking"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.2",
+          "section_title": "Reading Skills",
+          "topics": [
+            {
+              "topic_title": "Reading",
+              "subtopics": [
+                "Social-issue texts",
+                "Identifying arguments",
+                "Main ideas and supporting evidence"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.3",
+          "section_title": "Vocabulary Development",
+          "topics": [
+            {
+              "topic_title": "Social and Economic Vocabulary",
+              "subtopics": [
+                "Poverty-related terms",
+                "Economic vocabulary",
+                "Contextual meaning"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Modal verbs",
+                "Expressing possibility",
+                "Expressing obligation",
+                "Cause-and-effect structures"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.5",
+          "section_title": "Speaking Skills",
+          "topics": [
+            {
+              "topic_title": "Speaking",
+              "subtopics": [
+                "Discussing social problems",
+                "Expressing opinions",
+                "Suggesting solutions",
+                "Group discussion"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.6",
+          "section_title": "Writing Skills",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Opinion writing",
+                "Problem-solution writing",
+                "Persuasive paragraphs"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 7,
+      "unit_title": "Community Services",
+      "sections": [
+        {
+          "section_number": "7.1",
+          "section_title": "Listening Skills",
+          "topics": [
+            {
+              "topic_title": "Listening",
+              "subtopics": [
+                "Listening about community services",
+                "Identifying responsibilities",
+                "Listening for details"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.2",
+          "section_title": "Reading Skills",
+          "topics": [
+            {
+              "topic_title": "Reading",
+              "subtopics": [
+                "Community-service texts",
+                "Identifying key information",
+                "Understanding supporting details"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.3",
+          "section_title": "Vocabulary Development",
+          "topics": [
+            {
+              "topic_title": "Community Vocabulary",
+              "subtopics": [
+                "Community-service terms",
+                "Volunteering vocabulary",
+                "Public-service expressions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Reported speech",
+                "Requests and commands",
+                "Pronouns in reported speech"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.5",
+          "section_title": "Speaking Skills",
+          "topics": [
+            {
+              "topic_title": "Speaking",
+              "subtopics": [
+                "Discussing community needs",
+                "Making requests",
+                "Offering help",
+                "Role play"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.6",
+          "section_title": "Writing Skills",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Formal and informal messages",
+                "Community-service reports",
+                "Letters and paragraphs"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 8,
+      "unit_title": "Communicable Diseases",
+      "sections": [
+        {
+          "section_number": "8.1",
+          "section_title": "Listening Skills",
+          "topics": [
+            {
+              "topic_title": "Listening",
+              "subtopics": [
+                "Health information",
+                "Identifying prevention measures",
+                "Listening for specific information"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "8.2",
+          "section_title": "Reading Skills",
+          "topics": [
+            {
+              "topic_title": "Reading",
+              "subtopics": [
+                "Health texts",
+                "Identifying facts",
+                "Understanding prevention information"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "8.3",
+          "section_title": "Vocabulary Development",
+          "topics": [
+            {
+              "topic_title": "Health Vocabulary",
+              "subtopics": [
+                "Disease vocabulary",
+                "Prevention terms",
+                "Health-related expressions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "8.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Passive voice",
+                "Active and passive sentences",
+                "Uses of passive voice"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "8.5",
+          "section_title": "Speaking Skills",
+          "topics": [
+            {
+              "topic_title": "Speaking",
+              "subtopics": [
+                "Giving health information",
+                "Giving advice",
+                "Discussing prevention"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "8.6",
+          "section_title": "Writing Skills",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Informative writing",
+                "Health-awareness messages",
+                "Advice and instructions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 9,
+      "unit_title": "Fairness and Equity",
+      "sections": [
+        {
+          "section_number": "9.1",
+          "section_title": "Listening Skills",
+          "topics": [
+            {
+              "topic_title": "Listening",
+              "subtopics": [
+                "Listening about fairness",
+                "Identifying viewpoints",
+                "Understanding arguments"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "9.2",
+          "section_title": "Reading Skills",
+          "topics": [
+            {
+              "topic_title": "Reading",
+              "subtopics": [
+                "Texts about fairness and equity",
+                "Identifying opinions",
+                "Supporting evidence",
+                "Critical reading"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "9.3",
+          "section_title": "Vocabulary Development",
+          "topics": [
+            {
+              "topic_title": "Equity Vocabulary",
+              "subtopics": [
+                "Fairness and justice terms",
+                "Equality vocabulary",
+                "Contextual meaning"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "9.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Simple past",
+                "Present perfect",
+                "Uses of present perfect",
+                "Past events and experiences"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "9.5",
+          "section_title": "Speaking Skills",
+          "topics": [
+            {
+              "topic_title": "Speaking",
+              "subtopics": [
+                "Expressing viewpoints",
+                "Debating",
+                "Agreeing and disagreeing",
+                "Giving reasons"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "9.6",
+          "section_title": "Writing Skills",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Reflective writing",
+                "Opinion paragraphs",
+                "Argumentative writing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 10,
+      "unit_title": "The Internet",
+      "sections": [
+        {
+          "section_number": "10.1",
+          "section_title": "Listening Skills",
+          "topics": [
+            {
+              "topic_title": "Listening",
+              "subtopics": [
+                "Listening about the internet",
+                "Identifying advantages and disadvantages",
+                "Listening for details"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "10.2",
+          "section_title": "Reading Skills",
+          "topics": [
+            {
+              "topic_title": "Reading",
+              "subtopics": [
+                "Digital-literacy texts",
+                "Identifying main ideas",
+                "Evaluating information",
+                "Reading critically"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "10.3",
+          "section_title": "Vocabulary Development",
+          "topics": [
+            {
+              "topic_title": "Internet Vocabulary",
+              "subtopics": [
+                "Digital vocabulary",
+                "Online communication",
+                "Technology terms",
+                "Word meaning from context"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "10.4",
+          "section_title": "Grammar",
+          "topics": [
+            {
+              "topic_title": "Grammar",
+              "subtopics": [
+                "Review of key verb forms",
+                "Relative clauses",
+                "Connectors",
+                "Sentence combination"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "10.5",
+          "section_title": "Speaking Skills",
+          "topics": [
+            {
+              "topic_title": "Speaking",
+              "subtopics": [
+                "Discussing internet use",
+                "Expressing advantages and disadvantages",
+                "Presenting information",
+                "Group discussion"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "10.6",
+          "section_title": "Writing Skills",
+          "topics": [
+            {
+              "topic_title": "Writing",
+              "subtopics": [
+                "Research-based writing",
+                "Advantages-and-disadvantages essays",
+                "Online communication",
+                "Essay organization"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

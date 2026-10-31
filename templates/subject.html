@@ -1,0 +1,265 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="bg-blue-950 text-slate-100 font-sans antialiased min-h-screen py-10 px-4 sm:px-6 lg:px-8 selection:bg-blue-500/30">
+
+    <div class="max-w-6xl mx-auto space-y-10">
+
+        <!-- Back Navigation & Breadcrumb -->
+        <div class="flex items-center justify-between">
+            <a href="/" class="inline-flex items-center gap-2 text-xs font-bold text-blue-400 hover:text-blue-300 uppercase tracking-widest bg-slate-900/80 border border-slate-800 px-4 py-2 rounded-xl transition shadow-md">
+                <span>←</span>
+                <span>Back to Home</span>
+            </a>
+            <span class="bg-blue-500/10 border border-blue-500/30 text-blue-400 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">
+                ETHIOPIAN CURRICULUM HUB
+            </span>
+        </div>
+
+        <!-- Subject Hero Banner Card -->
+        <div class="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-950 to-blue-900/80 border border-slate-800/90 p-8 sm:p-10 rounded-[2.5rem] shadow-2xl backdrop-blur-xl">
+            <!-- Ambient Background Glow -->
+            <div class="absolute top-0 right-0 w-80 h-80 bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+            <div class="relative z-10 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
+                <div class="flex items-start gap-5">
+                    <!-- Dynamic Subject Icon Container -->
+                    <div id="subject-icon-box" class="w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center text-4xl shadow-xl shadow-blue-600/30 flex-shrink-0 border border-white/20">
+                        📚
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-3 flex-wrap">
+                            <span class="bg-blue-600/20 text-blue-300 border border-blue-500/30 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">
+                                MODULE HUB
+                            </span>
+                            <span class="text-xs text-slate-400 font-bold uppercase tracking-wider">GRADES 9–12</span>
+                        </div>
+                        <h1 class="text-3xl sm:text-4xl font-black text-white mt-2 tracking-tight" id="subject-heading">{{ subject_name }}</h1>
+                        <p class="text-sm text-slate-300 mt-2 max-w-2xl leading-relaxed" id="subject-description">
+                            Master Grade 9-12 chapters, solve national entrance exam questions, track your progress, and get step-by-step guidance with AI Tutor.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Hero Action Buttons -->
+                <div class="flex flex-wrap items-center gap-3 w-full lg:w-auto pt-2 lg:pt-0">
+                    {% if subject_name == 'Entrance' %}
+                        <a href="#subject-exam-list" class="flex-1 lg:flex-none inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white font-extrabold text-xs px-6 py-4 rounded-2xl shadow-xl shadow-amber-600/25 hover:scale-[1.02] active:scale-95 transition-all">
+                            <span>🎓</span>
+                            <span>Browse Entrance Papers</span>
+                        </a>
+                    {% else %}
+                        <a href="/chapters/{{ subject_name }}" class="flex-1 lg:flex-none inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-extrabold text-xs px-6 py-4 rounded-2xl shadow-xl shadow-blue-600/25 hover:scale-[1.02] active:scale-95 transition-all">
+                            <span>📖</span>
+                            <span>Chapter Practice</span>
+                        </a>
+                    {% endif %}
+                    <a href="/tutor" class="flex-1 lg:flex-none inline-flex items-center justify-center gap-2 bg-slate-900/90 border border-slate-700 hover:border-blue-500/60 text-slate-200 hover:text-white font-extrabold text-xs px-6 py-4 rounded-2xl hover:scale-[1.02] active:scale-95 transition-all backdrop-blur-md">
+                        <span>🤖</span>
+                        <span>AI Tutor Helper</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grade Selector Pills -->
+        {% if subject_name != 'Entrance' %}
+        <div class="bg-slate-900/80 border border-slate-800 p-6 rounded-[2rem] shadow-xl backdrop-blur-xl">
+            <h2 class="text-xs font-black text-blue-400 uppercase tracking-[0.25em] mb-4">Select Grade Level</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                <a href="/chapters/{{ subject_name }}?grade=9" class="bg-slate-950/80 hover:bg-blue-600/20 border border-slate-800 hover:border-blue-500/50 p-4 rounded-2xl transition-all group text-center">
+                    <span class="block text-lg font-black text-white group-hover:text-blue-300">Grade 9</span>
+                    <span class="text-[10px] text-slate-400 font-bold uppercase tracking-widest block mt-1">Foundation Units</span>
+                </a>
+                <a href="/chapters/{{ subject_name }}?grade=10" class="bg-slate-950/80 hover:bg-blue-600/20 border border-slate-800 hover:border-blue-500/50 p-4 rounded-2xl transition-all group text-center">
+                    <span class="block text-lg font-black text-white group-hover:text-blue-300">Grade 10</span>
+                    <span class="text-[10px] text-slate-400 font-bold uppercase tracking-widest block mt-1">Intermediate Units</span>
+                </a>
+                <a href="/chapters/{{ subject_name }}?grade=11" class="bg-slate-950/80 hover:bg-blue-600/20 border border-slate-800 hover:border-blue-500/50 p-4 rounded-2xl transition-all group text-center">
+                    <span class="block text-lg font-black text-white group-hover:text-blue-300">Grade 11</span>
+                    <span class="text-[10px] text-slate-400 font-bold uppercase tracking-widest block mt-1">Advanced Prep</span>
+                </a>
+                <a href="/chapters/{{ subject_name }}?grade=12" class="bg-slate-950/80 hover:bg-blue-600/20 border border-slate-800 hover:border-blue-500/50 p-4 rounded-2xl transition-all group text-center">
+                    <span class="block text-lg font-black text-white group-hover:text-blue-300">Grade 12</span>
+                    <span class="text-[10px] text-amber-400 font-bold uppercase tracking-widest block mt-1">National Exam Prep</span>
+                </a>
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- Subject Specific Stats Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-slate-900/90 border border-slate-800 p-6 rounded-2xl shadow-xl text-center backdrop-blur-xl">
+                <span class="text-3xl font-black text-blue-400" id="stat-chapters">12</span>
+                <span class="text-[10px] font-bold text-slate-400 block uppercase tracking-widest mt-1">Total Chapters</span>
+            </div>
+            <div class="bg-slate-900/90 border border-slate-800 p-6 rounded-2xl shadow-xl text-center backdrop-blur-xl">
+                <span class="text-3xl font-black text-emerald-400" id="stat-questions">450+</span>
+                <span class="text-[10px] font-bold text-slate-400 block uppercase tracking-widest mt-1">Practice Questions</span>
+            </div>
+            <div class="bg-slate-900/90 border border-slate-800 p-6 rounded-2xl shadow-xl text-center backdrop-blur-xl">
+                <span class="text-3xl font-black text-amber-400" id="stat-exams">2003–2018 E.C.</span>
+                <span class="text-[10px] font-bold text-slate-400 block uppercase tracking-widest mt-1">E.C. Exam Coverage</span>
+            </div>
+            <div class="bg-slate-900/90 border border-slate-800 p-6 rounded-2xl shadow-xl text-center backdrop-blur-xl">
+                <span class="text-3xl font-black text-purple-400">100%</span>
+                <span class="text-[10px] font-bold text-slate-400 block uppercase tracking-widest mt-1">AI Tutor Enabled</span>
+            </div>
+        </div>
+
+        <!-- Subject Exams Section -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-[2.5rem] p-8 sm:p-10 shadow-2xl backdrop-blur-xl">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-slate-800 pb-6 mb-8 gap-4">
+                <div>
+                    <span class="bg-amber-500/10 border border-amber-500/30 text-amber-400 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full inline-block mb-2">
+                        PRACTICE ARENA
+                    </span>
+                    <h2 class="text-2xl font-black text-white tracking-tight">Active {{ subject_name }} Exam Papers</h2>
+                </div>
+                <p class="text-slate-400 text-xs">
+                    Timed CBT mock exams and past national entrance papers for {{ subject_name }}.
+                </p>
+            </div>
+
+            <div id="subject-exam-list" class="grid md:grid-cols-2 gap-6">
+                <!-- Loading Skeleton States -->
+                <div class="animate-pulse bg-slate-950/60 border border-slate-800 p-6 rounded-2xl h-28"></div>
+                <div class="animate-pulse bg-slate-950/60 border border-slate-800 p-6 rounded-2xl h-28"></div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- JavaScript to Customize Subject Details & Fetch Filtered Exams -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const subName = "{{ subject_name }}".trim();
+        const iconBox = document.getElementById('subject-icon-box');
+        const descriptionBox = document.getElementById('subject-description');
+
+        // Dynamic Subject Metadata Configuration
+        const subjectDetails = {
+            "Mathematics": {
+                icon: "∑",
+                gradient: "from-blue-600 to-indigo-700",
+                desc: "Algebra, Geometry, Trigonometry, Calculus, Vectors, and Applied Statistics for Grade 9-12 Ethiopian students."
+            },
+            "Biology": {
+                icon: "🧬",
+                gradient: "from-emerald-600 to-teal-700",
+                desc: "Cellular Biology, Human Anatomy, Physiology, Genetics, Ecology, Evolution, and Biotechnology modules."
+            },
+            "Physics": {
+                icon: "⚛️",
+                gradient: "from-purple-600 to-violet-700",
+                desc: "Kinematics, Thermodynamics, Electricity, Magnetism, Optics, Mechanics, and Modern Physics."
+            },
+            "Chemistry": {
+                icon: "🧪",
+                gradient: "from-amber-600 to-orange-700",
+                desc: "Atomic Structure, Chemical Bonding, Stoichiometry, Organic Chemistry, Electrochemistry, and Reaction Kinetics."
+            },
+            "English": {
+                icon: "📖",
+                gradient: "from-indigo-600 to-blue-700",
+                desc: "English Grammar, Vocabulary, Reading Comprehension, Sentence Structures, and National Exam Communication Skills."
+            },
+            "Aptitude": {
+                icon: "🧠",
+                gradient: "from-teal-600 to-cyan-700",
+                desc: "Verbal Reasoning, Quantitative Aptitude, Logic, Spatial Ability, Data Interpretation, and Problem Solving."
+            },
+            "Geography": {
+                icon: "🌍",
+                gradient: "from-green-600 to-emerald-700",
+                desc: "Physical Geography, Map Reading, Human Geography, Environmental Systems, and Ethiopian Spatial Analysis."
+            },
+            "History": {
+                icon: "🏛️",
+                gradient: "from-rose-700 to-red-800",
+                desc: "Ancient Ethiopian Civilizations, Medieval Horn of Africa History, Colonialism, and Modern Global Movements."
+            },
+            "Economics": {
+                icon: "📊",
+                gradient: "from-sky-600 to-blue-700",
+                desc: "Microeconomics, Macroeconomics, Market Demand & Supply, Inflation, Trade, and Ethiopian Economic Development."
+            },
+            "Entrance": {
+                icon: "🎓",
+                gradient: "from-amber-500 to-orange-600",
+                desc: "Official Grade 12 National Entrance Exams (2003–2018 E.C.) for Natural and Social Science Streams."
+            }
+        };
+
+        // Apply metadata if available
+        if (subjectDetails[subName]) {
+            const meta = subjectDetails[subName];
+            if (iconBox) {
+                iconBox.innerHTML = meta.icon;
+                iconBox.className = `w-20 h-20 rounded-2xl bg-gradient-to-br ${meta.gradient} flex items-center justify-center text-4xl shadow-xl flex-shrink-0 border border-white/20`;
+            }
+            if (descriptionBox) {
+                descriptionBox.innerText = meta.desc;
+            }
+        }
+
+        // Fetch and Filter Exams
+        fetch('/api/exams')
+            .then(res => res.json())
+            .then(exams => {
+                const list = document.getElementById('subject-exam-list');
+                if (!list) return;
+
+                const targetSub = subName.toLowerCase();
+                const filtered = exams.filter(e => {
+                    const cat = (e.category || '').toLowerCase();
+                    const title = (e.title || '').toLowerCase();
+                    return cat.includes(targetSub) || title.includes(targetSub) || targetSub === 'entrance';
+                });
+
+                if (filtered.length === 0) {
+                    list.innerHTML = `
+                        <div class="bg-slate-950/60 p-8 rounded-2xl border border-dashed border-slate-800 text-center col-span-2">
+                            <p class="text-slate-400 text-xs font-medium">No custom exam papers loaded for <b>${subName}</b> yet.</p>
+                            ${subName.toLowerCase() === 'entrance' ? '' : `
+                                <a href="/chapters/${encodeURIComponent(subName)}" class="inline-block mt-4 text-xs font-black text-blue-400 hover:underline uppercase tracking-wider">
+                                    Try Chapter Unit Exercises Instead →
+                                </a>
+                            `}
+                        </div>`;
+                    return;
+                }
+
+                list.innerHTML = "";
+                filtered.forEach(exam => {
+                    const schoolName = exam.school_name || "Ethiopian National Exam";
+                    const category = exam.category || subName;
+                    
+                    list.innerHTML += `
+                        <div class="bg-slate-950/80 border border-slate-800 hover:border-blue-500/50 p-6 rounded-2xl transition-all duration-300 flex justify-between items-center group shadow-md hover:shadow-xl">
+                            <div class="space-y-1">
+                                <span class="bg-blue-500/10 border border-blue-500/30 text-blue-400 text-[9px] font-black tracking-widest px-2.5 py-0.5 rounded uppercase">
+                                    ${category}
+                                </span>
+                                <h3 class="text-base font-extrabold text-white group-hover:text-blue-300 transition-colors">
+                                    ${exam.title}
+                                </h3>
+                                <p class="text-[11px] text-slate-400">
+                                    ${schoolName}
+                                </p>
+                            </div>
+                            <a href="/exam/${exam.id}" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-md shadow-blue-600/20 flex-shrink-0 flex items-center gap-1">
+                                <span>Start Exam</span>
+                                <span>→</span>
+                            </a>
+                        </div>
+                    `;
+                });
+            })
+            .catch(err => {
+                console.error("Error fetching subject exams:", err);
+            });
+    });
+</script>
+{% endblock %}

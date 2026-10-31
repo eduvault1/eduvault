@@ -1,0 +1,445 @@
+{
+  "grade": 11,
+  "subject": "Mathematics",
+  "curriculum": "Ethiopian New Curriculum",
+  "source_note": "Structured to match the supplied Grade 10 Database.json format, using the Ethiopian Grade 11 New Curriculum unit structure verified from online curriculum/textbook sources.",
+  "units": [
+    {
+      "unit_number": 1,
+      "unit_title": "Relations and Functions",
+      "sections": [
+        {
+          "section_number": "1.1",
+          "section_title": "Relations",
+          "topics": [
+            {
+              "topic_title": "Relations",
+              "subtopics": [
+                "Review of relations",
+                "Types of relations",
+                "Domain and range",
+                "Inverse relation",
+                "Representation of relations"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.2",
+          "section_title": "Functions",
+          "topics": [
+            {
+              "topic_title": "Functions",
+              "subtopics": [
+                "Review of functions",
+                "Types of functions",
+                "One-to-one functions",
+                "Many-to-one functions",
+                "Onto functions",
+                "Into functions",
+                "Bijective functions",
+                "Classification of functions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.3",
+          "section_title": "Composition and Inverse Functions",
+          "topics": [
+            {
+              "topic_title": "Composition and Inverse",
+              "subtopics": [
+                "Composition of functions",
+                "Evaluating composite functions",
+                "Inverse functions",
+                "Finding inverse functions",
+                "Graphs of inverse functions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "unit_title": "Rational Expressions and Rational Functions",
+      "sections": [
+        {
+          "section_number": "2.1",
+          "section_title": "Rational Expressions",
+          "topics": [
+            {
+              "topic_title": "Rational Expressions",
+              "subtopics": [
+                "Definition of rational expressions",
+                "Domain restrictions",
+                "Simplifying rational expressions",
+                "Equivalent rational expressions",
+                "Operations on rational expressions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.2",
+          "section_title": "Rational Equations and Inequalities",
+          "topics": [
+            {
+              "topic_title": "Rational Equations",
+              "subtopics": [
+                "Solving rational equations",
+                "Extraneous solutions",
+                "Rational inequalities",
+                "Solving rational inequalities",
+                "Applications"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.3",
+          "section_title": "Rational Functions",
+          "topics": [
+            {
+              "topic_title": "Rational Functions",
+              "subtopics": [
+                "Definition of rational functions",
+                "Domain and range",
+                "Graphs of rational functions",
+                "Vertical asymptotes",
+                "Horizontal asymptotes",
+                "Applications and modeling"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "unit_title": "Matrices",
+      "sections": [
+        {
+          "section_number": "3.1",
+          "section_title": "Introduction to Matrices",
+          "topics": [
+            {
+              "topic_title": "Matrices",
+              "subtopics": [
+                "Definition of a matrix",
+                "Order of a matrix",
+                "Elements of a matrix",
+                "Types of matrices",
+                "Equality of matrices",
+                "Transpose of a matrix"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.2",
+          "section_title": "Operations on Matrices",
+          "topics": [
+            {
+              "topic_title": "Matrix Operations",
+              "subtopics": [
+                "Addition of matrices",
+                "Subtraction of matrices",
+                "Scalar multiplication",
+                "Matrix multiplication",
+                "Properties of matrix operations"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.3",
+          "section_title": "Applications of Matrices",
+          "topics": [
+            {
+              "topic_title": "Matrix Applications",
+              "subtopics": [
+                "Row operations",
+                "Systems of linear equations",
+                "Matrix representation of systems",
+                "Applications of matrices"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "unit_title": "Determinants and Their Properties",
+      "sections": [
+        {
+          "section_number": "4.1",
+          "section_title": "Determinants",
+          "topics": [
+            {
+              "topic_title": "Determinants",
+              "subtopics": [
+                "Determinant of a square matrix",
+                "Determinant of order 2",
+                "Determinant of order 3",
+                "Minors",
+                "Cofactors"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.2",
+          "section_title": "Properties of Determinants",
+          "topics": [
+            {
+              "topic_title": "Determinant Properties",
+              "subtopics": [
+                "Properties of determinants",
+                "Effect of row operations",
+                "Expansion by cofactors",
+                "Evaluating determinants"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.3",
+          "section_title": "Inverse Matrices and Systems",
+          "topics": [
+            {
+              "topic_title": "Inverse and Linear Systems",
+              "subtopics": [
+                "Inverse of a square matrix",
+                "Adjoint of a matrix",
+                "Solving systems using inverse matrices",
+                "Cramer's rule",
+                "Applications"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "unit_title": "Vectors",
+      "sections": [
+        {
+          "section_number": "5.1",
+          "section_title": "Introduction to Vectors",
+          "topics": [
+            {
+              "topic_title": "Vectors and Scalars",
+              "subtopics": [
+                "Scalars and vectors",
+                "Magnitude of a vector",
+                "Representation of vectors",
+                "Position vectors",
+                "Unit vectors"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.2",
+          "section_title": "Operations on Vectors",
+          "topics": [
+            {
+              "topic_title": "Vector Operations",
+              "subtopics": [
+                "Addition of vectors",
+                "Subtraction of vectors",
+                "Multiplication by a scalar",
+                "Vector components",
+                "Geometric representation"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.3",
+          "section_title": "Scalar Product and Applications",
+          "topics": [
+            {
+              "topic_title": "Dot Product",
+              "subtopics": [
+                "Scalar (dot) product",
+                "Properties of scalar product",
+                "Angle between vectors",
+                "Perpendicular vectors",
+                "Applications of vectors"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "unit_title": "Transformations of the Plane",
+      "sections": [
+        {
+          "section_number": "6.1",
+          "section_title": "Translations",
+          "topics": [
+            {
+              "topic_title": "Translation",
+              "subtopics": [
+                "Definition of translation",
+                "Translation vectors",
+                "Coordinate representation",
+                "Images of points and figures"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.2",
+          "section_title": "Reflections and Rotations",
+          "topics": [
+            {
+              "topic_title": "Reflection and Rotation",
+              "subtopics": [
+                "Reflection in a line",
+                "Coordinate rules for reflections",
+                "Rotation about the origin",
+                "Rotation through common angles",
+                "Images under transformations"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.3",
+          "section_title": "Dilations and Combined Transformations",
+          "topics": [
+            {
+              "topic_title": "Dilations and Transformations",
+              "subtopics": [
+                "Dilation",
+                "Scale factor",
+                "Center of dilation",
+                "Composition of transformations",
+                "Applications and symmetry"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 7,
+      "unit_title": "Statistics",
+      "sections": [
+        {
+          "section_number": "7.1",
+          "section_title": "Data and Its Presentation",
+          "topics": [
+            {
+              "topic_title": "Statistical Data",
+              "subtopics": [
+                "Types of data",
+                "Collection of data",
+                "Frequency distributions",
+                "Grouped data",
+                "Tables and graphs",
+                "Histograms"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.2",
+          "section_title": "Measures of Central Tendency",
+          "topics": [
+            {
+              "topic_title": "Central Tendency",
+              "subtopics": [
+                "Mean",
+                "Median",
+                "Mode",
+                "Weighted mean",
+                "Mean for grouped data",
+                "Comparing measures"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.3",
+          "section_title": "Measures of Dispersion",
+          "topics": [
+            {
+              "topic_title": "Dispersion",
+              "subtopics": [
+                "Range",
+                "Variance",
+                "Standard deviation",
+                "Measures for grouped data",
+                "Interpretation of dispersion",
+                "Applications of statistics"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 8,
+      "unit_title": "Probability",
+      "sections": [
+        {
+          "section_number": "8.1",
+          "section_title": "Counting Principles",
+          "topics": [
+            {
+              "topic_title": "Counting",
+              "subtopics": [
+                "Fundamental counting principle",
+                "Permutations",
+                "Combinations",
+                "Applications of counting"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "8.2",
+          "section_title": "Probability of Events",
+          "topics": [
+            {
+              "topic_title": "Probability",
+              "subtopics": [
+                "Sample space",
+                "Events",
+                "Probability of an event",
+                "Complementary events",
+                "Addition and multiplication rules",
+                "Conditional probability"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "8.3",
+          "section_title": "Probability Applications",
+          "topics": [
+            {
+              "topic_title": "Applications of Probability",
+              "subtopics": [
+                "Independent events",
+                "Dependent events",
+                "Binomial probability",
+                "Probability distributions",
+                "Real-life applications"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{% extends 'base.html' %}
+{% block content %}
+<main class="min-h-screen bg-slate-50 px-4 py-9 dark:bg-slate-950 sm:py-12">
+  <div class="mx-auto max-w-7xl space-y-8">
+    <header class="overflow-hidden rounded-[2rem] bg-gradient-to-br from-blue-950 via-indigo-950 to-slate-950 p-7 text-white shadow-2xl sm:p-10">
+      <p class="inline-flex rounded-full border border-blue-200/20 bg-white/10 px-3 py-1 text-xs font-black uppercase tracking-[.18em] text-blue-200">Grade 9–12 · EduVault Practice Questions</p>
+      <h1 class="mt-5 text-3xl font-black sm:text-5xl">Practice the topics you want to master.</h1>
+      <p class="mt-4 max-w-3xl text-sm leading-6 text-blue-100 sm:text-base">Choose topics from your curriculum and set how many questions you want at each Bloom level. EduVault prepares questions with answers and explanations, then saves them to your account so you can come back whenever you are ready.</p>
+    </header>
+
+    <div class="grid gap-6 xl:grid-cols-[minmax(0,1.5fr)_minmax(320px,.8fr)]">
+      <section class="space-y-6 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900 sm:p-7">
+        <div class="grid gap-4 sm:grid-cols-2">
+          <label class="text-sm font-extrabold text-slate-700 dark:text-slate-200">1 · Grade
+            <select id="grade" class="mt-2 w-full rounded-xl border border-slate-300 bg-white p-3 dark:border-slate-700 dark:bg-slate-950"><option value="">Choose grade</option><option value="9">Grade 9</option><option value="10">Grade 10</option><option value="11">Grade 11</option><option value="12">Grade 12</option></select>
+          </label>
+          <label class="text-sm font-extrabold text-slate-700 dark:text-slate-200">2 · Subject
+            <select id="subject" disabled class="mt-2 w-full rounded-xl border border-slate-300 bg-white p-3 disabled:opacity-50 dark:border-slate-700 dark:bg-slate-950"><option value="">Choose grade first</option></select>
+          </label>
+        </div>
+
+        <section>
+          <div class="mb-3"><h2 class="font-black text-slate-900 dark:text-white">3 · Choose your curriculum scope</h2><p class="mt-1 text-xs text-slate-500">Choose one or more units. You can use all topics in those units or select particular topics.</p></div>
+          <div id="units" class="grid max-h-72 gap-2 overflow-auto rounded-2xl bg-slate-50 p-3 dark:bg-slate-950"><p class="text-sm text-slate-500">Choose a grade and subject to load units.</p></div>
+          <div id="topics" class="mt-3 grid max-h-80 gap-2 overflow-auto rounded-2xl bg-slate-50 p-3 dark:bg-slate-950"><p class="text-sm text-slate-500">Topics will appear after selecting a curriculum.</p></div>
+        </section>
+
+        <section>
+          <div class="mb-3 flex flex-wrap items-end justify-between gap-3"><div><h2 class="font-black text-slate-900 dark:text-white">4 · Set your Bloom question counts</h2><p class="mt-1 text-xs text-slate-500">Enter 0 for any level you want to skip. EduVault will use the counts you choose.</p></div><div class="rounded-xl bg-blue-50 px-4 py-2 text-right dark:bg-blue-950/40"><span class="block text-[10px] font-black uppercase tracking-wider text-blue-600 dark:text-blue-300">Total questions</span><strong id="total-count" class="text-2xl text-blue-900 dark:text-white">0</strong></div></div>
+          <div id="bloom" class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3"></div>
+        </section>
+
+        <div class="grid gap-4 sm:grid-cols-2">
+          <label class="text-sm font-extrabold text-slate-700 dark:text-slate-200">Duration (minutes)<input id="duration" type="number" min="5" max="240" value="30" class="mt-2 w-full rounded-xl border border-slate-300 bg-white p-3 dark:border-slate-700 dark:bg-slate-950"></label>
+          <div class="flex items-end"><button id="generate" disabled class="w-full rounded-xl bg-blue-700 px-6 py-3.5 font-black text-white shadow-lg shadow-blue-900/20 transition hover:bg-blue-600 disabled:cursor-not-allowed disabled:opacity-50">Create Practice Questions</button></div>
+        </div>
+        <p id="message" class="text-sm" role="status" aria-live="polite"></p>
+      </section>
+
+      <aside class="space-y-5">
+        <section class="rounded-3xl bg-slate-900 p-6 text-white shadow-xl">
+          <span class="text-3xl" aria-hidden="true">✦</span><h2 class="mt-3 text-xl font-black">Your questions, step by step</h2>
+          <ol class="mt-4 space-y-3 text-sm leading-6 text-slate-300"><li><b class="text-white">1.</b> Choose your grade, subject, and the units or topics you want to practise.</li><li><b class="text-white">2.</b> Set the number of questions for each Bloom level.</li><li><b class="text-white">3.</b> EduVault prepares multiple-choice questions with explanations from your selected curriculum.</li><li><b class="text-white">4.</b> Your practice set is saved here. Return to it or remove it whenever you like.</li></ol>
+          <a href="/learning-analytics" class="mt-5 inline-flex font-bold text-cyan-300 hover:text-cyan-200">See your learning analytics →</a>
+        </section>
+        <section class="rounded-3xl border border-amber-200 bg-amber-50 p-5 text-sm leading-6 text-amber-950 dark:border-amber-900 dark:bg-amber-950/30 dark:text-amber-100"><b>Example:</b> Understand 5 + Apply 10 + Analyze 10 + Evaluate 15 + Create 10 = <b>50 questions</b>. The total updates as you edit counts.</section>
+      </aside>
+    </div>
+
+    <section class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900 sm:p-7">
+      <div class="mb-5 flex flex-wrap items-end justify-between gap-3"><div><p class="text-xs font-black uppercase tracking-[.18em] text-violet-600 dark:text-violet-300">Your saved practice</p><h2 class="mt-1 text-2xl font-black text-slate-900 dark:text-white">My Practice Questions</h2><p class="mt-1 text-sm text-slate-500">Pick up where you left off, or remove a practice set from your list.</p></div><button id="refresh-exams" class="rounded-xl border border-slate-300 px-4 py-2 text-sm font-bold dark:border-slate-700">Refresh</button></div>
+      <div id="my-exams" class="grid gap-3 md:grid-cols-2"><p class="text-sm text-slate-500">Loading your practice sets…</p></div>
+    </section>
+  </div>
+</main>
+
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const categories = ['Remember', 'Understand', 'Apply', 'Analyze', 'Evaluate', 'Create'];
+  let curriculum = [];
+  let savedExams = [];
+
+  const bloomBox = $('bloom');
+  categories.forEach(category => {
+    const label = document.createElement('label');
+    label.className = 'rounded-2xl border border-slate-200 p-4 dark:border-slate-700';
+    const title = document.createElement('span'); title.className = 'block text-sm font-extrabold text-slate-800 dark:text-white'; title.textContent = category;
+    const input = document.createElement('input'); input.type = 'number'; input.min = '0'; input.max = '100'; input.value = '0'; input.dataset.category = category;
+    input.className = 'bloom-count mt-3 w-full rounded-xl border border-slate-300 bg-white p-3 dark:border-slate-700 dark:bg-slate-950';
+    input.setAttribute('aria-label', `${category} questions`);
+    label.append(title, input); bloomBox.append(label);
+  });
+
+  function checkedValues(selector) { return [...document.querySelectorAll(selector + ':checked')].map(input => input.value); }
+  function updateTotal() {
+    const total = [...document.querySelectorAll('.bloom-count')].reduce((sum, input) => sum + Math.max(0, Number(input.value) || 0), 0);
+    $('total-count').textContent = total;
+    $('generate').disabled = total < 1 || total > 100 || !$('grade').value || !$('subject').value;
+  }
+  document.querySelectorAll('.bloom-count').forEach(input => input.addEventListener('input', updateTotal));
+
+  async function loadOptions() {
+    const grade = $('grade').value;
+    $('subject').disabled = true; $('subject').innerHTML = '<option value="">Loading subjects…</option>';
+    $('units').replaceChildren(); $('topics').replaceChildren(); curriculum = [];
+    if (!grade) { $('subject').innerHTML = '<option value="">Choose grade first</option>'; return; }
+    try {
+      const response = await fetch('/api/learning/curriculum-options');
+      if (!response.ok) throw new Error('Could not load the curriculum subjects.');
+      const data = await response.json();
+      const subjects = [...new Set((data.items || []).filter(item => Number(item.grade) === Number(grade)).map(item => item.subject))];
+      $('subject').innerHTML = '<option value="">Choose subject</option>';
+      subjects.forEach(subject => { const option = document.createElement('option'); option.value = subject; option.textContent = subject === 'Aptitude' ? 'SAT (Aptitude)' : subject; $('subject').append(option); });
+      $('subject').disabled = false;
+      $('units').innerHTML = '<p class="text-sm text-slate-500">Choose a subject to load units.</p>';
+      $('topics').innerHTML = '<p class="text-sm text-slate-500">Topics will appear after choosing a subject.</p>';
+    } catch (error) { $('subject').innerHTML = '<option value="">Unable to load subjects</option>'; showMessage(error.message, false); }
+    updateTotal();
+  }
+
+  function renderUnits() {
+    const box = $('units'); box.replaceChildren();
+    if (!curriculum.length) { box.textContent = 'Topic-by-topic materials are not available for this subject yet. You can still make general practice questions for this grade and subject.'; return; }
+    curriculum.forEach(unit => {
+      const label = document.createElement('label'); label.className = 'flex items-start gap-3 rounded-xl border border-slate-200 bg-white p-3 text-sm dark:border-slate-800 dark:bg-slate-900';
+      const input = document.createElement('input'); input.type = 'checkbox'; input.value = unit.id; input.className = 'unit-check mt-1';
+      const name = document.createElement('span'); name.className = 'font-semibold text-slate-800 dark:text-slate-100'; name.textContent = `Unit ${unit.unit_number}: ${unit.unit_title}`;
+      label.append(input, name); box.append(label);
+    });
+  }
+
+  function renderTopics() {
+    const selectedBefore = new Set(checkedValues('.topic-check'));
+    const units = new Set(checkedValues('.unit-check'));
+    const scoped = curriculum.filter(unit => !units.size || units.has(String(unit.id)));
+    const topics = [];
+    scoped.forEach(unit => Object.values(unit.sections || {}).forEach(section => (section.topics || []).forEach(topic => topics.push({...topic, unit_title: unit.unit_title, section_title: section.section_title}))));
+    const box = $('topics'); box.replaceChildren();
+    if (!topics.length) { box.textContent = curriculum.length ? 'No topics found in the selected unit.' : 'General subject practice is available while curriculum topics are being added.'; return; }
+    const hint = document.createElement('p'); hint.className = 'text-xs text-slate-500'; hint.textContent = 'Leave topics unchecked to include every topic in the selected unit(s).'; box.append(hint);
+    topics.forEach(topic => {
+      const label = document.createElement('label'); label.className = 'flex items-start gap-3 rounded-xl border border-slate-200 bg-white p-3 text-sm dark:border-slate-800 dark:bg-slate-900';
+      const input = document.createElement('input'); input.type = 'checkbox'; input.value = topic.id; input.className = 'topic-check mt-1'; input.checked = selectedBefore.has(String(topic.id));
+      const info = document.createElement('span'); info.className = 'text-slate-800 dark:text-slate-100';
+      const name = document.createElement('b'); name.textContent = topic.topic_title; info.append(name);
+      const meta = document.createElement('small'); meta.className = 'mt-1 block text-slate-500'; meta.textContent = `${topic.unit_title} · ${topic.section_title}${topic.subtopic ? ` · ${topic.subtopic}` : ''}`; info.append(meta);
+      label.append(input, info); box.append(label);
+    });
+  }
+
+  async function loadCurriculum() {
+    const grade = $('grade').value, subject = $('subject').value;
+    curriculum = []; $('units').textContent = 'Loading units…'; $('topics').textContent = 'Loading topics…';
+    if (!grade || !subject) return;
+    try {
+      const response = await fetch(`/api/curriculum/${encodeURIComponent(subject)}/${grade}`);
+      if (!response.ok) throw new Error('Unable to load this curriculum.');
+      curriculum = await response.json(); renderUnits(); renderTopics();
+    } catch (error) { $('units').textContent = error.message; $('topics').replaceChildren(); }
+  }
+
+  function showMessage(message, success) {
+    const box = $('message'); box.textContent = message; box.className = `text-sm ${success ? 'text-emerald-700 dark:text-emerald-300' : 'text-rose-700 dark:text-rose-300'}`;
+  }
+
+  async function loadSavedExams() {
+    const box = $('my-exams'); box.innerHTML = '<p class="text-sm text-slate-500">Loading your practice sets…</p>';
+    try {
+      const response = await fetch('/api/exam-generator/mine');
+      const rows = await response.json();
+      if (!response.ok) throw new Error(rows.error || 'Could not load your saved practice sets.');
+      savedExams = Array.isArray(rows) ? rows : []; box.replaceChildren();
+      if (!savedExams.length) { const empty = document.createElement('p'); empty.className = 'text-sm text-slate-500'; empty.textContent = 'You have no saved practice questions yet. Your practice sets will appear here.'; box.append(empty); return; }
+      savedExams.forEach(exam => {
+        const card = document.createElement('article'); card.className = 'rounded-2xl border border-slate-200 p-4 dark:border-slate-800';
+        const title = document.createElement('h3'); title.className = 'font-black text-slate-900 dark:text-white'; title.textContent = String(exam.title || '').replace(/^AI Practice\s*[—–-]\s*/, 'Practice Questions — ');
+        const meta = document.createElement('p'); meta.className = 'mt-2 text-xs text-slate-500';
+        const updateMeta = () => { meta.textContent = `Grade ${exam.grade} · ${exam.subject} · ${exam.question_count} questions · ${exam.duration_minutes || 30} min · ${exam.attempts ? `${exam.attempts} attempt(s)` : 'Not started'}`; };
+        updateMeta();
+        const actions = document.createElement('div'); actions.className = 'mt-4 flex flex-wrap gap-2';
+        const start = document.createElement('a'); start.href = `/exam/${exam.id}`; start.className = 'rounded-xl bg-violet-700 px-4 py-2 text-sm font-bold text-white hover:bg-violet-600'; start.textContent = 'Start practice';
+        const manage = document.createElement('details'); manage.className = 'w-full rounded-xl border border-slate-200 p-3 dark:border-slate-700';
+        const manageSummary = document.createElement('summary'); manageSummary.className = 'cursor-pointer text-sm font-bold text-slate-700 dark:text-slate-200'; manageSummary.textContent = exam.attempts ? 'Review saved questions' : 'Keep or remove questions';
+        const questionPanel = document.createElement('div'); questionPanel.className = 'mt-3 space-y-2';
+        manage.append(manageSummary, questionPanel);
+        let questionsLoaded = false;
+        const loadQuestions = async () => {
+          questionPanel.textContent = 'Loading questions…';
+          try {
+            const response = await fetch(`/api/exam-generator/mine/${exam.id}/questions`);
+            const rows = await response.json();
+            if (!response.ok) throw new Error(rows.error || 'Could not load questions.');
+            questionPanel.replaceChildren(); questionsLoaded = true; exam.question_count = rows.length; updateMeta();
+            if (!rows.length) { questionPanel.textContent = 'This practice set has no questions left. You can remove it from your saved list.'; return; }
+            rows.forEach(question => {
+              const row = document.createElement('div'); row.className = 'rounded-xl bg-slate-50 p-3 dark:bg-slate-950';
+              const prompt = document.createElement('p'); prompt.className = 'text-sm font-bold text-slate-800 dark:text-slate-100'; prompt.textContent = `Q${question.question_number || ''} · ${question.question_text}`;
+              const detail = document.createElement('p'); detail.className = 'mt-1 text-xs text-slate-500'; detail.textContent = `${question.category || 'Bloom level unavailable'} · Unit ${question.unit_number || ''}: ${question.unit_title || ''} · ${question.topic_title || ''}`;
+              row.append(prompt, detail);
+              if (!exam.attempts) {
+                const removeQuestion = document.createElement('button'); removeQuestion.className = 'mt-2 text-xs font-bold text-rose-700 hover:underline dark:text-rose-300'; removeQuestion.textContent = 'Remove this question';
+                removeQuestion.addEventListener('click', async () => {
+                  removeQuestion.disabled = true;
+                  try {
+                    const result = await fetch(`/api/exam-generator/mine/${exam.id}/questions/${question.id}`, {method: 'DELETE'});
+                    const data = await result.json(); if (!result.ok) throw new Error(data.error || 'Could not remove question.');
+                    questionsLoaded = false; await loadQuestions();
+                  } catch (error) { showMessage(error.message, false); removeQuestion.disabled = false; }
+                });
+                row.append(removeQuestion);
+              }
+              questionPanel.append(row);
+            });
+          } catch (error) { questionPanel.textContent = error.message || 'Could not load questions.'; }
+        };
+        manage.addEventListener('toggle', () => { if (manage.open && !questionsLoaded) loadQuestions(); });
+        const remove = document.createElement('button'); remove.className = 'rounded-xl border border-slate-300 px-4 py-2 text-sm font-bold text-slate-700 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800'; remove.textContent = 'Delete';
+        remove.addEventListener('click', async () => {
+          remove.disabled = true;
+          try { const result = await fetch(`/api/exam-generator/mine/${exam.id}`, {method: 'DELETE'}); const data = await result.json(); if (!result.ok) throw new Error(data.error || 'Delete failed.'); await loadSavedExams(); }
+          catch (error) { showMessage(error.message, false); remove.disabled = false; }
+        });
+        actions.append(start, remove); card.append(title, meta, actions, manage); box.append(card);
+      });
+    } catch (error) { box.textContent = error.message || 'Could not load your saved practice sets.'; }
+  }
+
+  $('grade').addEventListener('change', loadOptions);
+  $('subject').addEventListener('change', loadCurriculum);
+  $('units').addEventListener('change', renderTopics);
+  $('refresh-exams').addEventListener('click', loadSavedExams);
+  $('generate').addEventListener('click', async () => {
+    const message = $('message');
+    const counts = Object.fromEntries([...document.querySelectorAll('.bloom-count')].map(input => [input.dataset.category, Number(input.value) || 0]));
+    const selectedUnits = checkedValues('.unit-check');
+    const selectedTopics = checkedValues('.topic-check');
+    if (!selectedUnits.length && !selectedTopics.length && curriculum.length) { showMessage('Choose at least one curriculum unit or topic.', false); return; }
+    const total = Object.values(counts).reduce((sum, value) => sum + value, 0);
+    if (total < 1 || total > 100) { showMessage('The Bloom counts must total between 1 and 100.', false); return; }
+    $('generate').disabled = true; $('generate').textContent = 'EduVault is preparing your questions…';
+    showMessage(`EduVault is preparing ${total} questions in small batches. This may take a moment.`, true);
+    try {
+      const response = await fetch('/api/exam-generator/ai-generate', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({grade: $('grade').value, subject: $('subject').value, unit_ids: selectedUnits, topic_ids: selectedTopics, bloom_counts: counts, duration_minutes: $('duration').value})});
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || 'EduVault could not prepare your questions. Please try again.');
+      message.replaceChildren(document.createTextNode(`${result.title} · ${result.question_count} questions saved. `));
+      const link = document.createElement('a'); link.href = result.exam_url; link.className = 'font-extrabold underline'; link.textContent = 'Start practising →'; message.append(link);
+      const portalLink = document.createElement('a'); portalLink.href = result.system_url || '/eduvault-system'; portalLink.className = 'ml-3 font-bold underline'; portalLink.textContent = 'Open EduVault Exam System'; message.append(portalLink);
+      message.className = 'text-sm text-emerald-700 dark:text-emerald-300';
+      await loadSavedExams();
+    } catch (error) { showMessage(error.message, false); }
+    finally { $('generate').textContent = 'Create Practice Questions'; updateTotal(); }
+  });
+
+  loadSavedExams(); updateTotal();
+})();
+</script>
+{% endblock %}

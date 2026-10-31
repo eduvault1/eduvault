@@ -1,0 +1,727 @@
+{
+  "grade": 9,
+  "subject": "Mathematics",
+  "curriculum": "Ethiopian New Curriculum",
+  "units": [
+    {
+      "unit_number": 1,
+      "unit_title": "Further on Sets",
+      "page": 10,
+      "sections": [
+        {
+          "section_number": "1.1",
+          "section_title": "Sets and Elements",
+          "topics": [
+            {
+              "topic_title": "Sets and Elements",
+              "subtopics": [
+                "Definition of a set",
+                "Elements of a set",
+                "Membership notation",
+                "Well-defined collections"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.2",
+          "section_title": "Set Description",
+          "topics": [
+            {
+              "topic_title": "Description of Sets",
+              "subtopics": [
+                "Describing sets in words",
+                "Roster/listing method",
+                "Set-builder notation",
+                "Describing sets by properties"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.3",
+          "section_title": "The Notion of Sets",
+          "topics": [
+            {
+              "topic_title": "Types and Relationships of Sets",
+              "subtopics": [
+                "Equal sets",
+                "Equivalent sets",
+                "Universal set",
+                "Subset",
+                "Proper subset",
+                "Empty set",
+                "Finite sets",
+                "Infinite sets"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.4",
+          "section_title": "Operations on Sets",
+          "topics": [
+            {
+              "topic_title": "Set Operations",
+              "subtopics": [
+                "Union",
+                "Intersection",
+                "Absolute complement",
+                "Relative complement",
+                "Symmetric difference",
+                "Cartesian product",
+                "Venn diagrams",
+                "Number of elements in sets"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.5",
+          "section_title": "Application of Sets",
+          "topics": [
+            {
+              "topic_title": "Applications of Set Theory",
+              "subtopics": [
+                "Set theory in real-life situations",
+                "Grouping and classification",
+                "Problem solving using sets"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "unit_title": "The Number System",
+      "page": 43,
+      "sections": [
+        {
+          "section_number": "2.1",
+          "section_title": "Revision on Natural Numbers and Integers",
+          "topics": [
+            {
+              "topic_title": "Natural Numbers and Integers",
+              "subtopics": [
+                "Natural numbers",
+                "Integers",
+                "Properties of operations",
+                "Order of operations"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.2",
+          "section_title": "Rational Numbers",
+          "topics": [
+            {
+              "topic_title": "Rational Numbers",
+              "subtopics": [
+                "Definition of rational numbers",
+                "Operations on rational numbers",
+                "Decimal representation",
+                "Properties of rational numbers"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.3",
+          "section_title": "Irrational Numbers",
+          "topics": [
+            {
+              "topic_title": "Irrational Numbers",
+              "subtopics": [
+                "Definition of irrational numbers",
+                "Examples of irrational numbers",
+                "Decimal representation",
+                "Locating irrational numbers"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.4",
+          "section_title": "Real Numbers",
+          "topics": [
+            {
+              "topic_title": "Real Number System",
+              "subtopics": [
+                "Real numbers",
+                "Number line",
+                "Properties of real numbers",
+                "Operations involving real numbers"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.5",
+          "section_title": "Applications",
+          "topics": [
+            {
+              "topic_title": "Applications of Number Systems",
+              "subtopics": [
+                "Real-life applications",
+                "Numerical problem solving",
+                "Number-system applications"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "unit_title": "Solving Equations",
+      "page": 105,
+      "sections": [
+        {
+          "section_number": "3.1",
+          "section_title": "Revision on Linear Equations in One Variable",
+          "topics": [
+            {
+              "topic_title": "Linear Equations",
+              "subtopics": [
+                "Linear equations in one variable",
+                "Properties of equality",
+                "Solving linear equations",
+                "Word problems"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.2",
+          "section_title": "Systems of Linear Equations in Two Variables",
+          "topics": [
+            {
+              "topic_title": "Systems of Linear Equations",
+              "subtopics": [
+                "Systems of two linear equations",
+                "Graphical method",
+                "Substitution method",
+                "Elimination method",
+                "Applications"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.3",
+          "section_title": "Solving Non-linear Equations",
+          "topics": [
+            {
+              "topic_title": "Non-linear Equations",
+              "subtopics": [
+                "Quadratic equations",
+                "Factoring",
+                "Quadratic formula",
+                "Completing the square",
+                "Equations involving radicals and exponents"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.4",
+          "section_title": "Applications of Equations",
+          "topics": [
+            {
+              "topic_title": "Applications of Equations",
+              "subtopics": [
+                "Word problems",
+                "Age problems",
+                "Number problems",
+                "Geometry applications",
+                "Rate and mixture problems"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "unit_title": "Solving Inequalities",
+      "page": 151,
+      "sections": [
+        {
+          "section_number": "4.1",
+          "section_title": "Revision on Linear Inequalities in One Variable",
+          "topics": [
+            {
+              "topic_title": "Linear Inequalities",
+              "subtopics": [
+                "Linear inequalities",
+                "Properties of inequalities",
+                "Interval notation",
+                "Number-line representation"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.2",
+          "section_title": "Systems of Linear Inequalities in Two Variables",
+          "topics": [
+            {
+              "topic_title": "Systems of Linear Inequalities",
+              "subtopics": [
+                "Linear inequalities in two variables",
+                "Graphical representation",
+                "Systems of inequalities",
+                "Solution regions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.3",
+          "section_title": "Inequalities Involving Absolute Value",
+          "topics": [
+            {
+              "topic_title": "Absolute Value Inequalities",
+              "subtopics": [
+                "Absolute value inequalities",
+                "Graphing absolute value inequalities",
+                "Solving absolute value inequalities"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.4",
+          "section_title": "Quadratic Inequalities",
+          "topics": [
+            {
+              "topic_title": "Quadratic Inequalities",
+              "subtopics": [
+                "Quadratic inequalities",
+                "Product property",
+                "Sign chart",
+                "Solution intervals"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.5",
+          "section_title": "Applications of Inequalities",
+          "topics": [
+            {
+              "topic_title": "Applications of Inequalities",
+              "subtopics": [
+                "Real-life inequality problems",
+                "Optimization-type situations",
+                "Interpretation of inequality solutions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "unit_title": "Introduction to Trigonometry",
+      "page": 185,
+      "sections": [
+        {
+          "section_number": "5.1",
+          "section_title": "Revision on Right-angled Triangles",
+          "topics": [
+            {
+              "topic_title": "Right-angled Triangles",
+              "subtopics": [
+                "Pythagorean theorem",
+                "Properties of right triangles",
+                "Sides and angles of right triangles"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.2",
+          "section_title": "Trigonometric Ratios",
+          "topics": [
+            {
+              "topic_title": "Trigonometric Ratios",
+              "subtopics": [
+                "Sine",
+                "Cosine",
+                "Tangent",
+                "Opposite, adjacent and hypotenuse",
+                "Finding unknown sides",
+                "Finding unknown angles",
+                "Applications of trigonometric ratios"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "unit_title": "Regular Polygons",
+      "page": 207,
+      "sections": [
+        {
+          "section_number": "6.1",
+          "section_title": "Sum of Interior Angles of a Convex Polygon",
+          "topics": [
+            {
+              "topic_title": "Interior Angles",
+              "subtopics": [
+                "Convex polygons",
+                "Interior angles",
+                "Sum of interior angles",
+                "Polygon angle formula"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.2",
+          "section_title": "Sum of Exterior Angles of a Convex Polygon",
+          "topics": [
+            {
+              "topic_title": "Exterior Angles",
+              "subtopics": [
+                "Exterior angles",
+                "Sum of exterior angles",
+                "Exterior-angle properties"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.3",
+          "section_title": "Measures of Each Interior Angle and Exterior Angle of a Regular Polygon",
+          "topics": [
+            {
+              "topic_title": "Angles of Regular Polygons",
+              "subtopics": [
+                "Regular polygons",
+                "Interior angle of a regular polygon",
+                "Exterior angle of a regular polygon",
+                "Relationship between interior and exterior angles"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.4",
+          "section_title": "Properties of Regular Polygons",
+          "topics": [
+            {
+              "topic_title": "Properties of Regular Polygons",
+              "subtopics": [
+                "Pentagon",
+                "Hexagon",
+                "Octagon",
+                "Decagon",
+                "Symmetry",
+                "Diagonals and geometric properties"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 7,
+      "unit_title": "Congruency and Similarity",
+      "page": 239,
+      "sections": [
+        {
+          "section_number": "7.1",
+          "section_title": "Revision on Congruency of Triangles",
+          "topics": [
+            {
+              "topic_title": "Congruent Triangles",
+              "subtopics": [
+                "Congruent figures",
+                "Congruency of triangles",
+                "SSS",
+                "SAS",
+                "ASA",
+                "AAS"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.2",
+          "section_title": "Definition of Similar Figures",
+          "topics": [
+            {
+              "topic_title": "Similar Figures",
+              "subtopics": [
+                "Similar figures",
+                "Corresponding sides",
+                "Corresponding angles",
+                "Scale factor"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.3",
+          "section_title": "Theorems on Similar Plane Figures",
+          "topics": [
+            {
+              "topic_title": "Similarity Theorems",
+              "subtopics": [
+                "AA similarity",
+                "SAS similarity",
+                "SSS similarity",
+                "Properties of similar triangles",
+                "Applications of similarity theorems"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.4",
+          "section_title": "Ratio of Perimeters of Similar Plane Figures",
+          "topics": [
+            {
+              "topic_title": "Perimeter Ratios",
+              "subtopics": [
+                "Perimeter of similar figures",
+                "Scale factor and perimeter",
+                "Ratio of corresponding sides"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.5",
+          "section_title": "Ratio of Areas of Similar Plane Figures",
+          "topics": [
+            {
+              "topic_title": "Area Ratios",
+              "subtopics": [
+                "Area of similar figures",
+                "Square of scale factor",
+                "Ratio of areas"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.6",
+          "section_title": "Construction of Similar Figures",
+          "topics": [
+            {
+              "topic_title": "Construction",
+              "subtopics": [
+                "Construction of similar figures",
+                "Geometric construction",
+                "Scale drawings"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.7",
+          "section_title": "Applications of Similarity",
+          "topics": [
+            {
+              "topic_title": "Applications of Similarity",
+              "subtopics": [
+                "Indirect measurement",
+                "Scale models",
+                "Heights and distances",
+                "Real-life applications"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 8,
+      "unit_title": "Vectors in Two Dimensions",
+      "page": 277,
+      "sections": [
+        {
+          "section_number": "8.1",
+          "section_title": "Vector and Scalar Quantities",
+          "topics": [
+            {
+              "topic_title": "Vectors and Scalars",
+              "subtopics": [
+                "Scalar quantities",
+                "Vector quantities",
+                "Magnitude",
+                "Direction",
+                "Examples of scalar and vector quantities"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "8.2",
+          "section_title": "Representation of a Vector",
+          "topics": [
+            {
+              "topic_title": "Vector Representation",
+              "subtopics": [
+                "Geometric representation",
+                "Directed line segments",
+                "Equal vectors",
+                "Opposite vectors",
+                "Parallel vectors",
+                "Column vectors",
+                "Magnitude and direction"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "8.3",
+          "section_title": "Vector Operations",
+          "topics": [
+            {
+              "topic_title": "Vector Operations",
+              "subtopics": [
+                "Addition of vectors",
+                "Triangle law",
+                "Parallelogram law",
+                "Subtraction of vectors",
+                "Multiplication by a scalar",
+                "Components"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "8.4",
+          "section_title": "Position Vector",
+          "topics": [
+            {
+              "topic_title": "Position Vectors",
+              "subtopics": [
+                "Position vector",
+                "Unit vectors i and j",
+                "Components of a vector",
+                "Magnitude",
+                "Direction"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "8.5",
+          "section_title": "Applications of Vectors in Two Dimensions",
+          "topics": [
+            {
+              "topic_title": "Applications of Vectors",
+              "subtopics": [
+                "Displacement",
+                "Velocity",
+                "Force",
+                "Resultant vectors",
+                "Real-life vector problems"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 9,
+      "unit_title": "Statistics and Probability",
+      "page": 311,
+      "sections": [
+        {
+          "section_number": "9.1.1",
+          "section_title": "Collection and Tabulation of Statistical Data",
+          "topics": [
+            {
+              "topic_title": "Statistical Data",
+              "subtopics": [
+                "Primary and secondary data",
+                "Qualitative and quantitative data",
+                "Discrete and continuous data",
+                "Population and sample",
+                "Data collection",
+                "Frequency distribution tables"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "9.1.2",
+          "section_title": "Graphical Presentations of Statistical Data",
+          "topics": [
+            {
+              "topic_title": "Statistical Graphs",
+              "subtopics": [
+                "Pie charts",
+                "Bar graphs",
+                "Frequency polygons",
+                "Histograms",
+                "Graphical representation of data"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "9.1.3",
+          "section_title": "Measures of Central Tendency",
+          "topics": [
+            {
+              "topic_title": "Central Tendency",
+              "subtopics": [
+                "Mean",
+                "Mean of grouped data",
+                "Median",
+                "Mode",
+                "Properties of mean, median and mode"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "9.1.4",
+          "section_title": "Measures of Dispersion",
+          "topics": [
+            {
+              "topic_title": "Dispersion",
+              "subtopics": [
+                "Range",
+                "Variance",
+                "Standard deviation",
+                "Measures of spread",
+                "Interpretation of dispersion"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "9.2",
+          "section_title": "Probability",
+          "topics": [
+            {
+              "topic_title": "Probability",
+              "subtopics": [
+                "Random experiment",
+                "Sample space",
+                "Outcomes",
+                "Events",
+                "Equally likely outcomes",
+                "Probability of an event",
+                "Tree diagrams",
+                "Applications of probability"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

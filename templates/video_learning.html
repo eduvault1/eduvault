@@ -1,0 +1,188 @@
+{% extends 'base.html' %}
+{% block content %}
+<main class="relative isolate min-h-screen overflow-hidden bg-slate-50 px-4 py-8 dark:bg-slate-950 sm:py-12">
+  <div class="pointer-events-none absolute -top-32 left-1/3 h-96 w-96 rounded-full bg-violet-400/20 blur-3xl"></div>
+  <div class="pointer-events-none absolute right-0 top-80 h-80 w-80 rounded-full bg-blue-400/10 blur-3xl"></div>
+  <div class="relative mx-auto max-w-7xl space-y-8">
+    <header class="overflow-hidden rounded-[2rem] bg-gradient-to-br from-violet-950 via-indigo-950 to-slate-950 p-7 text-white shadow-2xl shadow-violet-950/20 sm:p-10">
+      <div class="max-w-3xl">
+        <span class="inline-flex items-center gap-2 rounded-full border border-violet-300/20 bg-white/10 px-3 py-1 text-xs font-extrabold uppercase tracking-[.18em] text-violet-200"><span aria-hidden="true">▶</span> EduVault Video Library</span>
+        <h1 class="mt-5 text-3xl font-black tracking-tight sm:text-5xl">Access Educational Video Tutorials</h1>
+        <p class="mt-4 max-w-2xl text-sm leading-6 text-indigo-100 sm:text-base">Explore video lessons for Grades 9–12, organized by grade, subject, and unit across Natural and Social Sciences.</p>
+      </div>
+      <div class="mt-8 grid gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 sm:grid-cols-[1fr_1fr_auto] sm:items-end sm:p-5">
+        <label class="text-xs font-extrabold uppercase tracking-wider text-indigo-100">Step 1 · Choose grade
+          <select id="grade" class="mt-2 block w-full rounded-xl border border-white/15 bg-slate-950/70 px-3 py-3 text-sm font-bold text-white outline-none focus:ring-2 focus:ring-violet-400"><option value="">All grades</option><option value="9">Grade 9</option><option value="10">Grade 10</option><option value="11">Grade 11</option><option value="12">Grade 12</option></select>
+        </label>
+        <label class="text-xs font-extrabold uppercase tracking-wider text-indigo-100">Step 2 · Choose subject
+          <select id="subject" class="mt-2 block w-full rounded-xl border border-white/15 bg-slate-950/70 px-3 py-3 text-sm font-bold text-white outline-none focus:ring-2 focus:ring-violet-400"><option value="">All subjects</option><option>Mathematics</option><option>English</option><option>Biology</option><option>Chemistry</option><option>Physics</option><option>Economics</option><option>History</option><option>Geography</option><option>Aptitude</option></select>
+        </label>
+        <button id="filter" type="button" class="rounded-xl bg-violet-500 px-5 py-3 text-sm font-black text-white shadow-lg shadow-violet-950/30 transition hover:bg-violet-400">Show tutorials</button>
+      </div>
+    </header>
+
+    {% if role == 'admin' %}
+    <details class="group rounded-2xl border border-violet-200 bg-white shadow-sm dark:border-slate-800 dark:bg-slate-900">
+      <summary class="cursor-pointer list-none px-5 py-4 font-extrabold text-slate-800 dark:text-white"><span class="mr-2 inline-grid h-8 w-8 place-items-center rounded-lg bg-violet-100 text-violet-700 dark:bg-violet-500/15 dark:text-violet-300">＋</span>Add a tutorial video <span class="ml-2 text-xs font-semibold text-slate-500">(administrator)</span></summary>
+      <div class="grid gap-3 border-t border-slate-100 p-5 dark:border-slate-800 sm:grid-cols-2" id="video-form">
+        <input id="v-title" placeholder="Tutorial title (e.g. Linear equations)" class="rounded-xl border border-slate-200 bg-white p-3 text-slate-900 dark:border-slate-700">
+        <input id="v-url" type="url" placeholder="HTTPS video link (YouTube, Vimeo, or MP4)" class="rounded-xl border border-slate-200 bg-white p-3 text-slate-900 dark:border-slate-700">
+        <select id="v-grade" class="rounded-xl border border-slate-200 bg-white p-3 text-slate-900 dark:border-slate-700"><option value="">Choose grade</option><option value="9">Grade 9</option><option value="10">Grade 10</option><option value="11">Grade 11</option><option value="12">Grade 12</option></select>
+        <select id="v-subject" class="rounded-xl border border-slate-200 bg-white p-3 text-slate-900 dark:border-slate-700"><option value="">Choose subject</option><option>Mathematics</option><option>English</option><option>Biology</option><option>Chemistry</option><option>Physics</option><option>Economics</option><option>History</option><option>Geography</option><option>Aptitude</option></select>
+        <input id="v-unit" placeholder="Unit (optional)" class="rounded-xl border border-slate-200 bg-white p-3 text-slate-900 dark:border-slate-700">
+        <input id="v-topic" placeholder="Topic / part (e.g. Part 1)" class="rounded-xl border border-slate-200 bg-white p-3 text-slate-900 dark:border-slate-700">
+        <textarea id="v-description" placeholder="Short description (optional)" class="rounded-xl border border-slate-200 bg-white p-3 text-slate-900 dark:border-slate-700 sm:col-span-2"></textarea>
+        <button id="save-video" type="button" class="rounded-xl bg-violet-700 p-3 font-bold text-white transition hover:bg-violet-600">Publish tutorial</button><p id="form-message" class="self-center text-sm" role="status"></p>
+        <p class="text-xs leading-5 text-slate-500 sm:col-span-2">Videos play inside EduVault when the link supports embedding. External video hosts may still apply their own playback rules.</p>
+      </div>
+    </details>
+    {% endif %}
+
+    <section aria-live="polite">
+      <div class="mb-4 flex flex-wrap items-end justify-between gap-2"><div><p class="text-xs font-black uppercase tracking-[.18em] text-violet-600 dark:text-violet-300">Your lessons</p><h2 id="results-title" class="mt-1 text-2xl font-black text-slate-900 dark:text-white">Choose a grade and subject</h2></div><p id="result-count" class="text-sm text-slate-500 dark:text-slate-400"></p></div>
+      <div id="videos" class="grid gap-5 lg:grid-cols-2"><div class="animate-pulse rounded-2xl bg-white p-6 text-slate-500 dark:bg-slate-900">Loading tutorials…</div></div>
+    </section>
+  </div>
+</main>
+
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const videoBox = $('videos');
+  let videos = [];
+
+  function getPlayer(url) {
+    try {
+      const parsed = new URL(url);
+      if (parsed.protocol !== 'https:') return null;
+      const host = parsed.hostname.toLowerCase().replace(/^www\./, '');
+      let embedUrl = '';
+      if (host === 'youtu.be') {
+        const id = parsed.pathname.slice(1).split('/')[0];
+        if (id) embedUrl = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}`;
+      } else if (host === 'youtube.com' || host === 'm.youtube.com' || host === 'youtube-nocookie.com') {
+        const id = parsed.searchParams.get('v') || parsed.pathname.match(/\/embed\/([^/?]+)/)?.[1] || parsed.pathname.match(/\/shorts\/([^/?]+)/)?.[1];
+        if (id) embedUrl = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}`;
+      } else if (host === 'vimeo.com' || host === 'player.vimeo.com') {
+        const id = parsed.pathname.match(/\d+/)?.[0];
+        if (id) embedUrl = `https://player.vimeo.com/video/${encodeURIComponent(id)}`;
+      }
+      if (embedUrl) return { type: 'iframe', src: embedUrl };
+      if (/\.(mp4|webm|ogv)(?:$|\?)/i.test(parsed.pathname + parsed.search)) return { type: 'video', src: parsed.href };
+    } catch (_) { /* Invalid links are shown as unavailable. */ }
+    return null;
+  }
+
+  function createLesson(v, index) {
+    const card = document.createElement('article');
+    card.className = 'overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900';
+    const player = getPlayer(v.video_url);
+    if (player) {
+      const frame = document.createElement('div');
+      frame.className = 'aspect-video bg-slate-950';
+      if (player.type === 'iframe') {
+        const iframe = document.createElement('iframe');
+        iframe.src = player.src;
+        iframe.title = v.title || `Tutorial Part ${index + 1}`;
+        iframe.className = 'h-full w-full';
+        iframe.loading = 'lazy';
+        iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        iframe.allowFullscreen = true;
+        frame.append(iframe);
+      } else {
+        const video = document.createElement('video');
+        video.src = player.src;
+        video.controls = true;
+        video.preload = 'metadata';
+        video.className = 'h-full w-full';
+        video.setAttribute('controlsList', 'nodownload noplaybackrate');
+        video.setAttribute('disablePictureInPicture', '');
+        video.setAttribute('oncontextmenu', 'return false');
+        frame.append(video);
+      }
+      card.append(frame);
+    } else {
+      const unavailable = document.createElement('div');
+      unavailable.className = 'grid aspect-video place-items-center bg-slate-950 px-6 text-center text-sm text-slate-300';
+      unavailable.textContent = 'This video link cannot be played inside EduVault. Please contact your teacher.';
+      card.append(unavailable);
+    }
+    const body = document.createElement('div');
+    body.className = 'p-5';
+    const part = document.createElement('span');
+    part.className = 'inline-flex rounded-full bg-violet-100 px-3 py-1 text-[11px] font-black uppercase tracking-wider text-violet-800 dark:bg-violet-500/15 dark:text-violet-200';
+    part.textContent = v.topic_title || `Part ${index + 1}`;
+    const title = document.createElement('h3');
+    title.className = 'mt-3 text-lg font-black text-slate-900 dark:text-white';
+    title.textContent = v.title;
+    const meta = document.createElement('p');
+    meta.className = 'mt-2 text-xs font-bold text-slate-500 dark:text-slate-400';
+    meta.textContent = `Grade ${v.grade} · ${v.subject}${v.unit_title ? ` · ${v.unit_title}` : ''}${v.duration ? ` · ${v.duration}` : ''}`;
+    const description = document.createElement('p');
+    description.className = 'mt-3 text-sm leading-6 text-slate-600 dark:text-slate-300';
+    description.textContent = v.description || v.chapter_title || 'Curriculum tutorial';
+    body.append(part, title, meta, description);
+    card.append(body);
+    return card;
+  }
+
+  function render() {
+    const grade = $('grade').value;
+    const subject = $('subject').value;
+    const rows = videos.filter(v => (!grade || String(v.grade) === grade) && (!subject || v.subject.toLowerCase() === subject.toLowerCase()));
+    rows.sort((a, b) => {
+      const subjectCompare = a.subject.localeCompare(b.subject);
+      if (subjectCompare) return subjectCompare;
+      const unitCompare = (a.unit_title || '').localeCompare(b.unit_title || '');
+      return unitCompare || (a.topic_title || a.title).localeCompare(b.topic_title || b.title, undefined, { numeric: true, sensitivity: 'base' });
+    });
+    $('results-title').textContent = grade && subject ? `Grade ${grade} · ${subject}` : grade ? `Grade ${grade} tutorials` : subject ? `${subject} tutorials` : 'All published tutorials';
+    $('result-count').textContent = `${rows.length} ${rows.length === 1 ? 'video' : 'videos'}`;
+    videoBox.replaceChildren();
+    if (!rows.length) {
+      const empty = document.createElement('div');
+      empty.className = 'rounded-2xl border border-dashed border-slate-300 bg-white p-8 text-center text-slate-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 lg:col-span-2';
+      empty.textContent = 'No tutorials for this selection yet. Choose another grade or subject, or check back later.';
+      videoBox.append(empty);
+      return;
+    }
+    rows.forEach((v, i) => videoBox.append(createLesson(v, i)));
+  }
+
+  async function loadVideos() {
+    videoBox.innerHTML = '<div class="rounded-2xl bg-white p-6 text-slate-500 dark:bg-slate-900">Loading tutorials…</div>';
+    try {
+      const response = await fetch('/api/learning/videos');
+      if (!response.ok) throw new Error('Request failed');
+      videos = await response.json();
+      render();
+    } catch (_) {
+      videoBox.innerHTML = '<div class="rounded-2xl border border-rose-200 bg-rose-50 p-6 text-sm text-rose-800 dark:border-rose-900 dark:bg-rose-950/40 dark:text-rose-200">Tutorials could not be loaded. Please try again.</div>';
+    }
+  }
+
+  $('filter').addEventListener('click', render);
+  $('grade').addEventListener('change', render);
+  $('subject').addEventListener('change', render);
+  const save = $('save-video');
+  if (save) save.addEventListener('click', async () => {
+    const msg = $('form-message');
+    const data = { title: $('v-title').value, video_url: $('v-url').value, grade: $('v-grade').value, subject: $('v-subject').value, unit_title: $('v-unit').value, topic_title: $('v-topic').value, description: $('v-description').value, publish: true };
+    try {
+      const response = await fetch('/api/learning/videos', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || 'Could not publish this video.');
+      msg.textContent = 'Tutorial published.';
+      msg.className = 'self-center text-sm text-emerald-600';
+      $('v-title').value = ''; $('v-url').value = ''; $('v-unit').value = ''; $('v-topic').value = ''; $('v-description').value = '';
+      await loadVideos();
+    } catch (error) {
+      msg.textContent = error.message;
+      msg.className = 'self-center text-sm text-rose-600';
+    }
+  });
+  loadVideos();
+})();
+</script>
+{% endblock %}

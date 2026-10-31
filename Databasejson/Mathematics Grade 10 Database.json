@@ -1,0 +1,582 @@
+{
+  "grade": 10,
+  "subject": "Mathematics",
+  "curriculum": "Ethiopian New Curriculum",
+  "units": [
+    {
+      "unit_number": 1,
+      "unit_title": "Relations and Functions",
+      "sections": [
+        {
+          "section_number": "1.1",
+          "section_title": "Relations",
+          "topics": [
+            {
+              "topic_title": "Relations",
+              "subtopics": [
+                "Patterns",
+                "Sequences and patterns",
+                "Cartesian product",
+                "Relation as a subset of a Cartesian product",
+                "Ordered pairs",
+                "Arrow diagrams",
+                "Matrices",
+                "Domain",
+                "Range",
+                "Codomain"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.2",
+          "section_title": "Functions",
+          "topics": [
+            {
+              "topic_title": "Functions",
+              "subtopics": [
+                "Definition of a function",
+                "Function notation",
+                "Domain and range",
+                "Types of functions",
+                "One-to-one functions",
+                "Many-to-one functions",
+                "Onto functions",
+                "Into functions",
+                "Bijective functions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.3",
+          "section_title": "Graphs of Relations and Functions",
+          "topics": [
+            {
+              "topic_title": "Graphs",
+              "subtopics": [
+                "Cartesian plane",
+                "Graph of a relation",
+                "Graph of a function",
+                "Vertical line test",
+                "Graphing functions",
+                "Interpreting graphs"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "1.4",
+          "section_title": "Applications of Relations and Functions",
+          "topics": [
+            {
+              "topic_title": "Applications",
+              "subtopics": [
+                "Mathematical modeling",
+                "Real-life relations",
+                "Real-life functions",
+                "Problem solving using functions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "unit_title": "Polynomial Functions",
+      "sections": [
+        {
+          "section_number": "2.1",
+          "section_title": "Introduction to Polynomial Functions",
+          "topics": [
+            {
+              "topic_title": "Polynomial Functions",
+              "subtopics": [
+                "Definition of polynomial",
+                "Terms and coefficients",
+                "Degree of a polynomial",
+                "Leading coefficient",
+                "Constant polynomial",
+                "Polynomial functions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.2",
+          "section_title": "Operations on Polynomial Functions",
+          "topics": [
+            {
+              "topic_title": "Polynomial Operations",
+              "subtopics": [
+                "Addition",
+                "Subtraction",
+                "Multiplication",
+                "Division",
+                "Synthetic division",
+                "Remainder theorem"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.3",
+          "section_title": "Theorems on Polynomials",
+          "topics": [
+            {
+              "topic_title": "Polynomial Theorems",
+              "subtopics": [
+                "Factor theorem",
+                "Remainder theorem",
+                "Fundamental theorem of algebra",
+                "Applications of polynomial theorems"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.4",
+          "section_title": "Zeros of Polynomial Functions",
+          "topics": [
+            {
+              "topic_title": "Zeros",
+              "subtopics": [
+                "Zeros and roots",
+                "Finding zeros",
+                "Factors and zeros",
+                "Multiplicity of zeros",
+                "Relationship between zeros and coefficients"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2.5",
+          "section_title": "Graphs of Polynomial Functions",
+          "topics": [
+            {
+              "topic_title": "Polynomial Graphs",
+              "subtopics": [
+                "Graphing polynomial functions",
+                "End behavior",
+                "Turning points",
+                "Intercepts",
+                "Multiplicity and graph behavior"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "unit_title": "Exponential and Logarithmic Functions",
+      "sections": [
+        {
+          "section_number": "3.1",
+          "section_title": "Exponents and Logarithms",
+          "topics": [
+            {
+              "topic_title": "Exponents and Logarithms",
+              "subtopics": [
+                "Laws of exponents",
+                "Rational exponents",
+                "Definition of logarithm",
+                "Laws of logarithms",
+                "Common logarithm",
+                "Natural logarithm"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.2",
+          "section_title": "Exponential Functions and Their Graphs",
+          "topics": [
+            {
+              "topic_title": "Exponential Functions",
+              "subtopics": [
+                "Definition",
+                "Properties",
+                "Graphs",
+                "Growth",
+                "Decay",
+                "Transformations"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.3",
+          "section_title": "Logarithmic Functions and Their Graphs",
+          "topics": [
+            {
+              "topic_title": "Logarithmic Functions",
+              "subtopics": [
+                "Definition",
+                "Inverse relationship with exponential functions",
+                "Graphs",
+                "Domain and range",
+                "Transformations"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.4",
+          "section_title": "Equations Involving Exponents and Logarithms",
+          "topics": [
+            {
+              "topic_title": "Exponential and Logarithmic Equations",
+              "subtopics": [
+                "Exponential equations",
+                "Logarithmic equations",
+                "Change of base",
+                "Solving equations"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "3.5",
+          "section_title": "Applications of Exponential and Logarithmic Functions",
+          "topics": [
+            {
+              "topic_title": "Applications",
+              "subtopics": [
+                "Population growth",
+                "Decay",
+                "Compound interest",
+                "Depreciation",
+                "pH and logarithmic scales",
+                "Real-life models"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 4,
+      "unit_title": "Trigonometric Functions",
+      "sections": [
+        {
+          "section_number": "4.1",
+          "section_title": "Radian Measure",
+          "topics": [
+            {
+              "topic_title": "Radian Measure",
+              "subtopics": [
+                "Radians",
+                "Degrees and radians",
+                "Conversion between degrees and radians",
+                "Arc length"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.2",
+          "section_title": "Trigonometric Functions",
+          "topics": [
+            {
+              "topic_title": "Trigonometric Functions",
+              "subtopics": [
+                "Sine function",
+                "Cosine function",
+                "Tangent function",
+                "Domain and range",
+                "Graphs",
+                "Periodicity"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.3",
+          "section_title": "Trigonometric Identities",
+          "topics": [
+            {
+              "topic_title": "Trigonometric Identities",
+              "subtopics": [
+                "Pythagorean identities",
+                "Reciprocal identities",
+                "Quotient identities",
+                "Simplifying trigonometric expressions"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.4",
+          "section_title": "Trigonometric Equations",
+          "topics": [
+            {
+              "topic_title": "Trigonometric Equations",
+              "subtopics": [
+                "Basic trigonometric equations",
+                "General solutions",
+                "Solving equations in intervals",
+                "Applications"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4.5",
+          "section_title": "Applications of Trigonometric Functions",
+          "topics": [
+            {
+              "topic_title": "Applications",
+              "subtopics": [
+                "Angles of elevation",
+                "Angles of depression",
+                "Heights and distances",
+                "Periodic phenomena",
+                "Real-life applications"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "unit_title": "Circles",
+      "sections": [
+        {
+          "section_number": "5.1",
+          "section_title": "Symmetrical Properties of Circles",
+          "topics": [
+            {
+              "topic_title": "Circle Symmetry",
+              "subtopics": [
+                "Circle and its parts",
+                "Radius",
+                "Diameter",
+                "Chord",
+                "Arc",
+                "Tangents",
+                "Symmetry of circles"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.2",
+          "section_title": "Angle Properties of Circles",
+          "topics": [
+            {
+              "topic_title": "Circle Angles",
+              "subtopics": [
+                "Angle at the center",
+                "Angle at the circumference",
+                "Angles in the same segment",
+                "Angle in a semicircle",
+                "Cyclic quadrilaterals",
+                "Tangent-chord theorem"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "5.3",
+          "section_title": "Arc Length, Perimeters and Areas of Segments and Sectors",
+          "topics": [
+            {
+              "topic_title": "Circle Measurement",
+              "subtopics": [
+                "Arc length",
+                "Sector area",
+                "Segment area",
+                "Perimeter of sectors",
+                "Applications"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "unit_title": "Solid Figures",
+      "sections": [
+        {
+          "section_number": "6.1",
+          "section_title": "Prisms and Cylinders",
+          "topics": [
+            {
+              "topic_title": "Prisms and Cylinders",
+              "subtopics": [
+                "Prisms",
+                "Cylinder",
+                "Surface area",
+                "Volume",
+                "Composite solids"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.2",
+          "section_title": "Pyramids and Cones",
+          "topics": [
+            {
+              "topic_title": "Pyramids and Cones",
+              "subtopics": [
+                "Pyramids",
+                "Cones",
+                "Slant height",
+                "Surface area",
+                "Volume"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.3",
+          "section_title": "Spheres",
+          "topics": [
+            {
+              "topic_title": "Spheres",
+              "subtopics": [
+                "Sphere",
+                "Surface area",
+                "Volume",
+                "Applications"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.4",
+          "section_title": "Frustums",
+          "topics": [
+            {
+              "topic_title": "Frustums",
+              "subtopics": [
+                "Frustum of a pyramid",
+                "Frustum of a cone",
+                "Surface area",
+                "Volume"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "6.5",
+          "section_title": "Composed Solid Figures",
+          "topics": [
+            {
+              "topic_title": "Composite Solids",
+              "subtopics": [
+                "Combining solid figures",
+                "Surface area of composite solids",
+                "Volume of composite solids",
+                "Applications"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 7,
+      "unit_title": "Coordinate Geometry",
+      "sections": [
+        {
+          "section_number": "7.1",
+          "section_title": "Distance Between Two Points",
+          "topics": [
+            {
+              "topic_title": "Distance",
+              "subtopics": [
+                "Coordinate plane",
+                "Distance formula",
+                "Applications of distance"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.2",
+          "section_title": "Division of a Line Segment",
+          "topics": [
+            {
+              "topic_title": "Section Formula",
+              "subtopics": [
+                "Midpoint",
+                "Internal division",
+                "External division",
+                "Ratio formula"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.3",
+          "section_title": "Equation of a Line",
+          "topics": [
+            {
+              "topic_title": "Straight Lines",
+              "subtopics": [
+                "Slope",
+                "Point-slope form",
+                "Slope-intercept form",
+                "Two-point form",
+                "General equation of a line",
+                "Intercepts"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.4",
+          "section_title": "Slopes of Parallel and Perpendicular Lines",
+          "topics": [
+            {
+              "topic_title": "Parallel and Perpendicular Lines",
+              "subtopics": [
+                "Parallel lines",
+                "Perpendicular lines",
+                "Relationships between slopes",
+                "Applications"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.5",
+          "section_title": "Equation of a Circle",
+          "topics": [
+            {
+              "topic_title": "Circle in Coordinate Geometry",
+              "subtopics": [
+                "Standard equation of a circle",
+                "Center and radius",
+                "General equation",
+                "Graphing circles"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "7.6",
+          "section_title": "Applications",
+          "topics": [
+            {
+              "topic_title": "Applications of Coordinate Geometry",
+              "subtopics": [
+                "Geometric problem solving",
+                "Distance and midpoint applications",
+                "Line and circle applications",
+                "Real-life coordinate models"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

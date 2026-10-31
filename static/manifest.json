@@ -1,0 +1,10 @@
+{
+  "name": "EduVault",
+  "short_name": "EduVault",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#2563eb",
+  "description": "EduVault learning and exam platform",
+  "icons": []
+}

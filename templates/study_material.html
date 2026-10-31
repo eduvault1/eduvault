@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="max-w-4xl mx-auto px-6 py-12">
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-8 shadow-sm">
+        <p class="text-xs font-bold uppercase tracking-wider text-blue-600">Study material</p>
+        <h1 class="mt-2 text-2xl font-black text-slate-900 dark:text-white">Material {{ material_id }}</h1>
+        <p class="mt-3 text-sm text-slate-500 dark:text-slate-400">This material is ready to study. Choose a resource from the resources page to continue.</p>
+        <a href="{{ url_for('resources_hub') }}" class="inline-block mt-6 bg-blue-600 text-white px-5 py-3 rounded-xl text-sm font-bold">Browse resources</a>
+    </div>
+</section>
+{% endblock %}
